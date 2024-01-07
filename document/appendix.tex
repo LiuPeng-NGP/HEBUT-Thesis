@@ -1,0 +1,855 @@
+\chapter{基础知识}
+\section{数学}
+
+\subsection{线性代数}
+\subsubsection{对角矩阵}
+除主对角线之外的元素皆为{$0$}的矩阵。
+
+\subsubsection{矩阵乘法}
+如果{$A$}是一个{$l\times m$}矩阵，
+{$B$}是一个{$m\times n$}矩阵，
+则{$AB$}是一个{$l\times n$}矩阵。
+
+\subsubsection{矩阵的迹}
+矩阵的迹为矩阵所有对角元素之和，即：
+\begin{equation}
+    \label{eq:matrix_trac}
+    Tr(A)=\sum_{i}A_{i,i}
+\end{equation}
+
+\subsubsection{范数}
+范数可以表示向量的大小，范数定义为:
+\begin{equation}
+    \label{eq:norm}
+    {\Vert \bm{x} \Vert}_{p} = {\left(  \sum_{i} \mid x_i  \mid^p    \right)}^{\frac{1}{p}}
+\end{equation}
+式{\ref{eq:norm}}中，{$p \in \mathbb{R}, p\geq 1$}
+
+{$L^1$}范数为：
+\begin{equation}
+    \label{eq:l1_norm}
+    \Vert \bm{x} \Vert_{1} =  \sum_{i} \mid x_i \mid
+\end{equation}
+
+最大范数为：
+\begin{equation}
+    \label{eq:max_norm}
+    \Vert \bm{x} \Vert_{\infty} = \max_i \mid x_i \mid
+\end{equation}
+
+
+矩阵的Frobenius范数为：
+\begin{equation}
+    \label{eq:frobenius_norm}
+    \Vert \bm{x} \Vert_{F} =\sqrt{\sum_{i,j}A_{i,j}^{2}}=\sqrt{Tr(AA^{T})}
+\end{equation}
+
+\subsubsection{矩阵行列式}
+矩阵的行列式是一个关于方形矩阵（方阵）内所有元素的标量函数值。
+一个{$n\times n$}的矩阵{$M$}的行列式为：
+\begin{equation}
+    \label{eq:determinant_of_matrix}
+    \det M =\det
+    \begin{bmatrix}
+        a_{11}&a_{12}&\cdots &a_{1n} \\
+        a_{21}&a_{22}&\cdots &a_{2n} \\
+        \vdots & \vdots & & \vdots \\
+        a_{n1}&a_{n2}&\cdots &a_{nn}
+    \end{bmatrix}
+    =\sum_{j_1j_2\cdots j_n}{(-1)}^{\tau (j_1j_2\cdots j_n)}a_{1j_1}a_{2j_2}\ldots a_{nj_n}
+\end{equation}
+
+式{\ref{eq:determinant_of_matrix}}中，
+求和符号{$\sum $}的下标{$j_1j_2\cdots j_n$}表示集合{$1,2,\ldots ,n$}的全排列，
+即共有{$n\!$} 项；
+{$\tau({j_1j_2\cdots j_n})$}表示排列{$j_1j_2\cdots j_n$}的符号，
+排列的符号定义为式{\ref{eq:parity_of_a_permutation}}。
+
+方阵的行列式可以用来判断矩阵{$M$}是否可逆：
+如果{$\det M = 0$}，那么矩阵不可逆。
+
+矩阵乘积的行列式等于矩阵行列式的乘积，即：
+\begin{equation}
+    \det (AB)=\det(A)\det(B)
+\end{equation}
+
+\subsubsection{可逆矩阵}
+如果一个{$n \times n$}的矩阵{$A$}可逆，那么存在{$n \times n$}矩阵{$B$}使得：
+\begin{equation}
+    \label{eq:invertable_matrix_defination}
+    AB=BA=I_n
+\end{equation}
+
+式{\ref{eq:invertable_matrix_defination}}中，{$I_n$}为单位矩阵，并且使用矩阵乘法。
+
+不可逆的方阵又称为奇异矩阵或退化矩阵。
+
+对于可逆矩阵有：
+\begin{equation}
+    \det(M)\det(M^{-1})=\det(M\dot M^{-1})
+    =\det(I)=1
+\end{equation}
+因此，
+\begin{equation}
+    \label{eq:determinant_of_inverse_matrix}
+    \det (M^{-1})={(\det(M))}^{-1}
+\end{equation}
+
+
+
+
+\subsubsection{雅可比矩阵}
+
+假设某函数{$\bm{f}:\mathbb{R}^{n}\rightarrow\mathbb{R}^{m}$}，
+从{$\bm{x}\in\mathbb{R}^{n}$}映射到向量{$\bm{f(x)}\in\mathbb{R}^{m}$}，
+这个函数的一阶偏导矩阵称为雅可比矩阵，是一个{$m\times n$}的矩阵。
+其第{$i$}行，第{$j$}列的值为{$\bm{J}_{ij}=\frac{\partial f_i}{\partial x_i} $}
+\begin{equation}
+    \label{eq:jacabian_matrix}
+    \bm{J}=
+    \begin{bmatrix}
+        \frac{\partial f_1}{\partial x_1}& \cdots & \frac{\partial f_1}{\partial x_n}\\
+        \vdots &\ddots  & \vdots \\
+        \frac{\partial f_m}{\partial x_1}& \cdots & \frac{\partial f_m}{\partial x_n}
+    \end{bmatrix}
+\end{equation}
+
+
+
+
+
+
+
+
+
+\subsection{概率论}
+\subsubsection{概率密度函数}
+一个连续随机变量{$X$}的概率可以由概率密度函数表示：
+\begin{equation}
+    p(X\in A )= \int_A f_{\bm{X}}(x)dx
+\end{equation}
+\subsubsection{概率质量函数}
+一个离散随机变量{$X$}的概率可以由概率质量函数表示：
+\begin{equation}
+    p_{X}(x)=p(\{X=x\})
+\end{equation}
+\subsubsection{正态分布}
+若实值随机变量{$X$}服从正态分布（高斯分布），
+则其概率密度函数为：
+\begin{equation}
+    \label{eq:gaussian_distribution}
+    f(x)=\frac{1}{\sigma\sqrt{2\pi}}\exp({\frac{1}{2}{(\frac{x-\mu}{\sigma})}^{2}})
+\end{equation}
+记为：{$X\sim \mathcal{N}(\mu,\sigma^{2})$}
+
+两高斯分布之和仍为高斯分布，
+假设{$X,Y$}为两独立随机变量，
+且
+\begin{align}
+    X\sim & \mathcal{N}(\mu_X,\sigma_{X}^{2}) \\ 
+    Y\sim & \mathcal{N}(\mu_Y,\sigma_{Y}^{2}) \\
+\end{align}
+则{$X,Y$}之和仍为高斯分布，
+即：
+\begin{align}
+    Z=&X+Y\\
+    Z\sim& \mathcal{N}(\mu_X+\mu_Y,\sigma_{X}^{2}+\sigma_{Y}^{2})  \label{eq:sum_of_two_gaussian_distributions}
+\end{align}
+
+\subsubsection{期望}
+当{$x \sim p(x)$}，函数{$f(x)$}的期望为：
+\begin{equation}
+    \label{eq:expection_discrete}
+    \mathbb{E}_{x \sim p} [ f(x)] = \sum_{x} p(x)f(x)
+\end{equation}
+或
+\begin{equation}
+    \label{eq:expection_continuous}
+    \mathbb{E}_{x \sim p} [ f(x)] = \int p(x)f(x) \,dx
+\end{equation}
+
+\subsubsection{协方差}
+随机变量{$X,Y$}的协方差为：
+\begin{equation}
+    \label{eq:covariance}
+    cov(X,Y)=\mathbb{E}\left[XY\right]-\mathbb{E}\left[X\right]\mathbb{E}\left[Y\right]
+\end{equation}
+
+
+\subsubsection{极大似然估计}
+
+假设{$\theta$}为未知参数（标量或者矢量），
+对于服从联合概率质量函数{$p_{X}(\bm{x};\theta)$}的一组观测向量{$X={X_1,\ldots,X_n}$}，
+假设我们有{$X$}的具体的观测值{$\bm{x}=(x_1,\ldots,x_n)$}。
+那么，其极大似然估计是未知参数{$\theta$}的一个取值，
+该取值能够使函数{$p_{X}(x_1,\ldots,x_n;\theta)$}取得最大值。
+\begin{equation}
+    \label{eq:maximux_likelihood_estimation_orgin}
+    \hat{\theta_n}
+    =\argmax_{\theta} p_X(\bm{x};\theta)
+    =\argmax_{\theta} p_X(x_1,\ldots,x_n;\theta)
+\end{equation}
+
+
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/maximux_likelihood_estimation}
+    \caption{极大似然估计示意图}\label{fig:maximux_likelihood_estimation}
+\end{figure}
+
+图{\ref{fig:maximux_likelihood_estimation}}中，
+假设{$X$}为离散变量，
+未知参数{$\theta$}可以从{$\theta_1,\ldots,\theta_m$}中选取。
+给定观测值{$X=\bm{x}$}，
+对于每个{$\theta_i$}取值，
+都可以计算{$p_X(\bm{x};\theta_i)$}。
+使函数{$p_X(\bm{x};\theta)$}取得最大值的{$\theta_i$}即为极大似然估计{$\theta$}。
+
+在很多情况下，都假定观测向量中的每一个{$X_i$}为互相独立的，
+因此，似然函数通常可以改写为：
+\begin{equation}
+    \label{eq:maximux_likelihood_estimation_discrete}
+    p_X(x_1,\ldots,x_n;\theta)=\prod_{i=1}^{n}p_{X_i}(x_i;\theta)
+\end{equation}
+
+为了分析与计算方便，可以将其改写为对数似然函数：
+\begin{equation}
+    \label{eq:maximux_likelihood_estimation_discrete_log}
+    \log p_X(x_1,\ldots,x_n;\theta)
+    =\log \prod_{i=1}^{n}p_{X_i}(x_i;\theta) 
+    =\sum_{i=1}^{n} \log p_{X_i}(x_i;\theta)
+\end{equation}
+
+当{$X$}为连续变量时，由概率密度函数替换概率质量函数可得：
+\begin{equation}
+    \label{eq:maximux_likelihood_estimation_continuous_log}
+    \log f_X(x_1,\ldots,x_n;\theta)
+    =\log \prod_{i=1}^{n}f_{X_i}(x_i;\theta) 
+    =\sum_{i=1}^{n} \log f_{X_i}(x_i;\theta)
+\end{equation}
+
+值得注意的是，
+对于{$X$}的观测值{$\bm{x}$}，
+其似然函数{$p_X(\bm{x};\theta)$}并不是指未知 参数取值为{$\theta$}的概率，
+而是指在未知参数取值为{$\theta$}时，
+{$X$}的观测值为{$\bm{x}$}的概率。
+
+\subsubsection{边缘似然}
+边缘似然是似然函数在参数空间上的积分，
+表示生成观测样本的概率，
+因此，边缘似然也被称为模型证据，简称为证据。
+
+
+
+
+\subsubsection{全概率公式}
+
+全概率公式将对一复杂事件A的概率求解问题转化为了在不同情况下发生的简单事件的概率的求和问题。
+
+若事件{$B_1,B_2,\dots,B_n$}构成一个完备事件组且都有正概率，则有，
+\begin{align}
+    p(A)
+    & =p(AB_1)+p(AB_2)+ \cdots +p(AB_n) \label{eq:total_probability_theorem_1}\\
+    & =p(A|B_1)p(B_1)+p(A|B_2)p(B_2)+ \cdots + p(A|B_n)p(B_n) \label{eq:total_probability_theorem_2}
+\end{align}
+
+
+
+
+\subsubsection{贝叶斯定理}
+若事件{$B_1,B_2,\dots,B_n$}构成一个完备事件组且都有正概率，则有，
+\begin{align}
+    p(B_i|A)
+    & =\frac{p(A|B_i)p(B_i)}{p(A)} \label{eq:bayes_rule_1}\\
+    & =\frac{p(A|B_i)p(B_i)}{p(A|B_1)p(B_1)+p(A|B_2)p(B_2)+ \cdots +p(A|B_n)p(B_n)} \label{eq:bayes_rule_2}
+\end{align}
+
+在式{\ref{eq:bayes_rule_1}}与{\ref{eq:bayes_rule_2}}中，
+{$B_i$}通常表示一个命题，如“硬币正面朝上的次数占投掷次数的50\%”；
+{$A$}通常表示事实，如“连续多次投掷硬币的结果”。
+{$p(B_i)$}表示{$B_i$}的先验概率，
+先验概率为不考虑事实{$A$}时，
+人们对事件{$B_i$}的相信程度，
+其也包含了人们对于{$B_i$}的先验知识。
+{$p(A|B_i)$}为似然函数，
+表示当命题{$B_i$}发生时，
+事实{$A$}发生的概率。
+“似然”表达了事件{$A$}对命题{$B_i$}的支撑程度。
+{$p(B_i|A)$}为{$B_i$}的后验概率，
+表示考虑事实{$A$}后，
+命题{$B_i$}发生的概率。
+贝叶斯定理根据事实{$B_i$}，
+对先验概率{$p(B_i)$}进行更新。
+
+\subsubsection{贝叶斯推理}
+贝叶斯推理可以由先验概率和似然函数得出后验概率，
+其中先验概率和似然函数皆由统计模型关于观测数据产生。
+\begin{equation}
+    \label{eq:bayesian_inference}
+    p(H\mid E)=\frac{p(E \mid H)p(H)}{p(E)}
+\end{equation}
+式{\ref{eq:bayesian_inference}}中：
+\begin{itemize}
+    \item {$H$}为假设，其概率受数据（以下称为证据）影响。
+    \item {$p(H)$}为先验概率，是在获得数据{$E$}前，对假设{$H$}概率的估计，{$E$}为当前证据。
+    \item {$E$}为证据，即未参与先验概率{$p(H)$}计算的数据。
+    \item {$p(H\mid E)$}未后验概率，给出证据{$E$}后，{$H$}为真的概率，是关于{$H$}的函数。
+    \item {$p(E\mid H)$}为似然函数，给出假设{$H$}后观测到{$E$}的概率，是关于{$E$}的函数。
+    \item {$p(E)$}为边缘似然，也称为模型证据。表示从先验概率中获得观测样本的概率。
+\end{itemize}
+
+
+\subsubsection{蒙特卡洛方法}
+
+蒙特卡洛方法是依赖于随机采样来获得数值结果的一种计算方法。
+其底层思想是，用随机方法来解决原理上具备确定性的问题。
+在物理和数学上，当其他方法不可用时，常常采用蒙特卡洛方法。
+蒙特卡洛方法主要应用于三类问题：优化、数值积分与从概率分布中采样。
+
+当无法精确求和或者计算积分时，
+通常使用蒙特卡洛采样方法来近似。
+基本思想为，将其和或者积分视为某分布的期望，
+通过相应的计算来近似该期望。
+如：
+\begin{equation}
+    \label{eq:monte_carlo_sampling_sum}
+    s=\sum_{\bm{x}} p(\bm{x})f(\bm{x})=E_p[f(\bm{x})]
+\end{equation}
+\begin{equation}
+    \label{eq:monte_carlo_sampling_integral}
+    s=\int  p(\bm{x})f(\bm{x}) \,d\bm{x}=E_p[f(\bm{x})]
+\end{equation}
+
+式{\ref{eq:monte_carlo_sampling_sum}}中，
+{$p(\bm{x})$}为随机变量{$\bm{x}$}的概率分布，
+式{\ref{eq:monte_carlo_sampling_integral}}中，
+{$p(\bm{x})$}为随机变量{$\bm{x}$}的概率密度。
+
+\subsubsection{随机微分方程}
+随机微分方程（Stochastic differential equation）是添加了一项或多项随机项的微分方程。
+
+
+
+\subsubsection{对比散度}
+
+用函数{$f(x;\bm{\theta})$}来为数据点的概率分布建模，
+其中，
+{$x$}为模型的输入，
+{$\bm{\theta}$}为模型的参数，
+且要保证概率积分为1的性质，即：
+\begin{equation}
+    \label{eq:contrastive_divergence_evidence_p}
+    p(x;\bm{\theta})=\frac{f(x;\bm{\theta})}{Z(\bm{\theta})}
+\end{equation}
+式{\ref{eq:contrastive_divergence_evidence_p}}中，
+{$Z(\bm{\theta})$}为划分函数：
+\begin{equation}
+    \label{eq:contrastive_divergence_evidence_z}
+    Z(\bm{\theta})=\int f(x;\bm{\theta}) \,dx
+\end{equation}
+假定数据点集合为{$\bm{x}=x_1, \ldots, x_K$}，
+则其似然函数为：
+\begin{equation}
+    \label{eq:contrastive_divergence_likelihood}
+    p(\bm{x};\bm{\theta})=\prod_{k=1}^{K} \frac{f(x_k;\bm{\theta})}{Z(\bm{\theta})}
+\end{equation}
+极大化似然函数{\ref{eq:contrastive_divergence_likelihood}}等价于最小化负对数似然函数，
+即能量函数{$E(\bm{x};\bm{\theta})$}:
+\begin{equation}
+    \label{eq:contrastive_divergence_energy_function}
+    E(\bm{x};\bm{\theta})
+    = \log Z(\bm{\theta}) - \frac{1}{K} \sum_{i=1}^{K} \log f(x_i;\bm{\theta})
+\end{equation}
+对式{\ref{eq:contrastive_divergence_energy_function}}关于参数{$\bm{\theta}$}求偏导，
+即：
+\begin{align}
+    \frac{\partial E(\bm{x};\bm{\theta})}{\partial \bm{\theta}}
+    &= \frac{\partial  \log Z(\bm{\theta}) }{\partial \bm{\theta}} -  \frac{1}{K}  \sum_{i=1}^{K} \frac{\partial \log f(x_i;\bm{\theta})}{\partial \bm{\theta}} \\
+    &= \frac{\partial  \log Z(\bm{\theta}) }{\partial \bm{\theta}} - \mathbb{E}_{p_{data}}  \left [ \frac{\partial \log f(x;\bm{\theta})}{\partial \bm{\theta}} \right ] \\
+    &= \frac{1}{Z(\bm{\theta})} \frac{\partial  Z(\bm{\theta}) }{\partial \bm{\theta}} - \mathbb{E}_{p_{data}}  \left [ \frac{\partial \log f(x;\bm{\theta})}{\partial \bm{\theta}} \right ] \\
+    &= \frac{1}{Z(\bm{\theta})}  \frac{\partial  \int f(x;\bm{\theta}) \,dx }{\partial \bm{\theta}}     - \mathbb{E}_{p_{data}}  \left [ \frac{\partial \log f(x;\bm{\theta})}{\partial \bm{\theta}} \right ] \\
+    &=  \frac{1}{Z(\bm{\theta})} \int \frac{\partial   f(x;\bm{\theta})  }{\partial \bm{\theta}}   \,dx    - \mathbb{E}_{p_{data}}  \left [ \frac{\partial \log f(x;\bm{\theta})}{\partial \bm{\theta}} \right ] \\
+    &=   \frac{1}{Z(\bm{\theta})} \int  f(x;\bm{\theta})  \frac{\partial \log  f(x;\bm{\theta}) }{\partial \bm{\theta}}   \,dx     - \mathbb{E}_{p_{data}}  \left [ \frac{\partial \log f(x;\bm{\theta})}{\partial \bm{\theta}} \right ] \\
+    &=  \int  p(x;\bm{\theta})  \frac{\partial \log  f(x;\bm{\theta}) }{\partial \bm{\theta}}   \,dx    - \mathbb{E}_{p_{data}}  \left [ \frac{\partial \log f(x;\bm{\theta})}{\partial \bm{\theta}} \right ] \\
+    &=   \mathbb{E}_{p(x;\bm{\theta})} \left [      \frac{\partial \log  f(x;\bm{\theta}) }{\partial \bm{\theta}}      \right ]   - \mathbb{E}_{p_{data}}  \left [ \frac{\partial \log f(x;\bm{\theta})}{\partial \bm{\theta}} \right ] \label{eq:contrastive_divergence_partial_negative_log_likelihood}
+\end{align}
+式{\ref{eq:contrastive_divergence_partial_negative_log_likelihood}}即为对比散度的梯度，
+对于其等号右侧第一项
+\begin{equation}
+    \mathbb{E}_{p(x;\bm{\theta})} \left [      \frac{\partial \log  f(x;\bm{\theta}) }{\partial \bm{\theta}}      \right ]
+\end{equation}
+可以通过多次循环使用马尔科夫链蒙特卡洛采样来将训练集数据转化为从{$p(x;\bm{\theta})$}分布中的采样。
+假设{$\bm{x}^{n}$}表示对训练样本数据{$\bm{x}$}使用{$n$}次马尔科夫链蒙特卡洛采样获得数据，
+可令{$\bm{x}^{0}=\bm{x}$}，
+即得：
+\begin{equation}
+    \label{eq:contrastive_divergence_gradient_mcmc_infinite}
+    \frac{\partial E(\bm{x};\bm{\theta})}{\partial \bm{\theta}}
+    =   \mathbb{E}_{\bm{x}^{\infty}} \left [      \frac{\partial \log  f(x;\bm{\theta}) }{\partial \bm{\theta}}      \right ]   - \mathbb{E}_{\bm{x}^{0}}  \left [ \frac{\partial \log f(x;\bm{\theta})}{\partial \bm{\theta}} \right ]
+\end{equation}
+对于式{\ref{eq:contrastive_divergence_gradient_mcmc_infinite}}，在机器学习中，
+即使使用一次马尔科夫链蒙特卡洛采样也可以取得很好得效果，
+参数更新式为：
+\begin{equation}
+    \bm{\theta}_{t+1}=\bm{\theta}_{t} + \eta \left(  \mathbb{E}_{\bm{x}^{0}} \left [      \frac{\partial \log  f(x;\bm{\theta}) }{\partial \bm{\theta}}      \right ]   - \mathbb{E}_{\bm{x}^{1}}  \left [ \frac{\partial \log f(x;\bm{\theta})}{\partial \bm{\theta}} \right ] \right) 
+\end{equation}
+
+
+\subsubsection{证据下界}
+显式密度模型需要表示出概率密度函数，
+假定观测变量{$\bm{x}$}和隐变量{$\bm{z}$}构成联合概率分布{$p(\bm{x},\bm{z})$}，
+概率密度函数{$p(\bm{x})$}可表示为：
+\begin{equation}
+    \label{eq:elbo_probability_of_x_with_integral}
+    p(\bm{x})=\int p(\bm{x},\bm{z})\,d\bm{z}
+\end{equation}
+或使用概率链式法则：
+\begin{equation}
+    \label{eq:elbo_probability_of_x_chain_rule}
+    p(\bm{x})=\frac{p(\bm{x},\bm{z})}{p(\bm{z}\mid\bm{x})}
+\end{equation}
+对于式{\ref{eq:elbo_probability_of_x_with_integral}}，
+复杂模型无法对所有隐变量{$\bm{z}$}进行积分；
+对于式{\ref{eq:elbo_probability_of_x_chain_rule}}，
+因无法获得实际后验分布{$p(\bm{z}\mid\bm{x})$}
+而也无法直接计算。
+结合式{\ref{eq:elbo_probability_of_x_with_integral}}与式{\ref{eq:elbo_probability_of_x_chain_rule}}，有：
+\begin{align}
+    \log p(\bm{x})
+    & =\log \int p(\bm{x},\bm{z}) d\,z & \mbox{（根据式{\ref{eq:elbo_probability_of_x_with_integral}}）} \\
+    &=\log \int p(\bm{x},\bm{z})  \frac{q_{\phi}(\bm{z}\mid\bm{x})}{q_{\phi}(\bm{z}\mid\bm{x})} d\,z \\
+    &=\log \int \frac{p(\bm{x},\bm{z}) q_{\phi}(\bm{z}\mid\bm{x})}{q_{\phi}(\bm{z}\mid\bm{x})} d\,z \\
+    &=\log \int q_{\phi}(\bm{z}\mid\bm{x}) \frac{p(\bm{x},\bm{z}) }{q_{\phi}(\bm{z}\mid\bm{x})} d\,z \\
+    &= \log \mathbb{E}_{q_{\phi}(\bm{z}|\bm{x})}\left[\frac{p(\bm{x},\bm{z})}{q_{\phi}(\bm{z}\mid\bm{x})}\right]  & \mbox{（根据期望定义式{\ref{eq:expection_continuous}}）} \\
+    &\geq \mathbb{E}_{q_{\phi}(\bm{z}|\bm{x})}\left[\log\frac{p(\bm{x},\bm{z})}{q_{\phi}(\bm{z}\mid\bm{x})}\right] & \mbox{（根据杰森不等式{\ref{eq:Jensen_ineuqality}}）} \label{eq:elbo_jensen_inequaality}
+\end{align}
+可获得观测变量{$\bm{x}$}对数似然函数的证据下界（Evidence Lower BOund, ELBO）：
+\begin{equation}
+    \label{eq:evidence_lower_bound}
+     \mathbb{E}_{q_{\phi}(\bm{z}|\bm{x})}\left[\log\frac{p(\bm{x},\bm{z})}{q_{\phi}(\bm{z}\mid\bm{x})}\right]
+\end{equation}
+其中，{$q_{\phi}(\bm{z}|\bm{x})$}是由参数{$\phi$}确定的近似变分分布，最大化证据下界即优化参数{$\phi$}。
+最大化证据下界可以取得与极大似然估计相近的效果。
+
+此外，对证据下界的另一种证明方式能够体现最大化证据下界的原因，
+\begin{align}
+    \log p(\bm{x})
+    &=\log p(\bm{x}) \int q_{\phi}(\bm{z}\mid\bm{x})d\,\bm{z}     & \mbox{（{$1=\int q_{\phi}(\bm{z}\mid\bm{x})d\,\bm{z} $}）}\\
+    &=\int q_{\phi}(\bm{z}\mid\bm{x})(\log p(\bm{x})) d\,\bm{z}     & \mbox{（不改变积分值）}\\
+    &=\mathbb{E}_{q_{\phi}(\bm{z}|\bm{x})} \left[  \log p(\bm{x}) \right] & \mbox{（期望定义式{\ref{eq:expection_continuous}}）}\\
+    &=\mathbb{E}_{q_{\phi}(\bm{z}|\bm{x})} \left[  \log \frac{p(\bm{x},\bm{z})}{p(\bm{z}\mid \bm{x})}  \right] & \mbox{（根据式{\ref{eq:elbo_probability_of_x_chain_rule}}）}\\
+    &=\mathbb{E}_{q_{\phi}(\bm{z}|\bm{x})} \left[  \log \frac{p(\bm{x},\bm{z})q_{\phi}(\bm{z}|\bm{x})}{p(\bm{z}\mid \bm{x})q_{\phi}(\bm{z}|\bm{x})}  \right] & \mbox{（{$1=\frac{q_{\phi}(\bm{z}\mid\bm{x})}{q_{\phi}(\bm{z}\mid\bm{x})}$}）}\\
+    &=\mathbb{E}_{q_{\phi}(\bm{z}|\bm{x})} \left[  \log \frac{p(\bm{x},\bm{z})}{q_{\phi}(\bm{z}|\bm{x})}  \right] 
+     +\mathbb{E}_{q_{\phi}(\bm{z}|\bm{x})} \left[  \log \frac{q_{\phi}(\bm{z}|\bm{x})}{p(\bm{z}\mid \bm{x})}  \right] & \mbox{（期望拆分）}\\
+    &=\mathbb{E}_{q_{\phi}(\bm{z}|\bm{x})} \left[  \log \frac{p(\bm{x},\bm{z})}{q_{\phi}(\bm{z}|\bm{x})}  \right] + D_{KL}(q_{\phi}(\bm{z}|\bm{x}) \mid \mid p(\bm{z}\mid \bm{x})) & \mbox{（散度定义式{\ref{eq:kl_divergence}}）} \label{eq:elbo_eexpection_and_kl_divergence}\\
+    &\geq\mathbb{E}_{q_{\phi}(\bm{z}|\bm{x})} \left[  \log \frac{p(\bm{x},\bm{z})}{q_{\phi}(\bm{z}|\bm{x})}  \right] & \mbox{（根据式{\ref{eq:kl_divergence_geq_zero}}）}
+\end{align}
+
+根据式{\ref{eq:elbo_eexpection_and_kl_divergence}}，
+对数似然函数{$\log p(\bm{x})$}即为证据下界与近似后验{$q_{\phi}(\bm{z}|\bm{x})$}和真实后验{$p(\bm{z}\mid \bm{x})$}的KL散度，
+KL散度项即为式{\ref{eq:elbo_jensen_inequaality}}中被移除的项。
+由于对数似然函数{$\log p(\bm{x})$}与证据下界的差值仅为非负的KL散度项，
+因此，证据下界的值不可能超过对数似然函数{$\log p(\bm{x})$}的值。
+通过最小化KL散度项，
+即可使变分后验{$q_{\phi}(\bm{z}|\bm{x})$}更接近于真实后验{$p(\bm{z}\mid \bm{x})$}，
+但由于无法获得真实后验{$p(\bm{z}\mid \bm{x})$}，
+无法直接对KL散度项最小化。
+而注意到，
+式{\ref{eq:elbo_eexpection_and_kl_divergence}}左侧证据下界项中，
+{$p(\bm{x},\bm{z})$}与参数{$\phi$}无关，
+对其关于变量{$\bm{z}$}计算边缘概率所得{$p(\bm{x})$}也因此与参数{$\phi$}无关，
+即{$\log p(\bm{x})$}与参数{$\phi$}无关。
+因此，在改变参数{$\phi$}时，证据下界与KL散度项的和为定值，
+对证据下界项的最大化即代表了KL散度项的最小化。
+对证据下界项的优化程度可以体现模型对隐变量后验概率的拟合程度，
+证据下界项优化程度越高，近似后验则越接近真实后验。
+此外，
+由于证据下界是对模型证据{$\log p(\bm{x})$}的近似，
+模型经过训练后，
+证据下界也可以作为对观测数据或生成数据似然的估计。
+
+
+\subsubsection{重参数方法}
+从均值为{$\mu$}，
+方差为{$\sigma$}的正态分布{$x \sim \mathcal{N} (x;\mu,\sigma^{2})$}中采样过程可以改写为
+\begin{equation}
+    \label{eq:reparameterization_trick}
+    x=\mu+\sigma\epsilon \mbox{\qquad 其中} \sigma\sim\mathcal{N}(\epsilon;0,1)
+\end{equation}
+
+使用重参数方法，从任意高斯分布取样可以变为从标准高斯分布取样，
+即将标准高斯分布采样取值根据{$\sigma$}对进行伸缩变换，
+再根据{$\mu$}进行平移变换。
+
+\subsection{信息论}
+\subsubsection{信息论基础}
+对信息论最直觉的理解是，某一事件发生携带的信息量，与其发生的概率成反相关。
+也就是说，低概率事件的发生，要比更高概率事件的发生携带更多的信息。
+如“今天早上有日食”相比“今天早上太阳照常升起”携带更多的信息。
+因此，对事件携带信息的量化也需要满足这种直觉。即：
+\begin{itemize}
+    \item 更高概率发生的事件携带更少的信息，必定发生的事件不携带信息。
+    \item 更低概率发生的事件携带更多的信息。
+    \item 相互独立的事件携带的信息具有可加性。
+\end{itemize}
+由此，可以定义事件{$x$}携带的信息为：
+\begin{equation}
+    \label{eq:information_theory}
+    I(x)=-\log p(x)
+\end{equation}
+
+式{\ref{eq:information_theory}}中，
+{$\log$}表示以自然数{$e$}为底数的自然对数。
+
+\subsubsection{香农熵}
+香农熵可以量化事件概率分布中所含的不确定度：
+\begin{equation}
+    \label{eq:shannon_entropy}
+    H(x)=\mathbb{E}_{x \thicksim p}[I(x)]=-\mathbb{E}_{x \thicksim p} [\log p(x)]
+\end{equation}
+
+
+\subsubsection{Kullback-Leibler（KL）散度}
+对于一随机变量{$x$}的两个概率分布{$p(x)$}和{$q(x)$}，
+KL散度可以测量这两个概率分布的不同程度。
+
+\begin{align}
+    D_{KL}(p \mid\mid q)
+    &=\mathbb{E}_{x \thicksim p} [ \log \frac{p(x)}{q(x)} ] \label{eq:kl_divergence_orgin}\\
+    &=\mathbb{E}_{x \thicksim p} [ \log p(x) -  \log q(x)] \label{eq:kl_divergence}
+\end{align}
+
+对式{\ref{eq:kl_divergence_orgin}}进行变形：
+\begin{align}
+    -D_{KL}(p \mid\mid q)
+    &=-(\mathbb{E}_{x \thicksim p}[ \log \frac{p(x)}{q(x)} ] )\\
+    &=\sum_{x} p(x) \log \frac{q(x)}{p(x)} \\
+    &\leq \sum_{x} p(x) ( \frac{q(x)}{p(x)}  - 1 ) \\
+    &= \sum_{x} q(x) - \sum_{x}p(x)\\
+    &= 1-1\\
+    &= 0 \label{eq:kl_divergence_geq_zero}
+\end{align}
+因此，KL散度具有非负性。 
+
+对于两高斯分布，其KL散度为：
+\begin{align}
+    &D_{KL}(\mathcal{N}(\bm{x};\bm{\mu}_{x},\bm{\Sigma}_{x})\Vert \mathcal{N}(\bm{y};\bm{\mu}_{y},\bm{\Sigma}_{y}))
+   \nonumber \\=& \frac{1}{2}\left[
+        \log \frac{\left|  \bm{\Sigma}_{y} \right|}{\left|  \bm{\Sigma}_{x} \right|}
+        -d
+        +tr(\bm{\Sigma}_{y}^{-1}\bm{\Sigma}_{x})
+        +{(\bm{\mu}_{y}-\bm{\mu}_{x})}^{\intercal}\bm{\Sigma}_{y}^{-1}(\bm{\mu}_{y}-\bm{\mu}_{x})
+    \right] \label{eq:kl_divergence_of_two_gaussian}
+\end{align}
+
+\subsubsection{交叉熵}
+交叉熵与KL散度相近，相比于KL散度，交叉熵增加了概率分布{$p(x)$}的香农熵{$H(p)$}：
+\begin{align}
+    H(p,q)
+    &=H(p)+D_{KL}(p \mid \mid q) \\
+    &=- \mathbb{E}_{x \sim p}\log q(x) \label{eq:cross_euqation}
+\end{align}
+
+因为被省略的项{$H(p)$}与{$q(x)$}无关，
+所以关于{$q(x)$}最小化交叉熵{$H(p,q)$}等价于最小化KL散度{$D_{KL}(p \mid \mid q)$}。
+
+
+
+\subsubsection{信噪比}
+信噪比（Signal-to-noise ratio, SNR, S/N）为有价值信号和背景噪声的比值。
+\begin{equation}
+    \label{eq:signal_to_noise_ratio}
+    SNR=\frac{\mu^{2}}{\sigma^{2}}
+\end{equation}
+式{\ref{eq:signal_to_noise_ratio}}中，
+{$\mu$}为均值，
+{$\sigma$}为方差。
+
+
+
+\subsection{其他}
+\subsubsection{配方法}
+若有抛物线{$y=ax^{2}+bx+c(a \neq 0)$}，
+则可使用配方法求其顶点与对称轴，
+\begin{align}
+    y&=ax^{2}+bx+c\\
+     &= a{(x+\frac{b}{2a})}^{2} + \frac{4ac-b^2}{4a} \label{eq:completing_the_square_method}
+\end{align}
+
+由式{\ref{eq:completing_the_square_method}}，
+抛物线{$y=ax^{2}+bx+c(a \neq 0)$}的对称轴为{$x=-\frac{b}{2a}$}，
+顶点坐标为{$(-\frac{b}{2a},\frac{4ac-b^2}{4a})$}。
+
+
+\subsubsection{排列}
+
+排列指对一个集合中所有元素的一种排列。
+如果集合{$\mathbb{X} $}确定了集合内部元素的顺序，
+其每一种排列{$\sigma$}可以看成对原序列内部元素进行多次置换，
+置换会增加集合内逆序对（两元素与原确定顺序不同）的个数，
+排列{$\sigma$}的符号即为该排列下逆序对的个数。
+
+排列的符号由{$sgn(\sigma)$}表示，可以表示为：
+\begin{equation}
+    \label{eq:parity_of_a_permutation}
+    sgn(\sigma)={(-1)}^{N(\sigma)}
+\end{equation}
+
+其中{$N(\sigma)$}表示排列{$\sigma$}中逆序对的个数、
+
+\subsubsection{S型函数}
+S型函数的曲线为S型，常见的S型函数如逻辑斯蒂函数为：
+\begin{equation}
+    \label{eq:sigmoid_function}
+    sigmoid(x)= \frac{1}{1+\exp(-x)}=\frac{\exp(x)}{\exp(x)+1}
+\end{equation}
+
+\subsubsection{换元定理在概率中的应用}
+
+若有随机变量{$z\thicksim \pi(z)$}, 
+一一映射函数{$x=f(z)$}，
+函数{$f$}可逆，即{$z=f^{-1}(x)$}。
+根据概率分布的定义有：
+\begin{equation}
+    \int p(x)  \,dx = \int \pi(z)\,dz =1
+\end{equation}
+对于单元变量有：
+\begin{equation}
+    p(x)=\pi(z)\left\rvert\frac{dz}{dx}\right\rvert
+    =\pi(f^{-1}(x))\left\rvert\frac{df^{-1}}{dx}\right\rvert
+    =\pi(f^{-1}(x))\left\rvert(f^{-1})'(x)\right\rvert
+\end{equation}
+对于多元变量形式{$\bm{z}\thicksim \pi(\bm{z})$}，{$\bm{x}=f(\bm{z})$}，{$\bm{z}=f^{-1}(\bm{x})$}有：
+\begin{equation}
+    \label{eq:mutivariable_change_variable_in_probability}
+    p(\bm{x})=\pi(\bm{z})\left\rvert \det \frac{d\bm{z}}{d\bm{x}}\right\rvert
+    =\pi(f^{-1}(\bm{x}))\left\vert \det \frac{df^{-1}}{d\bm{x}} \right\rvert
+\end{equation}
+在式{\ref{eq:mutivariable_change_variable_in_probability}}中，
+{$\det  \frac{\partial f^{-1}}{\partial x}$}表示函数{$f^{-1}$}的雅可比矩阵行列式。
+
+\subsubsection{反函数定理应用}
+对于{$y=f(x)$}和{$x=f^{-1}(y)$}，
+\begin{equation}
+    \label{eq:inverse_function_theorem_application}
+    \frac{df^{-1}(y)}{dy}
+    =\frac{dx}{dy}
+    ={\left(\frac{dy}{dx}\right)}^{-1}
+    ={\left(\frac{df(x)}{dx}\right)}^{-1}
+\end{equation}
+
+\subsubsection{微分方程}
+微分方程是包含了一项或多项函数以及它们的导数的方程。
+
+
+\subsubsection{杰森不等式}
+\begin{equation}
+    \label{eq:Jensen_ineuqality}
+    \mathbb{E}[g(x)]\geq g(\mathbb{E}[x])
+\end{equation}
+
+\subsubsection{指示函数}
+一个集合的子集的指示函数，
+将集合中属于该子集的元素映射为1，
+其他元素映射为0。
+假设集合{$X$}有子集{$Y$}，则：
+\begin{equation}
+    1_{A}(x) \coloneqq  
+    \begin{cases}
+        1 &\mbox{,} x\in A \\
+        0 &\mbox{,}x\notin A 
+    \end{cases}
+\end{equation}
+
+
+\subsubsection{狄拉克{$\delta$}函数}
+狄拉克{$\delta$}函数，也被称为单位脉冲，
+是在实数域上除0以外点的值处处为0，
+且在整个实数域上积分为1的广义函数或分布。
+
+\subsubsection{狄拉克测量}
+狄拉克测量将集合的大小指定为含有特定元素{$x$}的数量。
+假设集合{$X$}具有可观测子集{$A$}，且{$x \in X$}，
+则有：
+\begin{equation}
+    \label{eq:dirac_measure}
+    \delta_{(x)}(A)=1_{A}(x)=\begin{cases}
+        0 &\mbox{,}x\notin A \\
+        1 &\mbox{,}x\in A 
+    \end{cases}
+\end{equation}
+式{\ref{eq:dirac_measure}}中，
+{$1_{A}$}为指示函数。
+
+\subsubsection{点评估}
+点评估是狄拉克测量积分的描述，
+假设{$x \in X$}，
+则关于点{$y$}的点评估为：
+\begin{equation}
+    \label{eq:point_evaluation}
+    \int_{X}f(x) d\,u =f(y)
+\end{equation}
+
+\subsubsection{泛函}
+泛函是指以函数构成的向量空间为定义域，
+实数为值域的“函数”，
+往往被称为“函数的函数”。
+在泛函分析中，
+泛函也用来指一个从任意向量空间到标量域的映射。
+
+
+\subsubsection{向量空间}
+向量空间是一个内部元素具备可加性和可乘性的集合。
+
+\subsubsection{内积空间}
+内积空间是具有内积操作的向量空间。
+
+\subsubsection{欧几里得向量空间}
+欧几里得向量空间是在实数域上的有限维度内积空间。
+
+\subsubsection{希尔伯特空间}
+希尔伯特空间将欧几里得向量空间扩展至无限维度。
+
+\subsubsection{再生核希尔伯特空间}
+在泛函分析中，再生核希尔伯特空间是函数的希尔伯特空间，
+其函数的点评估为线性连续泛函。
+当两个函数{$f,g$}在再生核希尔伯特空间中在范数上相近，
+即{$\Vert f-g \Vert$}值趋近于0，
+则对于所有{$x$}，{$\Vert f(x)-g(x) \Vert$}趋近于0，
+反之不一定成立。
+
+\subsubsection{最大均值差异}
+最大均值差异以特征的嵌入均值（Mean Embeddings）来表示距离，
+假设{$p,q$}为集合{$\mathcal{X}$}上的概率分布，
+特征映射{$\phi: \mathcal{X} \rightarrow \mathcal{H} $}，
+其中{$\mathcal{H}$}为再生核希尔伯特空间，
+则有：
+\begin{equation}
+    \label{eq:maximux_mean_distance}
+    MMD(P,Q)= {\Vert \mathbb{E}_{X \sim P}[\phi(X)] -  \mathbb{E}_{Y \sim Q}[\phi(Y)] \Vert}_{\mathcal{H}}
+\end{equation}
+
+\section{物理学}
+\subsection{玻尔兹曼分布}
+在统计力学与数学中，
+玻尔兹曼分布（也成为吉布斯分布）给出了一个系统处在特定状态的概率，
+其值与该状态的能量和该系统的热力学温度相关：
+\begin{equation}
+    \label{eq:boltzmann_equation_without_q}
+    p_i \varpropto  \exp(-\frac{\varepsilon_i}{kT})
+\end{equation}
+式{\ref{eq:boltzmann_equation}}中，
+{$p_i$}表示系统处在状态{$i$}的概率，
+{$\varepsilon _i$}式该状态的能量，
+{$k$}为玻尔兹曼常数，
+{$T$}为热力学温度。
+{$\varpropto$}表示其成正比。
+其比例系数为{$\frac{1}{Q}$}，其中
+\begin{equation}
+    \label{eq:boltzmann_equation_q}
+    Q=\sum_{i=1}^{M} \exp(-\frac{\varepsilon_i}{kT})
+\end{equation}
+结合式{\ref{eq:boltzmann_equation_without_q}}与式{\ref{eq:boltzmann_equation_q}}的
+\begin{equation}
+    \label{eq:boltzmann_equation}
+    p_i = \frac{1}{Q} \exp(-\frac{\varepsilon_i}{kT})
+    =\frac{\exp(-\frac{\varepsilon_i}{kT})}{\sum_{i=1}^{M} \exp(-\frac{\varepsilon_i}{kT})}
+\end{equation}
+
+
+
+
+
+
+\subsection{朗之万动力学}
+
+在物理学中，朗之万动力学是一种对分子系统运动的数学建模方式，是一种采样方式。
+朗之万模拟是一种蒙特卡洛模拟。
+
+
+
+\section{机器学习与深度学习}
+\subsection{概率图模型}
+
+机器学习算法通常涉及到大量随机变量的概率分布。
+在通常情况下，这些变量只与很少部分的变量互相影响，
+使用单一的函数方程来描述全体变量的联合概率分布不利于进行计算，
+而将联合概率分布分解为条件概率有助于减少参数的数量。
+如对于三个随机变量{$a,b,c$}，
+其联合概率分布可以分解为：
+\begin{equation}
+    p(a,b,c)=p(a)p(b\mid a) p(c \mid a)
+\end{equation}
+
+当用“图”来表示这种对联合概率分布的分解时，
+即为概率图模型。
+
+概率图模型使用图{$\mathcal{G} $}来对变量进行建模，
+图中的每一个节点表示一个随机变量，
+每一条边连接两个随机变量，
+表示两个变量的概率分布可以直接互相表示。
+
+概率图模型可以分为有向图模型和无向图模型。
+\subsubsection{有向图模型}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[height=0.3\textheight]{figures/directed_graph_model}
+    \caption{有向图模型实例}\label{fig:directed_graph_model}
+\end{figure}
+有向图模型中的边为有向边。
+有向图模型中，
+每一个随机变量{$x_i$}都有一个概率因子{$p_{\mathcal{G}}(x_i)$}来表示其条件分布，
+即：
+\begin{equation}
+    \label{eq:directed_graph_model}
+    p(\bm{x})=\prod_{i} p(x_i \mid p_{\mathcal{G}}(x_i))
+\end{equation}
+
+
+
+图{\ref{fig:directed_graph_model}}中，
+{$a,b,c,d,e$}为随机变量，
+该有向图模型的联合概率分布为：
+\begin{align}
+    p(a,b,c,d,e)
+    &=p(a \mid p_{\mathcal{G}}(a)) + 
+    p(b \mid p_{\mathcal{G}}(b)) + 
+    p(c \mid p_{\mathcal{G}}(c)) + 
+    p(d \mid p_{\mathcal{G}}(d)) +
+    p(e \mid p_{\mathcal{G}}(e)) \\
+    &=p(a) p(b \mid a) p(c \mid a,b) p(d \mid b) p(e \mid c)
+\end{align}
+
+\subsubsection{无向图模型}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[height=0.3\textheight]{figures/undirected_graph_model}
+    \caption{无向图模型实例}\label{fig:undirected_graph_model}
+\end{figure}
+无向图模型中的边为无向边。
+无向图中任意两个节点都直接相连的部分为一个团{$\mathcal{C}^{(i)}$}，
+每一个团都可定义一个相关方程{$\phi^{(i)}(\mathcal{C}^{(i)})$}。
+可以由归一化后的团相关方程来表示无向图模型的联合概率分布，
+即：
+\begin{equation}
+    \label{eq:undirected_graph_model}
+    p(\bm{x})=\frac{1}{Z}\prod_{i} \phi^{(i)} ( \mathcal{C}^{(i)} )
+\end{equation}
+
+图{\ref{fig:undirected_graph_model}}中，
+{$a,b,c,d,e$}为随机变量。
+该有向图模型的联合概率分布为：
+\begin{equation}
+    p(a,b,c,d,e)
+    =\frac{1}{Z} \phi^{(1)}(a,b,c) \phi^{(2)}(b,d) \phi^{(3)}(c,e)
+\end{equation}
+
+
+
+
+
+
+
+
+% \subsection{注意力机制}

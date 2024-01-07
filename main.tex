@@ -1,0 +1,37 @@
+\documentclass{hebutthesis}
+
+
+
+\begin{document}
+\pdfbookmark[section]{生成模型研究与中国画生成}{cover}
+\input{document/cover}
+\pdfbookmark[section]{摘要}{abstract}
+\input{document/abstract}
+\clearpage
+\pdfbookmark[section]{\contentsname}{contents}
+\tableofcontents
+% \listoffigures
+% \listoftables
+
+
+\input{document/chap01 Introduction}
+\input{document/chap02 Basic Theory and Methods}
+% \input{document/chap03 Variational Autoencoder}
+% \input{document/chap04 Autoregressive Model}
+% \input{document/chap05 Energy-based Model}
+% \input{document/chap06 Normalizing Flow}
+% \input{document/chap07 Generative Adversarial Network}
+\input{document/chap08 Diffusion}
+
+
+
+\input{document/chap09 Conclusion}
+\addcontentsline{toc}{chapter}{结论}
+\input{document/bibliography}
+\input{document/acknowledgments}
+\addcontentsline{toc}{chapter}{致谢}
+
+\appendix
+\input{document/appendix}
+
+\end{document}

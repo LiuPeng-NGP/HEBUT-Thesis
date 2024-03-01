@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.1.30)  1 MAR 2024 21:38
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.1.30)  1 MAR 2024 22:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/hp/Desktop/test1/HEBUT-Thesis/main
-(c:/Users/hp/Desktop/test1/HEBUT-Thesis/main.tex
+**c:/Users/hp/Desktop/test1/HEBUT-Thesis/HebutThesis_example
+(c:/Users/hp/Desktop/test1/HEBUT-Thesis/HebutThesis_example.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> (./hebutthesis.cls
 Document Class: hebutthesis 
@@ -1315,8 +1315,8 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 ))
 \@quotelevel=\count512
 \@quotereset=\count513
- (./main.aux)
-\openout1 = `main.aux'.
+ (./HebutThesis_example.aux)
+\openout1 = `HebutThesis_example.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
@@ -1465,18 +1465,15 @@ Package biblatex Info: ... and expl3
  (f:/LaTeX/texlive/2021/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
 Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 )
-\openout7 = `main.bcf'.
+\openout7 = `HebutThesis_example.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'HebutThesis_example.bbl' not found.
 
-
-Package biblatex Warning: File 'main.bbl' is wrong format version - expected 3.1.
-
-Package biblatex Info: ... file 'main.bbl' found.
-(./main.bbl)
+No file HebutThesis_example.bbl.
 Package biblatex Info: Reference section=0 on input line 4.
 Package biblatex Info: Reference segment=0 on input line 4.
- (./document/cover.tex
+(./document/cover.tex
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: xetex
 * paper: custom
@@ -1537,12 +1534,12 @@ Package fontspec Info: Font family 'fzxbsjt.ttf(0)' created for font
 (fontspec)             <->"[fzxbsjt.ttf]/OT:script=hani;language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
-LaTeX Font Info:    Calculating math sizes for size <36> on input line 8.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 8.
+LaTeX Font Info:    Calculating math sizes for size <36> on input line 9.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 9.
 (f:/LaTeX/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 8.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 9.
  (f:/LaTeX/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -1587,22 +1584,173 @@ Package fontspec Info: Font family 'FandolHei-Regular(0)' created for font
 [1
 
 
-]) (./document/abstract.tex [1]) [2] (./main.toc [3
+]) (./document/abstract.tex [1]) [2] (./HebutThesis_example.toc [3
 
 
 ])
 \tf@toc=\write8
-\openout8 = `main.toc'.
+\openout8 = `HebutThesis_example.toc'.
 
  (./document/chap01 Introduction.tex [4]
 1
+
+LaTeX Warning: Citation 'chinesepainting' on page 1 undefined on input line 16.
+
+
+LaTeX Warning: Citation 'machinery1950computing' on page 1 undefined on input line 34.
+
+
+LaTeX Warning: Citation 'aigcwhitebook' on page 1 undefined on input line 35.
+
+
+LaTeX Warning: Citation 'goodfellow2016deep' on page 1 undefined on input line 37.
+
+
+LaTeX Warning: Citation 'lecun2015deep' on page 1 undefined on input line 38.
+
+
+LaTeX Warning: Citation 'kingma2013auto' on page 1 undefined on input line 43.
+
+
+LaTeX Warning: Citation 'goodfellow2020generative' on page 1 undefined on input line 44.
+
+
+LaTeX Warning: Citation 'radford2015unsupervised' on page 1 undefined on input line 46.
+
+
+LaTeX Warning: Citation 'arjovsky2017wasserstein' on page 1 undefined on input line 47.
+
+
+LaTeX Warning: Citation 'karras2017progressive' on page 1 undefined on input line 48.
+
+
+LaTeX Warning: Citation 'isola2017image' on page 1 undefined on input line 49.
+
+
+LaTeX Warning: Citation 'zhu2017unpaired' on page 1 undefined on input line 49.
+
+
+LaTeX Warning: Citation 'dong2018musegan' on page 1 undefined on input line 49.
+
 [1
 
-] [2]
+]
+
+LaTeX Warning: Citation 'larsen2016autoencoding' on page 2 undefined on input line 51.
+
+
+LaTeX Warning: Citation 'razavi2019generating' on page 2 undefined on input line 51.
+
+
+LaTeX Warning: Citation 'ha2018world' on page 2 undefined on input line 51.
+
+
+LaTeX Warning: Citation 'van2016pixel' on page 2 undefined on input line 53.
+
+
+LaTeX Warning: Citation 'van2016conditional' on page 2 undefined on input line 53.
+
+
+LaTeX Warning: Citation 'dinh2016density' on page 2 undefined on input line 54.
+
+
+Overfull \hbox (37.67891pt too wide) in paragraph at lines 53--55
+\TU/FandolSong-Regular(0)/m/n/12.045 引 入 了 一 种 新 的 生 成 图 像 的 方 式。|  也 有 一 些 其 他 生 成 图 像 方 式 的 尝 试 如 \TU/lmr/m/n/12.045 RealNVP$[]$
+ []
+
+
+LaTeX Warning: Citation 'vaswani2017attention' on page 2 undefined on input line 56.
+
+
+LaTeX Warning: Citation 'radford2018improving' on page 2 undefined on input line 58.
+
+
+LaTeX Warning: Citation 'devlin2018bert' on page 2 undefined on input line 58.
+
+
+LaTeX Warning: Citation 'huang2018music' on page 2 undefined on input line 59.
+
+
+LaTeX Warning: Citation 'zhang2019self' on page 2 undefined on input line 62.
+
+
+LaTeX Warning: Citation 'brock2018large' on page 2 undefined on input line 62.
+
+
+LaTeX Warning: Citation 'karras2019style' on page 2 undefined on input line 63.
+
+
+LaTeX Warning: Citation 'karras2020analyzing' on page 2 undefined on input line 63.
+
+
+LaTeX Warning: Citation 'song2019generative' on page 2 undefined on input line 65.
+
+
+LaTeX Warning: Citation 'esser2021taming' on page 2 undefined on input line 68.
+
+
+LaTeX Warning: Citation 'dosovitskiy2020image' on page 2 undefined on input line 68.
+
+
+LaTeX Warning: Citation 'sauer2022stylegan' on page 2 undefined on input line 69.
+
+
+Overfull \hbox (1.17548pt too wide) in paragraph at lines 67--70
+\TU/lmr/m/n/12.045 VQ-GAN$[]$ \TU/FandolSong-Regular(0)/m/n/12.045 将 生 成 对 抗 网 络 的 判 别 器 引 入 \TU/lmr/m/n/12.045 VQ-VAE \TU/FandolSong-Regular(0)/m/n/12.045 模 型 结 构，| \TU/lmr/m/n/12.045 Vision Trans-
+ []
+
+
+Overfull \hbox (43.19234pt too wide) in paragraph at lines 67--70
+\TU/lmr/m/n/12.045 former$[]$ \TU/FandolSong-Regular(0)/m/n/12.045 将 \TU/lmr/m/n/12.045 Transformer \TU/FandolSong-Regular(0)/m/n/12.045 应 用 在 图 像 领 域。| \TU/lmr/m/n/12.045 2022 \TU/FandolSong-Regular(0)/m/n/12.045 年，| \TU/lmr/m/n/12.045 StyleGAN-XL$[]$
+ []
+
+
+LaTeX Warning: Citation 'ho2020denoising' on page 2 undefined on input line 71.
+
+
+LaTeX Warning: Citation 'song2020denoising' on page 2 undefined on input line 71.
+
+[2]
+
+LaTeX Warning: Citation 'brown2020language' on page 3 undefined on input line 75.
+
+
+LaTeX Warning: Citation 'smith2022using' on page 3 undefined on input line 78.
+
+
+LaTeX Warning: Citation 'thoppilan2022lamda' on page 3 undefined on input line 78.
+
+
+LaTeX Warning: Citation 'ramesh2021zero' on page 3 undefined on input line 81.
+
+
+LaTeX Warning: Citation 'nichol2021glide' on page 3 undefined on input line 81.
+
+
+LaTeX Warning: Citation 'ramesh2022hierarchical' on page 3 undefined on input line 81.
+
+
+LaTeX Warning: Citation 'saharia2022photorealistic' on page 3 undefined on input line 81.
+
+
+LaTeX Warning: Citation 'yu2022scaling' on page 3 undefined on input line 81.
+
+
+LaTeX Warning: Citation 'rombach2022high' on page 3 undefined on input line 81.
+
+
+Overfull \hbox (8.24951pt too wide) in paragraph at lines 80--82
+\TU/lmr/m/n/12.045 DALL.E 2$[]$\TU/FandolSong-Regular(0)/m/n/12.045 ，|  谷 歌 发 布 的 \TU/lmr/m/n/12.045 Imagen$[]$\TU/FandolSong-Regular(0)/m/n/12.045 、| \TU/lmr/m/n/12.045 Parti$[]$
+ []
+
+[3]
 File: figures/gennerative_models.png Graphic file (type bmp)
 <figures/gennerative_models.png>
- [3]) (./document/chap02 Basic Theory and Methods.tex [4]
+) (./document/chap02 Basic Theory and Methods.tex [4]
 2
+
+LaTeX Warning: Citation 'goodfellow2016nips' on page 5 undefined on input line 12.
+
 [5
 
 ]
@@ -1610,22 +1758,49 @@ File: figures/max_likelihood.png Graphic file (type bmp)
 <figures/max_likelihood.png>
 File: figures/normalizing_flow.png Graphic file (type bmp)
 <figures/normalizing_flow.png>
- [6] [7]
+ [6]
+
+LaTeX Warning: Reference `eq:mutivariable_change_variable_in_probability' on page 7 undefined on input line 106.
+
+
+LaTeX Warning: Reference `eq:inverse_function_theorem_application' on page 7 undefined on input line 118.
+
+
+LaTeX Warning: Reference `eq:inverse_function_theorem_application' on page 7 undefined on input line 118.
+
+[7]
+
+LaTeX Warning: Citation 'weng2018flow' on page 8 undefined on input line 138.
+
 File: figures/autoregressive_model_finite_memory.png Graphic file (type bmp)
 <figures/autoregressive_model_finite_memory.png>
- [8]
+
+LaTeX Warning: Citation 'Jakub2022deep' on page 8 undefined on input line 172.
+
+[8]
 File: figures/autoregressive_model_rnn.png Graphic file (type bmp)
 <figures/autoregressive_model_rnn.png>
- [9]
+
+
+LaTeX Warning: Citation 'lippe2022uvadlc' on page 9 undefined on input line 199.
+
+[9]
 File: figures/energy_based_model_contrastive_divergence_training.png Graphic file (type bmp)
 <figures/energy_based_model_contrastive_divergence_training.png>
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 274.
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 275.
+
+
+LaTeX Warning: Citation 'weng2018VAE' on page 10 undefined on input line 291.
+
 File: figures/autoencoder.png Graphic file (type bmp)
 <figures/autoencoder.png>
- [10]
+[10]
+
+LaTeX Warning: Citation 'vincent2008extracting' on page 11 undefined on input line 322.
+
 File: figures/denoising_autoencoder_architecture.png Graphic file (type bmp)
 <figures/denoising_autoencoder_architecture.png>
- [11]
+[11]
 File: figures/vae_elbo.png Graphic file (type bmp)
 <figures/vae_elbo.png>
  [12]
@@ -1635,103 +1810,149 @@ File: figures/vae.png Graphic file (type bmp)
 File: figures/vae_reparameterization_trick.png Graphic file (type bmp)
 <figures/vae_reparameterization_trick.png>
  [14]
+
+LaTeX Warning: Citation 'Luo2022UnderstandingDM' on page 15 undefined on input line 455.
+
 File: figures/markovian_hierarchical_variational_autoencoder.png Graphic file (type bmp)
 <figures/markovian_hierarchical_variational_autoencoder.png>
- [15]
+
+LaTeX Warning: Reference `eq:Jensen_ineuqality' on page 15 undefined on input line 491.
+
+
+LaTeX Warning: Reference `eq:Jensen_ineuqality' on page 15 undefined on input line 491.
+
+[15]
+
+LaTeX Warning: Citation 'sohl2015deep' on page 16 undefined on input line 519.
+
+
+LaTeX Warning: Citation 'song2019generative' on page 16 undefined on input line 520.
+
 File: figures/diffusion_model.png Graphic file (type bmp)
 <figures/diffusion_model.png>
- [16] [17] [18]
+
+LaTeX Warning: Citation 'ho2020denoising' on page 16 undefined on input line 555.
+
+
+LaTeX Warning: Citation 'kingma2023variational' on page 16 undefined on input line 556.
+
+[16] [17] [18]
 File: figures/diffusion_model_optimize_elbo.png Graphic file (type bmp)
 <figures/diffusion_model_optimize_elbo.png>
  [19] [20]
 File: figures/diffusion_model_optimize_elbo_single_variable.png Graphic file (type bmp)
 <figures/diffusion_model_optimize_elbo_single_variable.png>
 
-Overfull \hbox (9.62411pt too wide) in paragraph at lines 698--702
+Overfull \hbox (9.62411pt too wide) in paragraph at lines 699--703
 []\TU/FandolSong-Regular(0)/m/n/12.045 图[][]\TU/lmr/m/n/12.045 2.14[][]\TU/FandolSong-Regular(0)/m/n/12.045 为 使 用 式[][]\TU/lmr/m/n/12.045 2.79[][]\TU/FandolSong-Regular(0)/m/n/12.045 优 化 扩 散 模 型 示 意 图，|  使 用 贝 叶 斯 定 理 计 算 真 实 降 噪 过 程$\OML/cmm/m/it/12.045 q\OT1/cmr/m/n/12.045 (\OML/cmm/b/it/12.045 x[] \OMS/cmsy/m/n/12.045 j
  []
 
 
-Overfull \hbox (26.19624pt too wide) in paragraph at lines 728--731
+Overfull \hbox (26.19624pt too wide) in paragraph at lines 729--732
 []\TU/FandolSong-Regular(0)/m/n/12.045 可 以 使 用 重 参 数 方 法 对$\OML/cmm/m/it/12.045 q\OT1/cmr/m/n/12.045 (\OML/cmm/b/it/12.045 x[] \OMS/cmsy/m/n/12.045 j \OML/cmm/b/it/12.045 x[]\OT1/cmr/m/n/12.045 )$ \TU/FandolSong-Regular(0)/m/n/12.045 进 行 递 归 推 导，|  假 设 有$\OT1/cmr/m/n/12.045 2\OML/cmm/m/it/12.045 T$ \TU/FandolSong-Regular(0)/m/n/12.045 个 随 机 噪 声 变 量$\OMS/cmsy/m/n/12.045 f\OML/cmm/b/it/12.045 ^^O[]\OML/cmm/m/it/12.045 ; \OML/cmm/b/it/12.045 ^^O[]\OMS/cmsy/m/n/12.045 g[] []
  []
 
-[21] [22] [23] [24] [25] [26]
+[21] [22]
+
+LaTeX Warning: Reference `eq:completing_the_square_method' on page 23 undefined on input line 808.
+
+
+LaTeX Warning: Reference `eq:kl_divergence_of_two_gaussian' on page 23 undefined on input line 830.
+
+[23] [24]
+
+LaTeX Warning: Reference `eq:signal_to_noise_ratio' on page 25 undefined on input line 960.
+
+
+LaTeX Warning: Reference `eq:sigmoid_function' on page 25 undefined on input line 1005.
+
+[25] [26]
 File: figures/gan_training.png Graphic file (type bmp)
 <figures/gan_training.png>
- [27] [28]) (./document/chap03 Variational Autoencoder.tex [29]
+ [27]
+
+LaTeX Warning: Citation 'salimans2016improved' on page 28 undefined on input line 1154.
+
+
+LaTeX Warning: Reference `eq:kl_divergence' on page 28 undefined on input line 1171.
+
+
+LaTeX Warning: Citation 'heusel2017gans' on page 28 undefined on input line 1177.
+
+
+LaTeX Warning: Citation 'binkowski2018demystifying' on page 28 undefined on input line 1186.
+
+
+LaTeX Warning: Reference `eq:maximux_mean_distance' on page 28 undefined on input line 1187.
+
+[28]
+
+LaTeX Warning: Citation 'betzalel2022study' on page 29 undefined on input line 1204.
+
+) (./document/chap03 Variational Autoencoder.tex [29]
 3
 ) (./document/chap04 Autoregressive Model.tex [30
 
 ]
 4
-) (./document/bibliography.tex [31
+) (./document/bibliography.tex
 
-]
-Overfull \hbox (2.76392pt too wide) in paragraph at lines 3--3
-[]\TU/lmr/m/n/12.045 MACHINERY C. Computing machinery and intelligence-AM Turing[J]. Mind, 1950,
- []
+LaTeX Warning: Empty bibliography on input line 4.
 
+) (./document/acknowledgments.tex [31
 
-Overfull \hbox (22.68304pt too wide) in paragraph at lines 3--3
-\TU/lmr/m/n/12.045 deep convolutional generative adversarial networks[J]. ArXiv preprint arXiv:1511.06434,
- []
-
-
-Package fontspec Warning: Font "FandolFang-Regular" does not contain requested
-(fontspec)                Script "CJK".
-
-
-Package fontspec Info: Font family 'FandolFang-Regular(0)' created for font
-(fontspec)             'FandolFang-Regular' with options
-(fontspec)             [Script={CJK},Extension={.otf}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"[FandolFang-Regular.otf]/OT:language=dflt;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-
-[32
-
-]
-Overfull \hbox (1.12643pt too wide) in paragraph at lines 3--3
-\TU/lmr/m/n/12.045 transformers for language understanding[J]. ArXiv preprint arXiv:1810.04805, 2018. 
- []
-
-[33]
-Overfull \hbox (18.85524pt too wide) in paragraph at lines 3--3
-\TU/lmr/m/n/12.045 words: Transformers for image recognition at scale[J]. ArXiv preprint arXiv:2010.11929,
- []
-
-[34] [35]) (./document/acknowledgments.tex [36]) (./document/appendix.tex [37
+]) (./document/appendix.tex [32
 
 ]
 附录 A
-[38
+[33
 
-] [39] [40]
+]
+
+LaTeX Warning: Reference `eq:parity_of_a_permutation' on page 34 undefined on input line 68.
+
+[34] [35]
 File: figures/maximux_likelihood_estimation.png Graphic file (type bmp)
 <figures/maximux_likelihood_estimation.png>
- [41] [42] [43] [44] [45] [46] [47] [48] [49] [50] [51]
-File: figures/directed_graph_model.png Graphic file (type bmp)
-<figures/directed_graph_model.png>
- [52]
-File: figures/undirected_graph_model.png Graphic file (type bmp)
-<figures/undirected_graph_model.png>
- [53]) [54] (./main.aux)
-Package logreq Info: Writing requests to 'main.run.xml'.
-\openout1 = `main.run.xml'.
+ [36] [37] [38] [39]
+
+LaTeX Warning: Reference `eq:Jensen_ineuqality' on page 40 undefined on input line 428.
+
+
+LaTeX Warning: Reference `eq:Jensen_ineuqality' on page 40 undefined on input line 428.
+
+
+LaTeX Warning: Reference `eq:kl_divergence' on page 40 undefined on input line 449.
+
+
+LaTeX Warning: Reference `eq:kl_divergence_geq_zero' on page 40 undefined on input line 449.
+
+
+LaTeX Warning: Reference `eq:kl_divergence' on page 40 undefined on input line 449.
+
+
+LaTeX Warning: Reference `eq:kl_divergence_geq_zero' on page 40 undefined on input line 449.
+
+[40] [41]) [42] (./HebutThesis_example.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                HebutThesis_example
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'HebutThesis_example.run.xml'.
+\openout1 = `HebutThesis_example.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 44604 strings out of 476919
- 961967 string characters out of 5822736
- 1843062 words of memory out of 5000000
- 63778 multiletter control sequences out of 15000+600000
- 424779 words of font info for 164 fonts, out of 8000000 for 9000
+ 44311 strings out of 476919
+ 951732 string characters out of 5822736
+ 1840660 words of memory out of 5000000
+ 63504 multiletter control sequences out of 15000+600000
+ 419143 words of font info for 138 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 116i,18n,121p,1235b,4981s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 116i,18n,121p,1250b,1241s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (59 pages).
+Output written on HebutThesis_example.pdf (47 pages).

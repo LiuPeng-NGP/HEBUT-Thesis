@@ -77,7 +77,7 @@
 			\vskip 52pt
       \renewcommand\arraystretch{1.6}
       \begin{tabular}{c c}
-        \fontsize{15}{0}\songti{作\qquad 者：}&\fontsize{16}{0}\kaishu\uline{\makebox[7em][c]{\hebutthesis@author}}
+        \fontsize{15}{0}\songti{作\qquad 者：}&\fontsize{16}{0}\kaishu\uline{\makebox[7em][c]{\hebutthesis@author}}   %[7em][c]
         \fontsize{15}{0}\songti{学\qquad 号：}\Large\uline{\makebox[7em][c]{\hebutthesis@studentID}}\\
         \fontsize{15}{0}\songti{学\qquad 院：}&\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{\hebutthesis@college}} \\
         \fontsize{15}{0}\songti{系(专业)：}&\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{\hebutthesis@major}}\\

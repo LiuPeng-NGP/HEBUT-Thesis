@@ -6,8 +6,8 @@
 \input{document/cover}
 \pdfbookmark[section]{摘要}{abstract}
 \input{document/abstract}
-\clearpage      %?什么意思
-\pdfbookmark[section]{\contentsname}{contents}  %contents在哪儿
+\clearpage      %?什么意思 清楚页面内容，然后下一页
+\pdfbookmark[section]{\contentsname}{contents}  %contents在哪儿 目录是自动生成的，下一行命令能自动生成目录
 \tableofcontents
 % \listoffigures
 % \listoftables
@@ -18,7 +18,7 @@
 \input{document/chap03 Variational Autoencoder}
 \input{document/chap04 Autoregressive Model}
 
-\addcontentsline{toc}{chapter}{结论}    %?语法
+\addcontentsline{toc}{chapter}{结论}    %?语法 不用比如 \chapter{绪论} 的命令无法自动添加到目录，所以要手动添加到目录
 \input{document/bibliography}
 \input{document/acknowledgments}
 \addcontentsline{toc}{chapter}{致谢}

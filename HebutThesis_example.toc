@@ -1,67 +1,63 @@
 \contentsline {chapter}{\numberline {1\hspace {.3em}}绪论}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}标题1}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}标题2}{1}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}插图}{1}{subsection.1.2.1}%
 \contentsline {section}{\numberline {1.3}标题3}{1}{section.1.3}%
 \contentsline {section}{\numberline {1.4}标题4}{1}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}三级标题5}{1}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}三级标题6}{1}{subsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.4.3}2018--2019 Transformer时代}{2}{subsection.1.4.3}%
-\contentsline {subsection}{\numberline {1.4.4}2020--2023 大模型时代}{3}{subsection.1.4.4}%
-\contentsline {section}{\numberline {1.5}研究内容与创新点}{3}{section.1.5}%
-\contentsline {section}{\numberline {1.6}论文组织结构}{4}{section.1.6}%
-\contentsline {chapter}{\numberline {2\hspace {.3em}}基本理论与方法}{5}{chapter.2}%
-\contentsline {section}{\numberline {2.1}生成模型介绍}{5}{section.2.1}%
-\contentsline {section}{\numberline {2.2}显式密度模型}{6}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}可求解密度模型}{7}{subsection.2.2.1}%
-\contentsline {subsubsection}{规范化流模型}{7}{subsection.2.2.1}%
-\contentsline {subsubsection}{自回归模型}{8}{equation.2.2.18}%
-\contentsline {subsection}{\numberline {2.2.2}近似估计密度模型}{9}{subsection.2.2.2}%
-\contentsline {subsubsection}{基于能量的模型}{9}{subsection.2.2.2}%
-\contentsline {subsubsection}{变分自编码器}{10}{ALC@unique.5}%
-\contentsline {subsubsection}{扩散模型}{14}{equation.2.2.50}%
-\contentsline {section}{\numberline {2.3}隐式密度模型}{23}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}生成对抗网络}{23}{subsection.2.3.1}%
-\contentsline {section}{\numberline {2.4}生成模型评价指标}{24}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}图灵测试}{24}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}图像质量评估分数}{24}{subsection.2.4.2}%
-\contentsline {chapter}{\numberline {3\hspace {.3em}}变分自编码器模型生成中国画}{26}{chapter.3}%
-\contentsline {section}{\numberline {3.1}模型概述}{26}{section.3.1}%
-\contentsline {section}{\numberline {3.2}模型结构}{26}{section.3.2}%
-\contentsline {section}{\numberline {3.3}模型训练}{26}{section.3.3}%
-\contentsline {section}{\numberline {3.4}实验结果}{26}{section.3.4}%
-\contentsline {chapter}{\numberline {4\hspace {.3em}}自回归模型生成中国画}{27}{chapter.4}%
-\contentsline {section}{\numberline {4.1}模型概述}{27}{section.4.1}%
-\contentsline {section}{\numberline {4.2}模型结构}{27}{section.4.2}%
-\contentsline {section}{\numberline {4.3}模型训练}{27}{section.4.3}%
-\contentsline {section}{\numberline {4.4}实验结果}{27}{section.4.4}%
-\contentsline {chapter}{结论}{27}{section.4.4}%
-\contentsline {chapter}{参考文献}{28}{chapter*.19}%
-\contentsline {chapter}{致谢}{33}{chapter*.20}%
-\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}基础知识}{34}{appendix.A}%
-\contentsline {section}{\numberline {A.1}数学}{34}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}线性代数}{34}{subsection.A.1.1}%
-\contentsline {subsubsection}{对角矩阵}{34}{subsection.A.1.1}%
-\contentsline {subsubsection}{矩阵乘法}{34}{subsection.A.1.1}%
-\contentsline {subsubsection}{矩阵的迹}{34}{subsection.A.1.1}%
-\contentsline {subsubsection}{范数}{34}{equation.A.1.1}%
-\contentsline {subsubsection}{矩阵行列式}{35}{equation.A.1.5}%
-\contentsline {subsubsection}{可逆矩阵}{35}{equation.A.1.7}%
-\contentsline {subsubsection}{雅可比矩阵}{35}{equation.A.1.10}%
-\contentsline {subsection}{\numberline {A.1.2}概率论}{36}{subsection.A.1.2}%
-\contentsline {subsubsection}{概率密度函数}{36}{subsection.A.1.2}%
-\contentsline {subsubsection}{概率质量函数}{36}{equation.A.1.12}%
-\contentsline {subsubsection}{正态分布}{36}{equation.A.1.13}%
-\contentsline {subsubsection}{期望}{36}{equation.A.1.19}%
-\contentsline {subsubsection}{协方差}{37}{equation.A.1.21}%
-\contentsline {subsubsection}{极大似然估计}{37}{equation.A.1.22}%
-\contentsline {subsubsection}{边缘似然}{37}{equation.A.1.26}%
-\contentsline {subsubsection}{全概率公式}{38}{equation.A.1.26}%
-\contentsline {subsubsection}{贝叶斯定理}{38}{equation.A.1.28}%
-\contentsline {subsubsection}{贝叶斯推理}{38}{equation.A.1.30}%
-\contentsline {subsubsection}{蒙特卡洛方法}{39}{equation.A.1.31}%
-\contentsline {subsubsection}{随机微分方程}{39}{equation.A.1.33}%
-\contentsline {subsubsection}{对比散度}{39}{equation.A.1.33}%
-\contentsline {subsubsection}{证据下界}{40}{equation.A.1.48}%
-\contentsline {subsubsection}{重参数方法}{42}{equation.A.1.65}%
-\contentsline {section}{\numberline {A.2}物理学}{43}{section.A.2}%
-\contentsline {subsection}{\numberline {A.2.1}玻尔兹曼分布}{43}{subsection.A.2.1}%
+\contentsline {subsection}{\numberline {1.4.1}插表}{1}{subsection.1.4.1}%
+\contentsline {chapter}{\numberline {2\hspace {.3em}}基本理论与方法}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}生成模型介绍}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}显式密度模型}{4}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}可求解密度模型}{5}{subsection.2.2.1}%
+\contentsline {subsubsection}{规范化流模型}{5}{subsection.2.2.1}%
+\contentsline {subsubsection}{自回归模型}{6}{equation.2.2.18}%
+\contentsline {subsection}{\numberline {2.2.2}近似估计密度模型}{7}{subsection.2.2.2}%
+\contentsline {subsubsection}{基于能量的模型}{7}{subsection.2.2.2}%
+\contentsline {subsubsection}{变分自编码器}{8}{ALC@unique.5}%
+\contentsline {subsubsection}{扩散模型}{12}{equation.2.2.50}%
+\contentsline {section}{\numberline {2.3}隐式密度模型}{21}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}生成对抗网络}{21}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.4}生成模型评价指标}{22}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}图灵测试}{22}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}图像质量评估分数}{22}{subsection.2.4.2}%
+\contentsline {chapter}{\numberline {3\hspace {.3em}}变分自编码器模型生成中国画}{24}{chapter.3}%
+\contentsline {section}{\numberline {3.1}模型概述}{24}{section.3.1}%
+\contentsline {section}{\numberline {3.2}模型结构}{24}{section.3.2}%
+\contentsline {section}{\numberline {3.3}模型训练}{24}{section.3.3}%
+\contentsline {section}{\numberline {3.4}实验结果}{24}{section.3.4}%
+\contentsline {chapter}{\numberline {4\hspace {.3em}}自回归模型生成中国画}{25}{chapter.4}%
+\contentsline {section}{\numberline {4.1}模型概述}{25}{section.4.1}%
+\contentsline {section}{\numberline {4.2}模型结构}{25}{section.4.2}%
+\contentsline {section}{\numberline {4.3}模型训练}{25}{section.4.3}%
+\contentsline {section}{\numberline {4.4}实验结果}{25}{section.4.4}%
+\contentsline {chapter}{结论}{25}{section.4.4}%
+\contentsline {chapter}{参考文献}{26}{chapter*.19}%
+\contentsline {chapter}{致谢}{31}{chapter*.20}%
+\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}基础知识}{32}{appendix.A}%
+\contentsline {section}{\numberline {A.1}数学}{32}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}线性代数}{32}{subsection.A.1.1}%
+\contentsline {subsubsection}{对角矩阵}{32}{subsection.A.1.1}%
+\contentsline {subsubsection}{矩阵乘法}{32}{subsection.A.1.1}%
+\contentsline {subsubsection}{矩阵的迹}{32}{subsection.A.1.1}%
+\contentsline {subsubsection}{范数}{32}{equation.A.1.1}%
+\contentsline {subsubsection}{矩阵行列式}{33}{equation.A.1.5}%
+\contentsline {subsubsection}{可逆矩阵}{33}{equation.A.1.7}%
+\contentsline {subsubsection}{雅可比矩阵}{33}{equation.A.1.10}%
+\contentsline {subsection}{\numberline {A.1.2}概率论}{34}{subsection.A.1.2}%
+\contentsline {subsubsection}{概率密度函数}{34}{subsection.A.1.2}%
+\contentsline {subsubsection}{概率质量函数}{34}{equation.A.1.12}%
+\contentsline {subsubsection}{正态分布}{34}{equation.A.1.13}%
+\contentsline {subsubsection}{期望}{34}{equation.A.1.19}%
+\contentsline {subsubsection}{协方差}{35}{equation.A.1.21}%
+\contentsline {subsubsection}{极大似然估计}{35}{equation.A.1.22}%
+\contentsline {subsubsection}{边缘似然}{35}{equation.A.1.26}%
+\contentsline {subsubsection}{全概率公式}{36}{equation.A.1.26}%
+\contentsline {subsubsection}{贝叶斯定理}{36}{equation.A.1.28}%
+\contentsline {subsubsection}{贝叶斯推理}{36}{equation.A.1.30}%
+\contentsline {subsubsection}{蒙特卡洛方法}{37}{equation.A.1.31}%
+\contentsline {subsubsection}{随机微分方程}{37}{equation.A.1.33}%
+\contentsline {subsubsection}{对比散度}{37}{equation.A.1.33}%
+\contentsline {subsubsection}{证据下界}{38}{equation.A.1.48}%
+\contentsline {subsubsection}{重参数方法}{40}{equation.A.1.65}%
+\contentsline {section}{\numberline {A.2}物理学}{41}{section.A.2}%
+\contentsline {subsection}{\numberline {A.2.1}玻尔兹曼分布}{41}{subsection.A.2.1}%

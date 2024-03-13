@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber HebutThesis_example"] 0 "HebutThesis_example.bcf" "HebutThesis_example.bbl" "HebutThesis_example" 1710323081 -1
+["biber HebutThesis_example"] 0 "HebutThesis_example.bcf" "HebutThesis_example.bbl" "HebutThesis_example" 1710335537 -1
   "./bibliography.bib" 1709990436 16097 0c6351185db0757231688e35b436c2d2 ""
-  "HebutThesis_example.bcf" 1710323080 139290 580bb58f74ca8306685aff256eaaef00 "pdflatex"
+  "HebutThesis_example.bcf" 1710335536 136587 317f59703b150fe321b2f7775fab000b "pdflatex"
   (generated)
   "HebutThesis_example.bbl"
   "HebutThesis_example.blg"
   (rewritten before read)
-["pdflatex"] 1710323077 "d:/新建文件夹/these/HEBUT-Thesis/HebutThesis_example.tex" "HebutThesis_example.pdf" "HebutThesis_example" 1710323081 2
-  "HebutThesis_example.aux" 1710323080 38926 c750ecda3fec33907543cd1e67cf3675 "pdflatex"
+["pdflatex"] 1710335534 "d:/新建文件夹/these/HEBUT-Thesis/HebutThesis_example.tex" "HebutThesis_example.pdf" "HebutThesis_example" 1710335537 2
+  "HebutThesis_example.aux" 1710335536 34472 ce0e0926ddc9da4eb62c6a1996926fe8 "pdflatex"
   "HebutThesis_example.bbl" 1709990436 170693 79a19db9b0303b828cb9c22f7474e7a4 "biber HebutThesis_example"
-  "HebutThesis_example.run.xml" 1710323080 2523 4d6de1e4d73835e3337826cf7cacfe9f "pdflatex"
+  "HebutThesis_example.run.xml" 1710335536 2523 4d6de1e4d73835e3337826cf7cacfe9f "pdflatex"
   "HebutThesis_example.tex" 1709990436 943 9d3825660b92cfe07e1fb7180c6353c7 ""
-  "HebutThesis_example.toc" 1710323080 4996 ff5bfdee1e7b74cb04d6836e5e277a72 "pdflatex"
+  "HebutThesis_example.toc" 1710335536 4625 03a9a58cde7938da8f122b8a07e3fb57 "pdflatex"
   "c:/Windows/Fonts/msyh.ttc" 1699986221 19701556 07c864a5b15e68fa47639738197fae38 ""
   "c:/Windows/Fonts/simhei.ttf" 1651842600 9753388 6abc0fcfbaa40600f9cecca3afeb3aa7 ""
   "c:/Windows/Fonts/simkai.ttf" 1651842600 11787328 76179557c160634a761c845ea111c893 ""
@@ -201,6 +201,7 @@
   "c:/texlive/2023/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong98.tfm" 1709987274 1172 0d85b1f7b78508ff1f0a5ef94e0aaca9 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong99.tfm" 1709987274 1172 445e3c81b2f1f84601e454216cbde866 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong9a.tfm" 1709987274 1172 37a3cd36cf03e67f393bee80b1370d05 ""
+  "c:/texlive/2023/texmf-dist/fonts/tfm/zhmetrics/unisong/unisong9f.tfm" 1709987274 1172 9f5913528ac56c45715ab9430a95446c ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/zhmetrics/unisong/unisongff.tfm" 1709987274 1172 156175f4eaa9daea4e21b890ac9fafb8 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1709986056 32080 340ef9bf63678554ee606688e7b5339d ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb" 1709986056 32166 b0c356b15f19587482a9217ce1d8fa67 ""
@@ -342,6 +343,7 @@
   "c:/texlive/2023/texmf-dist/tex/latex/biblatex/lbx/russian.lbx" 1709986110 45859 11ceb0c84af12b9adde69a2b9fb6e5ba ""
   "c:/texlive/2023/texmf-dist/tex/latex/bookmark/bkm-pdftex.def" 1709986143 8609 8ac7db65d9617618cf703bd16c1bd0b8 ""
   "c:/texlive/2023/texmf-dist/tex/latex/bookmark/bookmark.sty" 1709986143 18237 5cbdfe9ef383a557f780a0a1f45cdb1c ""
+  "c:/texlive/2023/texmf-dist/tex/latex/booktabs/booktabs.sty" 1709986144 6078 f1cb470c9199e7110a27851508ed7a5c ""
   "c:/texlive/2023/texmf-dist/tex/latex/caption/caption.sty" 1709986160 55778 14d5c99aa26410e440820bb9ea5b8b3a ""
   "c:/texlive/2023/texmf-dist/tex/latex/caption/caption3.sty" 1709986160 71836 1a735454ad10692452eb2f2fc37f3865 ""
   "c:/texlive/2023/texmf-dist/tex/latex/cjk/texinput/CJK.enc" 1709986193 29591 d67c9aa515f4260cdd60fa9f76d96368 ""
@@ -446,6 +448,7 @@
   "c:/texlive/2023/texmf-dist/tex/latex/tools/bm.sty" 1709987146 13231 b52297489a0e9d929aae403417d92a02 ""
   "c:/texlive/2023/texmf-dist/tex/latex/tools/calc.sty" 1709987146 10214 de3e21cfc0eccc98ca7f8dac0ef263d2 ""
   "c:/texlive/2023/texmf-dist/tex/latex/tools/shellesc.sty" 1709987146 4118 0aa319c56935d7d217b6a8bf300b81b7 ""
+  "c:/texlive/2023/texmf-dist/tex/latex/tools/tabularx.sty" 1709987146 7147 be6981d9f5d866a5634048c4a11814a9 ""
   "c:/texlive/2023/texmf-dist/tex/latex/tools/verbatim.sty" 1709987146 7392 f19cdc68ae9f1190dbd54eee6d29fb7c ""
   "c:/texlive/2023/texmf-dist/tex/latex/trimspaces/trimspaces.sty" 1709987154 1380 971a51b00a14503ddf754cab24c3f209 ""
   "c:/texlive/2023/texmf-dist/tex/latex/url/url.sty" 1709987198 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
@@ -466,7 +469,7 @@
   "document/acknowledgments.tex" 1709990436 518 044b02b0f18af9019acf414ea3e6add9 ""
   "document/appendix.tex" 1709990436 23638 e0b12bafbb5c4c4b9a687d821db7c7c9 ""
   "document/bibliography.tex" 1709990436 206 32cc0154d983cc9f86117f7774e9f4bf ""
-  "document/chap01 Introduction.tex" 1710320159 9587 a213cb49dab91fb2a23fb2606247f01a ""
+  "document/chap01 Introduction.tex" 1710335529 2009 0a7948f27c5e9684e0415e911bfa417b ""
   "document/chap02 Basic Theory and Methods.tex" 1709990950 72648 9e097463a06f70b6710ea6833ed73f27 ""
   "document/chap03 Variational Autoencoder.tex" 1709990436 250 c2e0291bf74b47585edb36c3b4b45d7f ""
   "document/chap04 Autoregressive Model.tex" 1709990436 241 c392b58b0c9f04ae1207c86656d7d752 ""
@@ -480,7 +483,6 @@
   "figures/diffusion_model_optimize_elbo_single_variable" 0 -1 0 ""
   "figures/energy_based_model_contrastive_divergence_training" 0 -1 0 ""
   "figures/gan_training" 0 -1 0 ""
-  "figures/gennerative_models" 0 -1 0 ""
   "figures/historyhebut.jpg" 1710319487 439592 1877020721840de8d8ed80ea7ae4b376 ""
   "figures/markovian_hierarchical_variational_autoencoder" 0 -1 0 ""
   "figures/max_likelihood.png" 1709990437 40319 cafd0f1047d209071131f20a56634718 ""
@@ -489,7 +491,7 @@
   "figures/vae" 0 -1 0 ""
   "figures/vae_elbo" 0 -1 0 ""
   "figures/vae_reparameterization_trick" 0 -1 0 ""
-  "hebutthesis.cls" 1710317216 4846 76bb584e6113b3a3868330905b1cb02c ""
+  "hebutthesis.cls" 1710335276 4924 f2dfece89a60b7113a867762728a040d ""
   (generated)
   "HebutThesis_example.aux"
   "HebutThesis_example.bcf"

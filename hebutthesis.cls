@@ -29,6 +29,9 @@
 \RequirePackage[export]{adjustbox}
 \RequirePackage{algorithm}
 \RequirePackage{algorithmic}
+\RequirePackage{booktabs}
+\RequirePackage{tabularx}
+\RequirePackage{array}
 
 \addbibresource{bibliography.bib}
 \allowdisplaybreaks

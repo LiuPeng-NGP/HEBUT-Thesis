@@ -1,1 +1,0 @@
-color pictures yellow and color a100 40gb

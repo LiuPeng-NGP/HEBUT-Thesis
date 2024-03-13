@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bcf:controlfile version="3.9" bltxversion="3.18b" xmlns:bcf="https://sourceforge.net/projects/biblatex">
+<bcf:controlfile version="3.10" bltxversion="3.19" xmlns:bcf="https://sourceforge.net/projects/biblatex">
   <!-- BIBER OPTIONS -->
   <bcf:options component="biber" type="global">
     <bcf:option type="singlevalued">
@@ -37,6 +37,11 @@
     <bcf:option type="singlevalued">
       <bcf:key>alphaothers</bcf:key>
       <bcf:value>+</bcf:value>
+    </bcf:option>
+    <bcf:option type="multivalued">
+      <bcf:key>extradatecontext</bcf:key>
+      <bcf:value order="1">labelname</bcf:value>
+      <bcf:value order="2">labeltitle</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>labelalpha</bcf:key>
@@ -276,6 +281,11 @@
   </bcf:options>
   <!-- online -->
   <bcf:options component="biblatex" type="online">
+    <bcf:option type="multivalued">
+      <bcf:key>extradatecontext</bcf:key>
+      <bcf:value order="1">labelname</bcf:value>
+      <bcf:value order="2">labeltitle</bcf:value>
+    </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>labelalpha</bcf:key>
       <bcf:value>0</bcf:value>
@@ -495,6 +505,7 @@
     <bcf:option datatype="xml">sortingnamekeytemplate</bcf:option>
     <bcf:option datatype="xml">sortingtemplate</bcf:option>
     <bcf:option datatype="xml">extradatespec</bcf:option>
+    <bcf:option datatype="xml">extradatecontext</bcf:option>
     <bcf:option datatype="xml">labelnamespec</bcf:option>
     <bcf:option datatype="xml">labeltitlespec</bcf:option>
     <bcf:option datatype="xml">labeldatespec</bcf:option>
@@ -748,6 +759,7 @@
     <bcf:option datatype="xml">translit</bcf:option>
     <bcf:option datatype="xml">sortexclusion</bcf:option>
     <bcf:option datatype="xml">sortinclusion</bcf:option>
+    <bcf:option datatype="xml">extradatecontext</bcf:option>
     <bcf:option datatype="xml">labelnamespec</bcf:option>
     <bcf:option datatype="xml">labeltitlespec</bcf:option>
     <bcf:option datatype="xml">labeldatespec</bcf:option>
@@ -909,11 +921,6 @@
       <bcf:map>
         <bcf:map_step map_field_source="address" map_final="1"/>
         <bcf:map_step map_field_set="location" map_origfieldval="1"/>
-      </bcf:map>
-      <bcf:map>
-        <bcf:per_type>inproceedings</bcf:per_type>
-        <bcf:map_step map_field_source="eventtitle" map_final="1"/>
-        <bcf:map_step map_field_source="techreport" map_field_target="booktitle"/>
       </bcf:map>
       <bcf:map>
         <bcf:map_step map_field_source="mark" map_final="1"/>
@@ -2914,62 +2921,58 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1" intorder="1">chinesepainting</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">machinery1950computing</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">aigcwhitebook</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">goodfellow2016deep</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">lecun2015deep</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">kingma2013auto</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">goodfellow2020generative</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">radford2015unsupervised</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">arjovsky2017wasserstein</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">karras2017progressive</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">isola2017image</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">zhu2017unpaired</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">dong2018musegan</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">larsen2016autoencoding</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">razavi2019generating</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">ha2018world</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">van2016pixel</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">van2016conditional</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">dinh2016density</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">vaswani2017attention</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">radford2018improving</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">devlin2018bert</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">huang2018music</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">zhang2019self</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">brock2018large</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">karras2019style</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">karras2020analyzing</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">song2019generative</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">esser2021taming</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">dosovitskiy2020image</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">sauer2022stylegan</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">ho2020denoising</bcf:citekey>
-    <bcf:citekey order="33" intorder="1">song2020denoising</bcf:citekey>
-    <bcf:citekey order="34" intorder="1">brown2020language</bcf:citekey>
-    <bcf:citekey order="35" intorder="1">smith2022using</bcf:citekey>
-    <bcf:citekey order="36" intorder="1">thoppilan2022lamda</bcf:citekey>
-    <bcf:citekey order="37" intorder="1">ramesh2021zero</bcf:citekey>
-    <bcf:citekey order="38" intorder="1">nichol2021glide</bcf:citekey>
-    <bcf:citekey order="39" intorder="1">ramesh2022hierarchical</bcf:citekey>
-    <bcf:citekey order="40" intorder="1">saharia2022photorealistic</bcf:citekey>
-    <bcf:citekey order="41" intorder="1">yu2022scaling</bcf:citekey>
-    <bcf:citekey order="42" intorder="1">rombach2022high</bcf:citekey>
-    <bcf:citekey order="43" intorder="1">goodfellow2016nips</bcf:citekey>
-    <bcf:citekey order="44" intorder="1">weng2018flow</bcf:citekey>
-    <bcf:citekey order="45" intorder="1">Jakub2022deep</bcf:citekey>
-    <bcf:citekey order="46" intorder="1">lippe2022uvadlc</bcf:citekey>
-    <bcf:citekey order="47" intorder="1">weng2018VAE</bcf:citekey>
-    <bcf:citekey order="48" intorder="1">vincent2008extracting</bcf:citekey>
-    <bcf:citekey order="49" intorder="1">Luo2022UnderstandingDM</bcf:citekey>
-    <bcf:citekey order="50" intorder="1">sohl2015deep</bcf:citekey>
-    <bcf:citekey order="51" intorder="1">song2019generative</bcf:citekey>
-    <bcf:citekey order="52" intorder="1">ho2020denoising</bcf:citekey>
-    <bcf:citekey order="53" intorder="1">kingma2023variational</bcf:citekey>
-    <bcf:citekey order="54" intorder="1">salimans2016improved</bcf:citekey>
-    <bcf:citekey order="55" intorder="1">heusel2017gans</bcf:citekey>
-    <bcf:citekey order="56" intorder="1">binkowski2018demystifying</bcf:citekey>
-    <bcf:citekey order="57" intorder="1">betzalel2022study</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">kingma2013auto</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">goodfellow2020generative</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">radford2015unsupervised</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">arjovsky2017wasserstein</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">karras2017progressive</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">isola2017image</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">zhu2017unpaired</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">dong2018musegan</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">larsen2016autoencoding</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">razavi2019generating</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">ha2018world</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">van2016pixel</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">van2016conditional</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">dinh2016density</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">vaswani2017attention</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">radford2018improving</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">devlin2018bert</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">huang2018music</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">zhang2019self</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">brock2018large</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">karras2019style</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">karras2020analyzing</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">song2019generative</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">esser2021taming</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">dosovitskiy2020image</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">sauer2022stylegan</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">ho2020denoising</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">song2020denoising</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">brown2020language</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">smith2022using</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">thoppilan2022lamda</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">ramesh2021zero</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">nichol2021glide</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">ramesh2022hierarchical</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">saharia2022photorealistic</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">yu2022scaling</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">rombach2022high</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">goodfellow2016nips</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">weng2018flow</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">Jakub2022deep</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">lippe2022uvadlc</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">weng2018VAE</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">vincent2008extracting</bcf:citekey>
+    <bcf:citekey order="45" intorder="1">Luo2022UnderstandingDM</bcf:citekey>
+    <bcf:citekey order="46" intorder="1">sohl2015deep</bcf:citekey>
+    <bcf:citekey order="47" intorder="1">song2019generative</bcf:citekey>
+    <bcf:citekey order="48" intorder="1">ho2020denoising</bcf:citekey>
+    <bcf:citekey order="49" intorder="1">kingma2023variational</bcf:citekey>
+    <bcf:citekey order="50" intorder="1">salimans2016improved</bcf:citekey>
+    <bcf:citekey order="51" intorder="1">heusel2017gans</bcf:citekey>
+    <bcf:citekey order="52" intorder="1">binkowski2018demystifying</bcf:citekey>
+    <bcf:citekey order="53" intorder="1">betzalel2022study</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

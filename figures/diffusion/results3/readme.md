@@ -1,1 +1,0 @@
-white pictures 24GB

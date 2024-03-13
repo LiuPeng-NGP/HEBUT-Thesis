@@ -100,12 +100,12 @@
 
   \setlength\headwidth{\textwidth}
   \fancypagestyle{plain}{
-    \fancyhead[C]{\songti\zihao{5} 河北工业大学2023届本科毕业设计说明书}
+    \fancyhead[C]{\songti\zihao{5} 河北工业大学2024届本科毕业设计说明书}
   }
   \pagestyle{fancy} 
   \fancyhead[R]{}
   \fancyhead[L]{}
-  \fancyhead[C]{\songti\zihao{5} 河北工业大学2023届本科毕业设计说明书}
+  \fancyhead[C]{\songti\zihao{5} 河北工业大学2024届本科毕业设计说明书}
   \cfoot{\footnotesize\thepage}
 }
 

@@ -1,0 +1,17 @@
+[0] Config.pm:306> INFO - This is Biber 2.18
+[0] Config.pm:309> INFO - Logfile is 'HebutThesis_example.blg'
+[213] biber-MSWIN64:340> INFO - === 
+[273] Biber.pm:418> INFO - Reading 'HebutThesis_example.bcf'
+[486] Biber.pm:978> INFO - Found 2 citekeys in bib section 0
+[506] Biber.pm:4401> INFO - Processing section 0
+[522] Biber.pm:4592> INFO - Looking for bibtex file 'bibliography.bib' for section 0
+[638] bibtex.pm:1713> INFO - LaTeX decoding ...
+[649] bibtex.pm:1518> INFO - Found BibTeX data source 'bibliography.bib'
+[712] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[713] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[713] Biber.pm:4221> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[714] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
+[721] bbl.pm:654> INFO - Writing 'HebutThesis_example.bbl' with encoding 'UTF-8'
+[725] bbl.pm:757> INFO - Output to HebutThesis_example.bbl
+[726] Biber.pm:130> WARN - I didn't find a database entry for 'chinesepainting' (section 0)
+[726] Biber.pm:132> INFO - WARNINGS: 1

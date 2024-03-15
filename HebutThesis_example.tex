@@ -1,30 +1,30 @@
 \documentclass{hebutthesis}
 
-
 \begin{document}
-\pdfbookmark[section]{论文标题}{cover}
-\input{document/cover}
+
+\pdfbookmark[section]{论文标题}{cover}  %在生成的PDF文档中创建书签
+\input{document/cover}      %插入封面
 \pdfbookmark[section]{摘要}{abstract}
-\input{document/abstract}
-\clearpage      %?什么意思 清楚页面内容，然后下一页
-\pdfbookmark[section]{\contentsname}{contents}  %contents在哪儿 目录是自动生成的，下一行命令能自动生成目录
-\tableofcontents
-% \listoffigures
-% \listoftables
+\input{document/abstract}   %插入摘要
+\clearpage                  %结束当前页，并将所有未处理的浮动体（如表格和图形）输出到下一页。
+\pdfbookmark[section]{\contentsname}{contents}  
+\tableofcontents            %自动生成目录
+% \listoffigures            %自动生成图片目录
+% \listoftables             %自动生成表格目录
 
-
-\input{document/chap01}
+% 正文部分
+\input{document/chap01}     %插入章节一
 \input{document/chap02}
 \input{document/chap03}
 \input{document/chap04}
 
-\input{document/conclusion} % 结论章节
-\addcontentsline{toc}{chapter}{结论}    %?语法 不用比如 \chapter{绪论} 的命令无法自动添加到目录，所以要手动添加到目录
-\input{document/bibliography}
-\input{document/acknowledgments}
-\addcontentsline{toc}{chapter}{致谢}
-
-\appendix
-\input{document/appendix}
+% 其他部分
+\input{document/conclusion}             %插入结论
+\addcontentsline{toc}{chapter}{结论}     %比如 \chapter{绪论} 的命令无法自动添加到目录，要手动将此条目添加到目录
+\input{document/bibliography}           %插入参考文献
+\input{document/acknowledgments}        %插入致谢
+\addcontentsline{toc}{chapter}{致谢}     %手动添加到目录
+\appendix                               %标记文档中附录部分的开始
+\input{document/appendix}               %插入附录
 
 \end{document}

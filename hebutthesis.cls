@@ -26,7 +26,8 @@
 \RequirePackage[font=small]{caption}    % 使得所有的图表标题使用比正文小一号的字体大小
 \RequirePackage[backend=biber,style=gb7714-2015,sorting=none]{biblatex}   % 处理参考文献的宏包，使用biber作为后端，格式依照gb7714-2015标准，引文不按特定顺序排列（而按照引用顺序）
 \RequirePackage{parskip}              % 在文档开始前就调整段落间距，改变LaTeX默认行为，让文档中的段落之间用垂直空间分隔，而不是缩进第一行
-\RequirePackage{subfigure}            % 用于管理复杂图形
+% \RequirePackage{subfigure}            % 用于管理复杂图形
+\RequirePackage{subfig}
 \RequirePackage[export]{adjustbox}    % adjustbox用于调整盒子的属性，export表示将 adjustbox 包的键值选项导出到 \includegraphics 命令中
 \RequirePackage{algorithm}            % 允许用户在文档中编写算法
 \RequirePackage{booktabs}             % 提供了创建高质量表格的命令
@@ -41,7 +42,7 @@
 \captionsetup[table]{labelsep=space}        % 表格标题中标签与题目之间只有一个空格
 \captionsetup[figure]{labelsep=space}       % 图片标题中标签与题目之间只有一个空格
 
-\renewcommand{\title}[1]{\def\hebutthesis@title{#1}}          % 对命令‘\title’的重新定义
+\renewcommand{\title}[1]{\def\hebutthesis@title{#1}}          % 对命令‘\title’的重新定义，因为report类没有
 \renewcommand{\author}[1]{\def\hebutthesis@author{#1}}
 \newcommand{\studentID}[1]{\def\hebutthesis@studentID{#1}}    % 定义全新的命令
 \newcommand{\college}[1]{\def\hebutthesis@college{#1}}
@@ -62,7 +63,7 @@
 
 \renewcommand{\maketitle}[0]{     % 重新定义\maketitle，不允许输入参数
   \newgeometry{                         % 调整页面布局
-    top        = 2.6cm,%2.41 2.5        % 上边距2.6cm
+    top        = 2.6cm,%2.41 2.5        % 上边距2.6cm，
     bottom     = 2.7cm, %2.73 %2.68     
     left       = 3.5cm, %3.4
     right      = 1.65cm,
@@ -124,20 +125,20 @@
     section={
         format={\bfseries\heiti\zihao{4}},    % 黑体加粗四号
         aftername={\quad},
-        beforeskip={.5\baselineskip},
-        afterskip={.5\baselineskip},
+%        beforeskip={.5\baselineskip},
+%        afterskip={.5\baselineskip},
     },
     subsection={
         format={\heiti\zihao{4}},             % 黑体四号
         aftername={\quad},
-        beforeskip={.5\baselineskip},
-        afterskip={.5\baselineskip},
+%        beforeskip={.5\baselineskip},
+%        afterskip={.5\baselineskip},
     },
     subsubsection={
         format={\heiti\zihao{5}},
         aftername={\quad},
-        beforeskip={.5\baselineskip},
-        afterskip={.5\baselineskip},
+%        beforeskip={.5\baselineskip},
+%        afterskip={.5\baselineskip},
         indent={2em},                         % 小节标题下第一行文本的缩进量2字符宽度
     }
 }

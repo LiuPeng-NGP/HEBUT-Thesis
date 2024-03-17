@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.1.30)  15 MAR 2024 08:10
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.1.30)  17 MAR 2024 09:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1303,15 +1303,6 @@ Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
 \@float@every@algorithm=\toks48
 \c@algorithm=\count507
-) (f:/LaTeX/texlive/2021/texmf-dist/tex/latex/algorithms/algorithmic.sty
-Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
-Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count508
-\c@ALC@line=\count509
-\c@ALC@rem=\count510
-\c@ALC@depth=\count511
-\ALC@tlm=\skip112
-\algorithmicindent=\skip113
 ) (f:/LaTeX/texlive/2021/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen354
@@ -1324,12 +1315,12 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen361
 \cmidrulekern=\dimen362
 \defaultaddspace=\dimen363
-\@cmidla=\count512
-\@cmidlb=\count513
+\@cmidla=\count508
+\@cmidlb=\count509
 \@aboverulesep=\dimen364
 \@belowrulesep=\dimen365
-\@thisruleclass=\count514
-\@lastruleclass=\count515
+\@thisruleclass=\count510
+\@lastruleclass=\count511
 \@thisrulewidth=\dimen366
 ) (f:/LaTeX/texlive/2021/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
@@ -1338,11 +1329,11 @@ Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 \TX@old@col=\dimen369
 \TX@target=\dimen370
 \TX@delta=\dimen371
-\TX@cols=\count516
+\TX@cols=\count512
 \TX@ftn=\toks49
 ))
-\@quotelevel=\count517
-\@quotereset=\count518
+\@quotelevel=\count513
+\@quotereset=\count514
  (./HebutThesis_example.aux)
 \openout1 = `HebutThesis_example.aux'.
 
@@ -1467,12 +1458,12 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (f:/LaTeX/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count519
+\c@section@level=\count515
 )
 LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
 LaTeX Info: Redefining \nameref on input line 3.
-\c@lstlisting=\count520
+\c@lstlisting=\count516
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -1681,11 +1672,11 @@ Package logreq Info: Writing requests to 'HebutThesis_example.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 44006 strings out of 476919
- 935246 string characters out of 5822736
- 1816079 words of memory out of 5000000
- 63201 multiletter control sequences out of 15000+600000
- 419143 words of font info for 138 fonts, out of 8000000 for 9000
+ 43892 strings out of 476919
+ 933721 string characters out of 5822736
+ 1813888 words of memory out of 5000000
+ 63091 multiletter control sequences out of 15000+600000
+ 419135 words of font info for 137 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  116i,11n,121p,1941b,4928s stack positions out of 5000i,500n,10000p,200000b,80000s
 

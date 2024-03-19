@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.1.30)  17 MAR 2024 21:47
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.1.30)  19 MAR 2024 11:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/hp/Desktop/test2/HEBUT-Thesis/HebutThesis_example
-(c:/Users/hp/Desktop/test2/HEBUT-Thesis/HebutThesis_example.tex
+**c:/Users/hp/Desktop/test1/HEBUT-Thesis/HebutThesis_example
+(c:/Users/hp/Desktop/test1/HEBUT-Thesis/HebutThesis_example.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> (./hebutthesis.cls
 Document Class: hebutthesis 
@@ -1655,18 +1655,15 @@ Package fontspec Info: Font family 'FandolFang-Regular(0)' created for font
 ) [9
 
 ] (./HebutThesis_example.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package logreq Info: Writing requests to 'HebutThesis_example.run.xml'.
 \openout1 = `HebutThesis_example.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43898 strings out of 476919
- 933953 string characters out of 5822736
- 1815473 words of memory out of 5000000
- 63101 multiletter control sequences out of 15000+600000
+ 43900 strings out of 476919
+ 933967 string characters out of 5822736
+ 1815424 words of memory out of 5000000
+ 63103 multiletter control sequences out of 15000+600000
  419127 words of font info for 136 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  116i,11n,121p,1941b,4928s stack positions out of 5000i,500n,10000p,200000b,80000s

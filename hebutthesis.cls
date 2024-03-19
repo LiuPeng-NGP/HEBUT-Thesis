@@ -61,6 +61,7 @@
   rightrule=0.4mm                 % 文本框右边框的宽度为0.4毫米
 }
 
+% 设置封面
 \renewcommand{\maketitle}[0]{     % 重新定义\maketitle，不允许输入参数
   \newgeometry{                         % 调整页面布局
     top        = 2.6cm,%2.41 2.5        % 上边距2.6cm，
@@ -102,17 +103,23 @@
 	\end{titlepage}
 
 
-  \setlength\headwidth{\textwidth}    % 确保页眉宽度与文本宽度相同
-  \fancypagestyle{plain}{             % 属于fancyhdr宏包，添加一个plain样式
-    \fancyhead[C]{\songti\zihao{5} 河北工业大学2024届本科毕业设计说明书}    % 设置页眉的中间部分，宋体5号
-  }
-  \pagestyle{fancy}               % 在LaTeX文档中设置页面样式为fancy
-  \fancyhead[R]{}                 % 右侧页眉为空
-  \fancyhead[L]{}
-  \fancyhead[C]{\songti\zihao{5} 河北工业大学2024届本科毕业设计说明书}
-  \cfoot{\footnotesize\thepage}   % 将页码以较小的字体大小放置在每页的页脚中央位置
+  
 }
 
+% 设置页眉页脚
+\setlength\headwidth{\textwidth}    % 确保页眉宽度与文本宽度相同
+\newcommand{\setyear}[1]{\def\theyear{#1}}
+\fancypagestyle{plain}{             % 属于fancyhdr宏包，添加一个plain样式
+  \fancyhead[C]{\songti\zihao{5} 河北工业大学{\theyear}届本科毕业设计说明书}    % 设置页眉的中间部分，宋体5号
+}
+\pagestyle{fancy}               % 在LaTeX文档中设置页面样式为fancy
+\fancyhead[R]{}                 % 右侧页眉为空
+\fancyhead[L]{}
+\fancyhead[C]{\songti\zihao{5} 河北工业大学{\theyear}届本科毕业设计说明书}
+\cfoot{\footnotesize\thepage}   % 将页码以较小的字体大小放置在每页的页脚中央位置
+
+
+% 设置中文宏包
 \ctexset{                         % 基于latex的中文宏包，设置中文处理相关的参数
     chapter={
         name={},                              % 章节标题前不自动添加任何前缀（如“第一章”中的“第”和“章”），只显示章节的数字和标题文本

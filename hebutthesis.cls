@@ -1,8 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}    % 指定编译当前文档所需的LaTeX格式和版本
 \ProvidesClass{hebutthesis} % 声明此文件提供了一个文档类，叫做hebutthesis
 
-\DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}}  % 定义一个类（class）或宏包（package）接收到未定义选项时的行为
-\ProcessOptions     % 处理由 \DeclareOption 和 \DeclareOption* 声明的选项
 \LoadClass{report}  % 加载report文档类
 
 % 加载（包含）其他的包（package）以提供额外的功能或者设置
@@ -42,14 +40,14 @@
 \captionsetup[table]{labelsep=space}        % 表格标题中标签与题目之间只有一个空格
 \captionsetup[figure]{labelsep=space}       % 图片标题中标签与题目之间只有一个空格
 
-\renewcommand{\title}[1]{\def\hebutthesis@title{#1}}          % 对命令‘\title’的重新定义，因为report类没有
+\renewcommand{\title}[1]{\def\hebutthesis@title{#1}}          % 对命令‘\title’的重新定义，因为report标准类没有
 \renewcommand{\author}[1]{\def\hebutthesis@author{#1}}
 \newcommand{\studentID}[1]{\def\hebutthesis@studentID{#1}}    % 定义全新的命令
 \newcommand{\college}[1]{\def\hebutthesis@college{#1}}
 \newcommand{\major}[1]{\def\hebutthesis@major{#1}}
 \newcommand{\supervisor}[1]{\def\hebutthesis@supervisor{#1}}
 \newcommand{\hebutThesisTime}[1]{\def\hebutthesis@hebutThesisTime{#1}}
-\newCJKfontfamily{\fzxbsjt}{fzxbsjt.ttf}     % 定义新中日韩字体家族，命令为\fzxbsjt，文件为fzxbsjt.ttf
+\newCJKfontfamily{\fzxbsjt}{fzxbsjt.ttf}     % 定义新中日韩字体家族，命令为\fzxbsjt（方正小标宋简体），文件为fzxbsjt.ttf
 \renewcommand{\headrulewidth}{0.5pt}         % 重新定义页面顶部规则线宽度为0.5磅
 \tcbset{                          % 属于tcolorbox包，创建带有可选彩色背景的文本框
   height=0.85\textheight ,        % 本框的高度为文档总文本高度的85%
@@ -61,63 +59,118 @@
   rightrule=0.4mm                 % 文本框右边框的宽度为0.4毫米
 }
 
-% 设置封面
-\renewcommand{\maketitle}[0]{     % 重新定义\maketitle，不允许输入参数
-  \newgeometry{                         % 调整页面布局
-    top        = 2.6cm,%2.41 2.5        % 上边距2.6cm，
-    bottom     = 2.7cm, %2.73 %2.68     
-    left       = 3.5cm, %3.4
-    right      = 1.65cm,
-    headheight = 1.0cm,                 % 页眉高度1cm
-    headsep    = 0.64cm,                % 页眉和正文之间的距离（分隔）设置为0.64cm
-    footskip   = 0.79cm                 % 页脚底部与正文底部之间的距离设置为0.79cm
+
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}}  % 定义一个类（class）或宏包（package）接收到未定义选项时的行为
+
+\DeclareOption{design}{
+  \def\doctype{毕业设计说明书}
+  % 设置封面
+  \renewcommand{\maketitle}[0]{     % 重新定义\maketitle，不允许输入参数
+    \newgeometry{                         % 调整页面布局
+      top        = 2.6cm,%2.41 2.5        % 上边距2.6cm，
+      bottom     = 2.7cm, %2.73 %2.68     
+      left       = 3.5cm, %3.4
+      right      = 1.65cm,
+      headheight = 1.0cm,                 % 页眉高度1cm
+      headsep    = 0.64cm,                % 页眉和正文之间的距离（分隔）设置为0.64cm
+      footskip   = 0.79cm                 % 页脚底部与正文底部之间的距离设置为0.79cm
+    }
+    \begin{titlepage}         % 创建自定义标题页
+      \begin{center}          % 居中显示
+        \vspace*{2.36cm}      % 强制在页面的顶部添加2.36cm的空白空间
+        \fontsize{26}{0}\kaishu{河\quad 北\quad 工\quad 业\quad 大\quad 学}   % 字号设置26磅，行间距默认，楷书，\quad为空格
+        \vskip 26pt           % 垂直方向上添加空白空间26磅
+        \fontsize{36}{0}\fzxbsjt{毕业设计说明书}    % 字体“方正小标宋简体”
+        \vskip 52pt
+        \renewcommand\arraystretch{1.6}           % 调整局部表格行高为默认的1.6倍
+        \begin{tabular}{c c}                      % 创建一个2列居中对齐的表格
+          \fontsize{15}{0}\songti{作\qquad 者：}&\fontsize{16}{0}\kaishu\uline{\makebox[7em][c]{\hebutthesis@author}}   
+          % 字号15磅，默认行间距，宋体；字号16磅，楷书，下划线，创建一个宽度为7个中文字符宽度的盒子，并且盒子内的内容居中对齐，用于动态插入作者名字
+          \fontsize{15}{0}\songti{学\qquad 号：}\Large\uline{\makebox[7em][c]{\hebutthesis@studentID}}\\      % \Large表示比默认字体大一号，\表示换行
+          \fontsize{15}{0}\songti{学\qquad 院：}&\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{\hebutthesis@college}} \\
+          \fontsize{15}{0}\songti{系(专业)：}&\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{\hebutthesis@major}}\\
+          \fontsize{15}{0}\songti{题\qquad 目：}&\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{\hebutthesis@title}} \\
+          &\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{}}
+        \end{tabular}
+        \vskip 78pt
+        \renewcommand\arraystretch{2.4}
+        \begin{tabular}{c c}
+          \fontsize{15}{0}\songti{指导者：}&\fontsize{16}{0}\kaishu\uline{\makebox[20em][c]{\hebutthesis@supervisor}} \\
+          \fontsize{15}{0}\songti{评阅者：}&\fontsize{16}{0}\kaishu\uline{\makebox[20em][c]{}}\\
+        \end{tabular}
+        \renewcommand\arraystretch{1.2}
+
+        \vspace*{1.56cm}        % 在页面的底部强制添加1.56cm的空白空间
+        {\Large\fontsize{16}{0}\heiti{\hebutthesis@hebutThesisTime}}
+      \end{center}
+    \end{titlepage}
+
   }
-	\begin{titlepage}         % 创建自定义标题页
-		\begin{center}          % 居中显示
-			\vspace*{2.36cm}      % 强制在页面的顶部添加2.36cm的空白空间
-      \fontsize{26}{0}\kaishu{河\quad 北\quad 工\quad 业\quad 大\quad 学}   % 字号设置26磅，行间距默认，楷书，\quad为空格
-			\vskip 26pt           % 垂直方向上添加空白空间26磅
-			\fontsize{36}{0}\fzxbsjt{毕业设计说明书}    % 字体“方正小标宋简体”
-			\vskip 52pt
-      \renewcommand\arraystretch{1.6}           % 调整局部表格行高为默认的1.6倍
-      \begin{tabular}{c c}                      % 创建一个2列居中对齐的表格
-        \fontsize{15}{0}\songti{作\qquad 者：}&\fontsize{16}{0}\kaishu\uline{\makebox[7em][c]{\hebutthesis@author}}   
-        % 字号15磅，默认行间距，宋体；字号16磅，楷书，下划线，创建一个宽度为7个中文字符宽度的盒子，并且盒子内的内容居中对齐，用于动态插入作者名字
-        \fontsize{15}{0}\songti{学\qquad 号：}\Large\uline{\makebox[7em][c]{\hebutthesis@studentID}}\\      % \Large表示比默认字体大一号，\表示换行
-        \fontsize{15}{0}\songti{学\qquad 院：}&\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{\hebutthesis@college}} \\
-        \fontsize{15}{0}\songti{系(专业)：}&\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{\hebutthesis@major}}\\
-        \fontsize{15}{0}\songti{题\qquad 目：}&\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{\hebutthesis@title}} \\
-        &\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{}}
-      \end{tabular}
-      \vskip 78pt
-      \renewcommand\arraystretch{2.4}
-      \begin{tabular}{c c}
-        \fontsize{15}{0}\songti{指导者：}&\fontsize{16}{0}\kaishu\uline{\makebox[20em][c]{\hebutthesis@supervisor}} \\
-        \fontsize{15}{0}\songti{评阅者：}&\fontsize{16}{0}\kaishu\uline{\makebox[20em][c]{}}\\
-      \end{tabular}
-      \renewcommand\arraystretch{1.2}
-
-      \vspace*{1.56cm}        % 在页面的底部强制添加1.56cm的空白空间
-      {\Large\fontsize{16}{0}\heiti{\hebutthesis@hebutThesisTime}}
-		\end{center}
-	\end{titlepage}
-
-
   
 }
+
+\DeclareOption{thesis}{
+  \def\doctype{毕业论文}
+    
+  % 设置封面
+  \renewcommand{\maketitle}[0]{     % 重新定义\maketitle，不允许输入参数
+    \newgeometry{                         % 调整页面布局
+      top        = 2.6cm,%2.41 2.5        % 上边距2.6cm，
+      bottom     = 2.7cm, %2.73 %2.68     
+      left       = 3.5cm, %3.4
+      right      = 1.65cm,
+      headheight = 1.0cm,                 % 页眉高度1cm
+      headsep    = 0.64cm,                % 页眉和正文之间的距离（分隔）设置为0.64cm
+      footskip   = 0.79cm                 % 页脚底部与正文底部之间的距离设置为0.79cm
+    }
+    \begin{titlepage}         % 创建自定义标题页
+      \begin{center}          % 居中显示
+        \vspace*{2.36cm}      % 强制在页面的顶部添加2.36cm的空白空间
+        \fontsize{26}{0}\kaishu{河\quad 北\quad 工\quad 业\quad 大\quad 学}   % 字号设置26磅，行间距默认，楷书，\quad为空格
+        \vskip 26pt           % 垂直方向上添加空白空间26磅
+        \fontsize{44}{0}\fzxbsjt{毕\qquad 业\qquad 论\qquad 文}    % 字体“方正小标宋简体”
+        \vskip 52pt
+        \renewcommand\arraystretch{1.6}           % 调整局部表格行高为默认的1.6倍
+        \begin{tabular}{c c}                      % 创建一个2列居中对齐的表格
+          \fontsize{15}{0}\songti{作\qquad 者：}&\fontsize{16}{0}\kaishu\uline{\makebox[7em][c]{\hebutthesis@author}}   
+          % 字号15磅，默认行间距，宋体；字号16磅，楷书，下划线，创建一个宽度为7个中文字符宽度的盒子，并且盒子内的内容居中对齐，用于动态插入作者名字
+          \fontsize{15}{0}\songti{学\qquad 号：}\Large\uline{\makebox[7em][c]{\hebutthesis@studentID}}\\      % \Large表示比默认字体大一号，\表示换行
+          \fontsize{15}{0}\songti{学\qquad 院：}&\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{\hebutthesis@college}} \\
+          \fontsize{15}{0}\songti{系(专业)：}&\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{\hebutthesis@major}}\\
+          \fontsize{15}{0}\songti{题\qquad 目：}&\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{\hebutthesis@title}} \\
+          &\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{}}
+        \end{tabular}
+        \vskip 78pt
+        \renewcommand\arraystretch{2.4}
+        \begin{tabular}{c c}
+          \fontsize{15}{0}\songti{指导者：}&\fontsize{16}{0}\kaishu\uline{\makebox[20em][c]{\hebutthesis@supervisor}} \\
+          \fontsize{15}{0}\songti{评阅者：}&\fontsize{16}{0}\kaishu\uline{\makebox[20em][c]{}}\\
+        \end{tabular}
+        \renewcommand\arraystretch{1.2}
+
+        \vspace*{1.56cm}        % 在页面的底部强制添加1.56cm的空白空间
+        {\Large\fontsize{16}{0}\heiti{\hebutthesis@hebutThesisTime}}
+      \end{center}
+    \end{titlepage}
+
+  }
+}
+
+\ExecuteOptions{design}
+\ProcessOptions\relax     % 处理由 \DeclareOption 和 \DeclareOption* 声明的选项
 
 % 设置页眉页脚
 \setlength\headwidth{\textwidth}    % 确保页眉宽度与文本宽度相同
 \newcommand{\setyear}[1]{\def\theyear{#1}}
+\newcommand{\setdoctype}[1]{\def\doctype{#1}}
 \fancypagestyle{plain}{             % 属于fancyhdr宏包，添加一个plain样式
-  \fancyhead[C]{\songti\zihao{5} 河北工业大学{\theyear}届本科毕业设计说明书}    % 设置页眉的中间部分，宋体5号
+  \fancyhead[C]{\songti\zihao{5} 河北工业大学{\theyear}届本科{\doctype}}    % 设置页眉的中间部分，宋体5号
 }
 \pagestyle{fancy}               % 在LaTeX文档中设置页面样式为fancy
 \fancyhead[R]{}                 % 右侧页眉为空
 \fancyhead[L]{}
-\fancyhead[C]{\songti\zihao{5} 河北工业大学{\theyear}届本科毕业设计说明书}
+\fancyhead[C]{\songti\zihao{5} 河北工业大学{\theyear}届本科{\doctype}}
 \cfoot{\footnotesize\thepage}   % 将页码以较小的字体大小放置在每页的页脚中央位置
-
 
 % 设置中文宏包
 \ctexset{                         % 基于latex的中文宏包，设置中文处理相关的参数
@@ -149,7 +202,6 @@
         indent={2em},                         % 小节标题下第一行文本的缩进量2字符宽度
     }
 }
-
 
 \parskip=0pt                  % 段落之间垂直距离为0
 \floatname{algorithm}{算法}   % 将 algorithm 环境的标题名称从默认的“Algorithm”更改为“算法”

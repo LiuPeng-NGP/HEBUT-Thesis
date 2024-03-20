@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.1.30)  19 MAR 2024 11:39
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.1.30)  20 MAR 2024 08:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1330,7 +1330,8 @@ Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 ))
 \@quotelevel=\count516
 \@quotereset=\count517
- (./HebutThesis_example.aux)
+
+No file HebutThesis_example.aux.
 \openout1 = `HebutThesis_example.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -1353,7 +1354,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1459,13 +1459,17 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
 LaTeX Info: Redefining \nameref on input line 3.
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
 \c@lstlisting=\count519
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
- (f:/LaTeX/texlive/2021/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+(f:/LaTeX/texlive/2021/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
 )
 Package biblatex Info: XeTeX detected.
@@ -1602,70 +1606,4 @@ Package fontspec Info: Font family 'FandolHei-Regular(0)' created for font
 [1
 
 
-]) (./document/abstract.tex [1]) [2] (./HebutThesis_example.toc [3
-
-
-])
-\tf@toc=\write8
-\openout8 = `HebutThesis_example.toc'.
-
- (./document/chap01.tex [4]
-1
-File: figures/historyhebut.jpg Graphic file (type bmp)
-<figures/historyhebut.jpg>
-) (./document/chap02.tex [1
-
-] [2]
-2
-) (./document/chap03.tex [3
-
-]
-3
-) (./document/chap04.tex [4
-
-]
-4
-) (./document/conclusion.tex [5
-
-]) (./document/bibliography.tex [6
-
-]
-
-Package fontspec Warning: Font "FandolFang-Regular" does not contain requested
-(fontspec)                Script "CJK".
-
-
-Package fontspec Info: Font family 'FandolFang-Regular(0)' created for font
-(fontspec)             'FandolFang-Regular' with options
-(fontspec)             [Script={CJK},Extension={.otf}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"[FandolFang-Regular.otf]/OT:language=dflt;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-
-) (./document/acknowledgments.tex [7
-
-]) (./document/appendix.tex [8
-
-]
-附录 A
-) [9
-
-] (./HebutThesis_example.aux)
-Package logreq Info: Writing requests to 'HebutThesis_example.run.xml'.
-\openout1 = `HebutThesis_example.run.xml'.
-
- ) 
-Here is how much of TeX's memory you used:
- 43900 strings out of 476919
- 933967 string characters out of 5822736
- 1815424 words of memory out of 5000000
- 63103 multiletter control sequences out of 15000+600000
- 419127 words of font info for 136 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 116i,11n,121p,1941b,4928s stack positions out of 5000i,500n,10000p,200000b,80000s
-
-Output written on HebutThesis_example.pdf (14 pages).
+]) (./document/abstract.tex [1]) [2

@@ -83,7 +83,7 @@
       \fontsize{36}{0}\fzxbsjt{毕业设计说明书}    % 字体“方正小标宋简体”
       \def\doctype{毕业设计说明书}
       \else
-      \fontsize{44}{0}\fzxbsjt{毕\qquad 业\qquad 论\qquad 文}    % 字体“方正小标宋简体”
+      \fontsize{44}{0}\heiti{毕\qquad 业\qquad 论\qquad 文}    % 字体“黑体”
       \def\doctype{毕业论文}
       \fi
       

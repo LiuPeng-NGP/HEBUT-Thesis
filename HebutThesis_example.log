@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 23.1) (preloaded format=xelatex 2023.3.6)  20 MAR 2024 19:20
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 23.1) (preloaded format=xelatex 2023.3.6)  21 MAR 2024 09:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1412,17 +1412,29 @@ Package fontspec Info: Font family 'KaiTi(0)' created for font 'KaiTi' with
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
 
-Package fontspec Info: Font family 'fzxbsjt.ttf(0)' created for font
-(fontspec)             'fzxbsjt.ttf' with options [Script={CJK}].
+Package fontspec Info: Could not resolve font "SimHei/BI" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: Could not resolve font "SimHei/B" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: Could not resolve font "SimHei/I" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: Font family 'SimHei(0)' created for font 'SimHei' with
+(fontspec)             options [Script={CJK}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"[fzxbsjt.ttf]/OT:script=hani;language=dflt;"
+(fontspec)             <->"SimHei/OT:script=hani;language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
-LaTeX Font Info:    Calculating math sizes for size <36> on input line 9.
+LaTeX Font Info:    Calculating math sizes for size <44> on input line 9.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 9.
  (C:\Users\14733\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1454,33 +1466,22 @@ Package fontspec Info: Font family 'SimSun(1)' created for font 'SimSun' with
 (fontspec)             <->"SimSun/OT:script=hani;language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
-
-Package fontspec Info: Could not resolve font "SimHei/BI" (it probably doesn't
-(fontspec)             exist).
+ [1
 
 
-Package fontspec Info: Could not resolve font "SimHei/B" (it probably doesn't
-(fontspec)             exist).
+]) (document/abstract.tex
 
-
-Package fontspec Info: Could not resolve font "SimHei/I" (it probably doesn't
-(fontspec)             exist).
-
-
-Package fontspec Info: Font family 'SimHei(0)' created for font 'SimHei' with
-(fontspec)             options [Script={CJK}].
+Package fontspec Info: Font family 'fzxbsjt.ttf(0)' created for font
+(fontspec)             'fzxbsjt.ttf' with options [Script={CJK}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"SimHei/OT:script=hani;language=dflt;"
+(fontspec)             <->"[fzxbsjt.ttf]/OT:script=hani;language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
- [1
 
-
-]) (document/abstract.tex
 
 LaTeX Font Warning: Font shape `TU/SimHei(0)/b/n' undefined
 (Font)              using `TU/SimHei(0)/m/n' instead on input line 11.
@@ -1554,11 +1555,11 @@ Package logreq Info: Writing requests to 'HebutThesis_example.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  45881 strings out of 411476
- 984384 string characters out of 5818381
- 1908102 words of memory out of 5000000
+ 984367 string characters out of 5818381
+ 1908099 words of memory out of 5000000
  65397 multiletter control sequences out of 15000+600000
  530208 words of font info for 148 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  105i,11n,113p,1951b,5045s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on HebutThesis_example.xdv (14 pages, 90308 bytes).
+Output written on HebutThesis_example.xdv (14 pages, 89636 bytes).

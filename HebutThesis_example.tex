@@ -1,5 +1,5 @@
 \documentclass[design]{hebutthesis}
-%使用hebutthesis文档类，design表示毕业设计说明书，若为毕业论文，请将design换成thesis
+% 使用hebutthesis文档类，design表示毕业设计说明书，若为毕业论文，请将design换成thesis
 \begin{document}
 \setyear{2024}              %设置年份
 \pdfbookmark[section]{论文标题}{cover}  %在生成的PDF文档中创建书签
@@ -17,10 +17,10 @@
 \input{document/chap02}
 \input{document/chap03}
 \input{document/chap04}
-
-% 其他部分
 \input{document/conclusion}             %插入结论
 \addcontentsline{toc}{chapter}{结论}     %比如 \chapter{绪论} 的命令无法自动添加到目录，要手动将此条目添加到目录
+
+% 其他部分
 \input{document/bibliography}           %插入参考文献,用的第三方包包括此包，所以不用手动添加到目录
 \input{document/acknowledgments}        %插入致谢
 \addcontentsline{toc}{chapter}{致谢}     %手动添加到目录

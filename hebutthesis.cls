@@ -23,7 +23,7 @@
 \RequirePackage[most]{tcolorbox}        % 高度自定义彩色文本框
 \RequirePackage[font=small]{caption}    % 使得所有的图表标题使用比正文小一号的字体大小
 \RequirePackage[backend=biber,style=gb7714-2015,sorting=none]{biblatex}   % 处理参考文献的宏包，使用biber作为后端，格式依照gb7714-2015标准，引文不按特定顺序排列（而按照引用顺序）
-\RequirePackage{parskip}              % 在文档开始前就调整段落间距，改变LaTeX默认行为，让文档中的段落之间用垂直空间分隔，而不是缩进第一行
+\RequirePackage{parskip}                % 在文档开始前就调整段落间距，改变LaTeX默认行为，让文档中的段落之间用垂直空间分隔，而不是缩进第一行
 % \RequirePackage{subfigure}            % 用于管理复杂图形
 \RequirePackage{subfig}
 \RequirePackage[export]{adjustbox}    % adjustbox用于调整盒子的属性，export表示将 adjustbox 包的键值选项导出到 \includegraphics 命令中
@@ -149,7 +149,7 @@
 %        afterskip={.5\baselineskip},
     },
     subsection={
-        format={\heiti\zihao{4}},             % 黑体四号
+        format={\heiti\zihao{-4}},             % 黑体小四号
         aftername={\quad},
 %        beforeskip={.5\baselineskip},
 %        afterskip={.5\baselineskip},

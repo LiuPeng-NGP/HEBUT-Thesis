@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.1.30)  21 MAR 2024 14:57
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.1.30)  21 MAR 2024 22:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1552,12 +1552,12 @@ Package fontspec Info: Font family 'fzxbsjt.ttf(0)' created for font
 (fontspec)             <->"[fzxbsjt.ttf]/OT:script=hani;language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
-LaTeX Font Info:    Calculating math sizes for size <36> on input line 9.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 9.
+LaTeX Font Info:    Calculating math sizes for size <36> on input line 10.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 10.
 (f:/LaTeX/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 9.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
  (f:/LaTeX/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -1609,25 +1609,25 @@ Package fontspec Info: Font family 'FandolHei-Regular(0)' created for font
 \tf@toc=\write8
 \openout8 = `HebutThesis_example.toc'.
 
- (./document/chap01.tex [4]
+ (./document/chap01.tex [1]
 1
+[2
+
+]) (./document/chap02.tex [3]
+2
 File: figures/historyhebut.jpg Graphic file (type bmp)
 <figures/historyhebut.jpg>
-[1
-
-]) (./document/chap02.tex [2]
-2
-) (./document/chap03.tex [3
+) (./document/chap03.tex [4
 
 ]
 3
-) (./document/chap04.tex [4
+) (./document/chap04.tex [5
 
 ]
 4
-) (./document/conclusion.tex [5
+) (./document/conclusion.tex [6
 
-]) (./document/bibliography.tex [6
+]) (./document/bibliography.tex [7
 
 ]
 
@@ -1646,26 +1646,34 @@ Package fontspec Info: Font family 'FandolFang-Regular(0)' created for font
 (fontspec)             <->"[FandolFang-Regular.otf]/OT:language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
-) (./document/acknowledgments.tex [7
+) (./document/acknowledgments.tex [8
 
-]) (./document/appendix.tex [8
+]) (./document/appendix.tex [9
 
 ]
 附录 A
-) [9
+) [10
 
 ] (./HebutThesis_example.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                HebutThesis_example
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'HebutThesis_example.run.xml'.
 \openout1 = `HebutThesis_example.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43929 strings out of 476919
- 935481 string characters out of 5822736
- 1813315 words of memory out of 5000000
- 63132 multiletter control sequences out of 15000+600000
- 419127 words of font info for 136 fonts, out of 8000000 for 9000
+ 43917 strings out of 476919
+ 934474 string characters out of 5822736
+ 1817316 words of memory out of 5000000
+ 63118 multiletter control sequences out of 15000+600000
+ 419143 words of font info for 138 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 116i,11n,121p,1941b,4926s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 116i,11n,121p,1941b,4928s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on HebutThesis_example.pdf (14 pages).

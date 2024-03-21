@@ -60,8 +60,8 @@
 }
 
 \newif\if@isdesign % 定义⼀个开关，⽤于控制显⽰内容，默认为 false
-\DeclareOption{design}{\@isdesigntrue}
-\DeclareOption{thesis}{\@isdesignfalse}
+\DeclareOption{thesis}{\@isdesigntrue}
+\DeclareOption{design}{\@isdesignfalse}
 
 % 设置封面
 \renewcommand{\maketitle}[0]{     % 重新定义\maketitle，不允许输入参数
@@ -80,11 +80,11 @@
       \fontsize{26}{0}\kaishu{河\quad 北\quad 工\quad 业\quad 大\quad 学}   % 字号设置26磅，行间距默认，楷书，\quad为空格
       \vskip 26pt           % 垂直方向上添加空白空间26磅
       \if@isdesign
-      \fontsize{36}{0}\fzxbsjt{毕业设计说明书}    % 字体“方正小标宋简体”
-      \def\doctype{毕业设计说明书}
-      \else
       \fontsize{44}{0}\heiti{毕\qquad 业\qquad 论\qquad 文}    % 字体“黑体”
       \def\doctype{毕业论文}
+      \else
+      \fontsize{36}{0}\fzxbsjt{毕业设计说明书}    % 字体“方正小标宋简体”
+      \def\doctype{毕业设计说明书}
       \fi
       
       \vskip 52pt
@@ -119,9 +119,9 @@
 \newcommand{\setyear}[1]{\def\theyear{#1}}
 \newcommand{\setdoctype}[1]{\def\doctype{#1}}
 \if@isdesign
-\setdoctype{毕业设计说明书}
-\else
 \setdoctype{毕业论文}
+\else
+\setdoctype{毕业设计说明书}
 \fi
 \fancypagestyle{plain}{             % 属于fancyhdr宏包，添加一个plain样式
   \fancyhead[C]{\songti\zihao{5} 河北工业大学{\theyear}届本科{\doctype}}    % 设置页眉的中间部分，宋体5号

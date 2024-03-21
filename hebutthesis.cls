@@ -65,15 +65,6 @@
 
 % 设置封面
 \renewcommand{\maketitle}[0]{     % 重新定义\maketitle，不允许输入参数
-  \newgeometry{                         % 调整页面布局
-    top        = 2.6cm,%2.41 2.5        % 上边距2.6cm，
-    bottom     = 2.7cm, %2.73 %2.68     
-    left       = 3.5cm, %3.4
-    right      = 1.65cm,
-    headheight = 1.0cm,                 % 页眉高度1cm
-    headsep    = 0.64cm,                % 页眉和正文之间的距离（分隔）设置为0.64cm
-    footskip   = 0.79cm                 % 页脚底部与正文底部之间的距离设置为0.79cm
-  }
   \begin{titlepage}         % 创建自定义标题页
     \begin{center}          % 居中显示
       \vspace*{2.36cm}      % 强制在页面的顶部添加2.36cm的空白空间
@@ -115,6 +106,15 @@
 \ProcessOptions\relax     % 处理由 \DeclareOption 和 \DeclareOption* 声明的选项
 
 % 设置页眉页脚
+\newgeometry{                         % 调整页面布局
+    top        = 2.6cm,%2.41 2.5        % 上边距2.6cm，
+    bottom     = 2.7cm, %2.73 %2.68     
+    left       = 3.5cm, %3.4
+    right      = 1.65cm,
+    headheight = 1.0cm,                 % 页眉高度1cm
+    headsep    = 0.64cm,                % 页眉和正文之间的距离（分隔）设置为0.64cm
+    footskip   = 0.79cm                 % 页脚底部与正文底部之间的距离设置为0.79cm
+  }
 \setlength\headwidth{\textwidth}    % 确保页眉宽度与文本宽度相同
 \newcommand{\setyear}[1]{\def\theyear{#1}}
 \newcommand{\setdoctype}[1]{\def\doctype{#1}}

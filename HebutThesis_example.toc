@@ -8,7 +8,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.2.1}插图}{1}{subsection.1.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}标题3}{1}{section.1.3}%
+\contentsline {section}{\numberline {1.3}标题3}{2}{section.1.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.4}标题4}{2}{section.1.4}%
 \defcounter {refsection}{0}\relax 

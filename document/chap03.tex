@@ -1,7 +1,69 @@
 % !TeX root = ../HebutThesis_example.tex(此文件是被HebutThesis_example.tex调用的)
-\chapter{章节标题}
-\section{二级标题一}
+\chapter{数学符号与公式（仅供参考）}
+\section{数学模式}
+在LaTeX中，数学内容可以在文本内部（内联模式）或作为单独的段落（显示模式）呈现。
+% 内联模式：使用$...$或\(...\)将数学内容包围起来。
+% 例如：$a^2 + b^2 = c^2$。
+内联公式示例：$E=mc^2$。
 
-\subsection{三级标题一}
-\subsection{三级标题二}
-\section{二级标题二}
+% 显示模式：使用$$...$$或\[...\]将数学内容包围起来，这会使公式居中显示并且与周围的文本分开。
+% 例如：\[a^2 + b^2 = c^2\]。
+显示公式示例：
+\[E=mc^2\]
+
+\section{基础数学符号}
+
+希腊字母：
+\[\alpha, \beta, \gamma, \Gamma\]
+
+上标和下标：
+% ^表示上标，_表示下标。
+\[x_i^2\]
+
+求和公式：
+\[\sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}\]
+
+分数：
+% \frac{分子}{分母}。
+\[\frac{x}{y}\]
+
+根号：
+% \sqrt{表达式}表示平方根，\sqrt[n]{表达式}表示n次根。
+
+\[\sqrt{x+y}\]
+\[\sqrt[3]{x}\]
+
+求和与积分：
+% \sum和\int。设定上下界使用_和^
+\[\sum_{i=1}^n i^2\]
+
+\[\int_a^b x dx\]
+
+综合示例：
+\begin{align}       % 创建对齐的数学公式
+    \hat{\bm{x}}^{(i)} 
+    & \backsim \mathcal{M}_{\mathcal{D}}(\hat{\bm{x}}^{(i)} \mid \bm{x}^{(i)}) \label{eq:denoising_autoencoder_corrupt}   \\
+    L_{DAE}(\theta,\phi)
+    &=\frac{1}{n} \sum_{i=1}^{n}(\bm{x}^{(i)} - f_{\theta}(g_{\phi}(\hat{\bm{x}}^{(i)} ))) \label{eq:denoising_autoencoder_loss}
+\end{align}
+
+
+\section{常用数学结构}
+
+矩阵：使用amsmath包的matrix环境，
+可以创建不同种类的矩阵（如pmatrix，bmatrix等）。
+这是一个带小括号的矩阵：
+\[
+\begin{pmatrix}
+  1 & 2 & 3 \\
+  4 & 5 & 6 \\
+  7 & 8 & 9 \\
+\end{pmatrix}
+\]
+
+方程组：使用amsmath包的align环境进行对齐的多行公式。
+\begin{align}
+    x + y &= z \\
+    1 + 2 &= 3
+\end{align}
+

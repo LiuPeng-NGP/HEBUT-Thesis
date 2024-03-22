@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.1.30)  21 MAR 2024 22:14
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.1.30)  22 MAR 2024 09:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1602,14 +1602,14 @@ Package fontspec Info: Font family 'FandolHei-Regular(0)' created for font
 [1
 
 
-]) (./document/abstract.tex [1]) [2] (./HebutThesis_example.toc [3
-
-
-])
+]) (./document/abstract.tex [1]) [2] (./HebutThesis_example.toc)
 \tf@toc=\write8
 \openout8 = `HebutThesis_example.toc'.
 
- (./document/chap01.tex [1]
+ (./document/chap01.tex [1
+
+
+]
 1
 [2
 
@@ -1617,17 +1617,19 @@ Package fontspec Info: Font family 'FandolHei-Regular(0)' created for font
 2
 File: figures/historyhebut.jpg Graphic file (type bmp)
 <figures/historyhebut.jpg>
+File: figures/河北工业大学校门.jpg Graphic file (type bmp)
+<figures/河北工业大学校门.jpg>
 ) (./document/chap03.tex [4
 
-]
+] [5] [6]
 3
-) (./document/chap04.tex [5
+[7
 
-]
+]) (./document/chap04.tex [8]
 4
-) (./document/conclusion.tex [6
+) (./document/conclusion.tex [9
 
-]) (./document/bibliography.tex [7
+]) (./document/bibliography.tex [10
 
 ]
 
@@ -1646,34 +1648,26 @@ Package fontspec Info: Font family 'FandolFang-Regular(0)' created for font
 (fontspec)             <->"[FandolFang-Regular.otf]/OT:language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
-) (./document/acknowledgments.tex [8
+) (./document/acknowledgments.tex [11
 
-]) (./document/appendix.tex [9
+]) (./document/appendix.tex [12
 
 ]
 附录 A
-) [10
+) [13
 
 ] (./HebutThesis_example.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                HebutThesis_example
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'HebutThesis_example.run.xml'.
 \openout1 = `HebutThesis_example.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43917 strings out of 476919
- 934474 string characters out of 5822736
- 1817316 words of memory out of 5000000
- 63118 multiletter control sequences out of 15000+600000
+ 43942 strings out of 476919
+ 935531 string characters out of 5822736
+ 1817465 words of memory out of 5000000
+ 63142 multiletter control sequences out of 15000+600000
  419143 words of font info for 138 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 116i,11n,121p,1941b,4928s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 116i,12n,121p,1941b,4928s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on HebutThesis_example.pdf (14 pages).
+Output written on HebutThesis_example.pdf (16 pages).

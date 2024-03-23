@@ -128,7 +128,68 @@
       \endverb
       \keyw{song_score-based_2020}
     \endentry
+    \entry{example2019}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1318a946c3fffa54cec1130748f21c17}{%
+           family={Author},
+           familyi={A\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=dee8771fa109c71d1bad519bec6a8584}{%
+           family={Contributor},
+           familyi={C\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=1318a946c3fffa54cec1130748f21c17}{%
+           family={Author},
+           familyi={A\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=dee8771fa109c71d1bad519bec6a8584}{%
+           family={Contributor},
+           familyi={C\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Example Pub}%
+      }
+      \strng{namehash}{65b92fb550f32f3304ab7503a6dff18f}
+      \strng{fullhash}{7892c9b6cda5c90b363224db8939b44f}
+      \strng{bibnamehash}{7892c9b6cda5c90b363224db8939b44f}
+      \strng{authorbibnamehash}{7892c9b6cda5c90b363224db8939b44f}
+      \strng{authornamehash}{65b92fb550f32f3304ab7503a6dff18f}
+      \strng{authorfullhash}{7892c9b6cda5c90b363224db8939b44f}
+      \strng{nameabibnamehash}{7892c9b6cda5c90b363224db8939b44f}
+      \strng{nameanamehash}{65b92fb550f32f3304ab7503a6dff18f}
+      \strng{nameafullhash}{7892c9b6cda5c90b363224db8939b44f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Examples}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{1}
+      \field{title}{An example article}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{1}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{pages}{1\bibrangedash 2}
+      \range{pages}{2}
+      \keyw{example2019}
+    \endentry
   \enddatalist
+  \missing{song}
 \endrefsection
 \endinput
 

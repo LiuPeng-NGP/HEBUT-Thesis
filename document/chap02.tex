@@ -67,17 +67,13 @@
 \end{table}
 
 \section{引用}
-本文档中参考文献样式标准以GB/T 7714-2015为准，引用像这样\cite{song_score-based_2020}  % song_score-based_2020是biblography里的名字
+本文档中参考文献样式标准以GB/T 7714-2015为准，使用了 biblatex-gb7714-2015 宏包。
+biblatex-gb7714-2015 宏包是为满足《GB/T 7714-2015 信息与文献 参考文献著录规则》要求而开发的 biblatex 样式包。
 
-文档中使用BibTeX来进行参考文献的引用，BibTeX是一种用于管理和格式化参考文献的工具，它使用特定的规则来结构化参考文献数据。
-这些规则涉及到如何编写条目（每个参考文献的描述），条目类型（如书籍、文章等），以及字段（如作者、标题等）。
-下面是一些基本使用方法：
+使用时在 bibliography.bib 文件添加文献管理工具如 Zotero、ReadPaper、Google Scholar 导出的 BibTex 格式，如
 
-BibTeX对不同类型的参考文献（期刊、图书、会议论文、未发表论文）等设定了不懂的类。
-其中包括：@article表示期刊、@book表示有确定出版社的书籍、@booklet没有经过出版物出版的印刷作品、
-@conference等同于@inproceedings表示会议文章等等。
+\includegraphics[width=0.5\linewidth]{figures/参考文献.png}
 
-可根据不同类型出版物的定义规范在../bibliography.bib文件中添加文献，并在这里引用即可自动在最后的参考文献部分生成reference list，像这样\cite{example2019}。
-
-
+之后在正文部分使用{{{$\backslash$}cite}}命令可以引用\cite{lecun2015deep}。
+随后，可自动在最后的参考文献部分生成参考文献列表。
 

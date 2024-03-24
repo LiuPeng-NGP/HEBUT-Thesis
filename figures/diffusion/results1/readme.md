@@ -1,1 +1,0 @@
-all pictures a100 80gb

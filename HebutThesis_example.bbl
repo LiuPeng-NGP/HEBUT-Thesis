@@ -19,177 +19,77 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
-    \entry{song_score-based_2020}{inproceedings}{}
-      \name{author}{6}{}{%
-        {{hash=7dacbb5a6e92ab16944d46ba03705563}{%
-           family={Song},
-           familyi={S\bibinitperiod},
-           given={Yang},
+    \entry{lecun2015deep}{article}{}
+      \name{author}{3}{}{%
+        {{hash=6a1aa6b7eab12b931ca7c7e3f927231d}{%
+           family={LeCun},
+           familyi={L\bibinitperiod},
+           given={Yann},
            giveni={Y\bibinitperiod}}}%
-        {{hash=529bdf392a3471f000ce33ec88c41bd5}{%
-           family={Sohl-Dickstein},
-           familyi={S\bibinithyphendelim D\bibinitperiod},
-           given={Jascha},
-           giveni={J\bibinitperiod}}}%
-        {{hash=b6fbd171848aad4edf3925543f1f1522}{%
-           family={Kingma},
-           familyi={K\bibinitperiod},
-           given={Diederik\bibnamedelima P.},
-           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-        {{hash=6f760ca30acf637bd3ec08e61e594522}{%
-           family={Kumar},
-           familyi={K\bibinitperiod},
-           given={Abhishek},
-           giveni={A\bibinitperiod}}}%
-        {{hash=160929a7e6ceecdf3f7c9a13abd5ea35}{%
-           family={Ermon},
-           familyi={E\bibinitperiod},
-           given={Stefano},
-           giveni={S\bibinitperiod}}}%
-        {{hash=e528fda20644135dfae4f481a342148f}{%
-           family={Poole},
-           familyi={P\bibinitperiod},
-           given={Ben},
-           giveni={B\bibinitperiod}}}%
-      }
-      \name{namea}{6}{}{%
-        {{hash=7dacbb5a6e92ab16944d46ba03705563}{%
-           family={Song},
-           familyi={S\bibinitperiod},
-           given={Yang},
+        {{hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
            giveni={Y\bibinitperiod}}}%
-        {{hash=529bdf392a3471f000ce33ec88c41bd5}{%
-           family={Sohl-Dickstein},
-           familyi={S\bibinithyphendelim D\bibinitperiod},
-           given={Jascha},
-           giveni={J\bibinitperiod}}}%
-        {{hash=b6fbd171848aad4edf3925543f1f1522}{%
-           family={Kingma},
-           familyi={K\bibinitperiod},
-           given={Diederik\bibnamedelima P.},
-           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-        {{hash=6f760ca30acf637bd3ec08e61e594522}{%
-           family={Kumar},
-           familyi={K\bibinitperiod},
-           given={Abhishek},
-           giveni={A\bibinitperiod}}}%
-        {{hash=160929a7e6ceecdf3f7c9a13abd5ea35}{%
-           family={Ermon},
-           familyi={E\bibinitperiod},
-           given={Stefano},
-           giveni={S\bibinitperiod}}}%
-        {{hash=e528fda20644135dfae4f481a342148f}{%
-           family={Poole},
-           familyi={P\bibinitperiod},
-           given={Ben},
-           giveni={B\bibinitperiod}}}%
+        {{hash=9a8750ccdb2a4cf14d2655face1ce016}{%
+           family={Hinton},
+           familyi={H\bibinitperiod},
+           given={Geoffrey},
+           giveni={G\bibinitperiod}}}%
       }
-      \list{language}{1}{%
-        {english}%
-      }
-      \strng{namehash}{dfc4900ef888ac3ae86366a8ea1b1c63}
-      \strng{fullhash}{813324ac08b9c87edabe55f558dd2018}
-      \strng{bibnamehash}{f8f64a9d201d9c1eac84ae5e578affdf}
-      \strng{authorbibnamehash}{f8f64a9d201d9c1eac84ae5e578affdf}
-      \strng{authornamehash}{dfc4900ef888ac3ae86366a8ea1b1c63}
-      \strng{authorfullhash}{813324ac08b9c87edabe55f558dd2018}
-      \strng{nameabibnamehash}{f8f64a9d201d9c1eac84ae5e578affdf}
-      \strng{nameanamehash}{dfc4900ef888ac3ae86366a8ea1b1c63}
-      \strng{nameafullhash}{813324ac08b9c87edabe55f558dd2018}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Creating noise from data is easy; creating data from noise is generative modeling. We present a stochastic differential equation ({SDE}) that smoothly transforms a complex data distribution to a known prior distribution by slowly injecting noise, and a corresponding reverse-time {SDE} that transforms the prior distribution back into the data distribution by slowly removing the noise. Crucially, the reverse-time {SDE} depends only on the time-dependent gradient field (a.k.a., score) of the perturbed data distribution. By leveraging advances in score-based generative modeling, we can accurately estimate these scores with neural networks, and use numerical {SDE} solvers to generate samples. We show that this framework encapsulates previous approaches in score-based generative modeling and diffusion probabilistic modeling, allowing for new sampling procedures and new modeling capabilities. In particular, we introduce a predictor-corrector framework to correct errors in the evolution of the discretized reverse-time {SDE}. We also derive an equivalent neural {ODE} that samples from the same distribution as the {SDE}, but additionally enables exact likelihood computation, and improved sampling efficiency. In addition, we provide a new way to solve inverse problems with score-based models, as demonstrated with experiments on class-conditional generation, image inpainting, and colorization. Combined with multiple architectural improvements, we achieve record-breaking performance for unconditional image generation on {CIFAR}-10 with an Inception score of 9.89 and {FID} of 2.20, a competitive likelihood of 2.99 bits/dim, and demonstrate high fidelity generation of \$1024{\textbackslash}times 1024\$ images for the first time from a score-based generative model.}
-      \field{day}{2}
-      \field{eventtitle}{International Conference on Learning Representations}
-      \field{langid}{english}
-      \field{languageid}{english}
-      \field{lansortorder}{4}
-      \field{month}{10}
-      \field{title}{Score-Based Generative Modeling through Stochastic Differential Equations}
-      \field{urlday}{13}
-      \field{urlmonth}{11}
-      \field{urlyear}{2023}
-      \field{usera}{C}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{year}{2020}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{file}
-      \verb Song et al. - 2020 - Score-Based Generative Modeling through Stochastic.pdf:C\:\\Users\\14733\\Zotero\\storage\\2986XD3R\\Song et al. - 2020 - Score-Based Generative Modeling through Stochastic.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://openreview.net/forum?id=PxTIG12RRHS
-      \endverb
-      \verb{url}
-      \verb https://openreview.net/forum?id=PxTIG12RRHS
-      \endverb
-      \keyw{song_score-based_2020}
-    \endentry
-    \entry{example2019}{article}{}
-      \name{author}{2}{}{%
-        {{hash=1318a946c3fffa54cec1130748f21c17}{%
-           family={Author},
-           familyi={A\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=dee8771fa109c71d1bad519bec6a8584}{%
-           family={Contributor},
-           familyi={C\bibinitperiod},
-           given={B.},
-           giveni={B\bibinitperiod}}}%
-      }
-      \name{namea}{2}{}{%
-        {{hash=1318a946c3fffa54cec1130748f21c17}{%
-           family={Author},
-           familyi={A\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=dee8771fa109c71d1bad519bec6a8584}{%
-           family={Contributor},
-           familyi={C\bibinitperiod},
-           given={B.},
-           giveni={B\bibinitperiod}}}%
+      \name{namea}{3}{}{%
+        {{hash=6a1aa6b7eab12b931ca7c7e3f927231d}{%
+           family={LeCun},
+           familyi={L\bibinitperiod},
+           given={Yann},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=9a8750ccdb2a4cf14d2655face1ce016}{%
+           family={Hinton},
+           familyi={H\bibinitperiod},
+           given={Geoffrey},
+           giveni={G\bibinitperiod}}}%
       }
       \list{language}{1}{%
         {english}%
       }
       \list{publisher}{1}{%
-        {Example Pub}%
+        {Nature Publishing Group UK London}%
       }
-      \strng{namehash}{65b92fb550f32f3304ab7503a6dff18f}
-      \strng{fullhash}{7892c9b6cda5c90b363224db8939b44f}
-      \strng{bibnamehash}{7892c9b6cda5c90b363224db8939b44f}
-      \strng{authorbibnamehash}{7892c9b6cda5c90b363224db8939b44f}
-      \strng{authornamehash}{65b92fb550f32f3304ab7503a6dff18f}
-      \strng{authorfullhash}{7892c9b6cda5c90b363224db8939b44f}
-      \strng{nameabibnamehash}{7892c9b6cda5c90b363224db8939b44f}
-      \strng{nameanamehash}{65b92fb550f32f3304ab7503a6dff18f}
-      \strng{nameafullhash}{7892c9b6cda5c90b363224db8939b44f}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \strng{namehash}{9e4c6012409dc8dd9b2aa198a2059804}
+      \strng{fullhash}{c6c75bd00ce5a488e91a749d8383b3df}
+      \strng{bibnamehash}{c6c75bd00ce5a488e91a749d8383b3df}
+      \strng{authorbibnamehash}{c6c75bd00ce5a488e91a749d8383b3df}
+      \strng{authornamehash}{9e4c6012409dc8dd9b2aa198a2059804}
+      \strng{authorfullhash}{c6c75bd00ce5a488e91a749d8383b3df}
+      \strng{nameabibnamehash}{c6c75bd00ce5a488e91a749d8383b3df}
+      \strng{nameanamehash}{9e4c6012409dc8dd9b2aa198a2059804}
+      \strng{nameafullhash}{c6c75bd00ce5a488e91a749d8383b3df}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Examples}
+      \field{journaltitle}{nature}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
-      \field{number}{1}
-      \field{title}{An example article}
+      \field{number}{7553}
+      \field{title}{Deep learning}
       \field{usera}{J}
       \field{userd}{english}
       \field{userf}{english}
-      \field{volume}{1}
-      \field{year}{2019}
+      \field{volume}{521}
+      \field{year}{2015}
       \field{dateera}{ce}
-      \field{pages}{1\bibrangedash 2}
-      \range{pages}{2}
-      \keyw{example2019}
+      \field{pages}{436\bibrangedash 444}
+      \range{pages}{9}
+      \keyw{lecun2015deep}
     \endentry
   \enddatalist
-  \missing{song}
 \endrefsection
 \endinput
 

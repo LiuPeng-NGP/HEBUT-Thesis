@@ -7,15 +7,15 @@
 
 通常使用的函数图采用简化形式，称为简写函数图，例如图{\ref{fig:historyhebut}}以及图{\ref{fig:河北工业大学校门}}。
 % 引用图的方法：在正文中插入\ref{tab:表的名称}
-\begin{figure}[ht]
+\begin{figure}[H]
     \centering                                                      % 居中
     \includegraphics[width=0.5\textwidth]{figures/historyhebut}     % 页面宽度为文本宽度的0.5倍
     \caption{河北工业大学历史沿革}\label{fig:historyhebut}            % caption后为设定的图片名称，label后为图片文件名称
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{figures/河北工业大学校门}
+    \includegraphics[width=0.5\textwidth]{figures/河北工业大学校门}
     \caption{河北工业大学校门}\label{fig:河北工业大学校门}
 \end{figure}
 
@@ -32,7 +32,7 @@
 允许指定表格的总宽度，X列会自动调整宽度，以填满指定的表格宽度。
 适用于需要表格宽度匹配特定尺寸（如页面宽度）的场景。
 
-\begin{table}[ht]
+\begin{table}[H]
     \centering
     \caption{表格示例}
     \label{tab:table_example}
@@ -45,7 +45,7 @@
 \end{table}
 
 
-\begin{table}
+\begin{table}[H]
     \centering
     \caption{三线表示例}\label{tab:table_centered}      % caption后为设定的表格上名称，label后为表格标签
     \begin{tabularx}{\textwidth}{>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X}

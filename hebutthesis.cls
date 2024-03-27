@@ -40,8 +40,9 @@
 \captionsetup[table]{labelsep=space}        % 表格标题中标签与题目之间只有一个空格
 \captionsetup[figure]{labelsep=space}       % 图片标题中标签与题目之间只有一个空格
 
-\renewcommand{\title}[1]{\def\hebutthesis@title{#1}}          % 对命令‘\title’的重新定义，因为report标准类没有
-\renewcommand{\author}[1]{\def\hebutthesis@author{#1}}
+\newcommand{\titleone}[1]{\def\hebutthesis@titleone{#1}}          
+\newcommand{\titletwo}[1]{\def\hebutthesis@titletwo{#1}}
+\renewcommand{\author}[1]{\def\hebutthesis@author{#1}}        % 对命令‘\author’的重新定义，因为report标准类没有
 \newcommand{\studentID}[1]{\def\hebutthesis@studentID{#1}}    % 定义全新的命令
 \newcommand{\college}[1]{\def\hebutthesis@college{#1}}
 \newcommand{\major}[1]{\def\hebutthesis@major{#1}}
@@ -86,11 +87,11 @@
         \fontsize{15}{0}\songti{学\qquad 号：}\Large\uline{\makebox[7em][c]{\hebutthesis@studentID}}\\      % \Large表示比默认字体大一号，\表示换行
         \fontsize{15}{0}\songti{学\qquad 院：}&\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{\hebutthesis@college}} \\
         \fontsize{15}{0}\songti{系(专业)：}&\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{\hebutthesis@major}}\\
-        \fontsize{15}{0}\songti{题\qquad 目：}&\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{\hebutthesis@title}} \\
-        %&\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{}}      % 当标题不长时，只占一行
+        \fontsize{15}{0}\songti{题\qquad 目：}&\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{\hebutthesis@titleone}} \\
+        &\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{\hebutthesis@titletwo}}      % 当标题不长时，只占一行
       \end{tabular}
       \vskip 78pt
-      \vskip 35pt     % 弥补注释掉的标题第二行的距离
+      
       \renewcommand\arraystretch{2.4}
       \begin{tabular}{c c}
         \fontsize{15}{0}\songti{指导者：}&\fontsize{16}{0}\kaishu\uline{\makebox[20em][c]{\hebutthesis@supervisor}} \\

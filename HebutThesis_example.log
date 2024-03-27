@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.1.30)  24 MAR 2024 20:42
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.1.30)  27 MAR 2024 21:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/hp/Desktop/test1/HEBUT-Thesis/HebutThesis_example
-(c:/Users/hp/Desktop/test1/HEBUT-Thesis/HebutThesis_example.tex
+**c:/Users/hp/Desktop/1/latex项目/HEBUTthesis/HEBUT-Thesis/HebutThesis_example
+(c:/Users/hp/Desktop/1/latex项目/HEBUTthesis/HEBUT-Thesis/HebutThesis_example.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> (./hebutthesis.cls
 Document Class: hebutthesis 
@@ -1649,11 +1649,11 @@ Package logreq Info: Writing requests to 'HebutThesis_example.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  43957 strings out of 476919
- 936929 string characters out of 5822736
- 1817449 words of memory out of 5000000
+ 936977 string characters out of 5822736
+ 1817429 words of memory out of 5000000
  63162 multiletter control sequences out of 15000+600000
  419111 words of font info for 134 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 116i,12n,121p,1290b,4676s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 116i,12n,121p,1306b,4676s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on HebutThesis_example.pdf (16 pages).

@@ -87,9 +87,10 @@
         \fontsize{15}{0}\songti{学\qquad 院：}&\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{\hebutthesis@college}} \\
         \fontsize{15}{0}\songti{系(专业)：}&\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{\hebutthesis@major}}\\
         \fontsize{15}{0}\songti{题\qquad 目：}&\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{\hebutthesis@title}} \\
-        &\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{}}
+        %&\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{}}      % 当标题不长时，只占一行
       \end{tabular}
       \vskip 78pt
+      \vskip 35pt     % 弥补注释掉的标题第二行的距离
       \renewcommand\arraystretch{2.4}
       \begin{tabular}{c c}
         \fontsize{15}{0}\songti{指导者：}&\fontsize{16}{0}\kaishu\uline{\makebox[20em][c]{\hebutthesis@supervisor}} \\

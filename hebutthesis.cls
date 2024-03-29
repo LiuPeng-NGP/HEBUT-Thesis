@@ -30,6 +30,7 @@
 \RequirePackage{algorithm}            % 允许用户在文档中编写算法
 \RequirePackage{booktabs}             % 提供了创建高质量表格的命令
 \RequirePackage{tabularx}             % 使表格的列宽可以自动调整
+\RequirePackage{ifthen}               % 添加条件语句包
 
 \addbibresource{bibliography.bib}           % 指定参考文献数据库文件（.bib 文件）
 \allowdisplaybreaks                         % 允许在数学环境中自动进行跨页断行
@@ -42,6 +43,7 @@
 
 \newcommand{\titleone}[1]{\def\hebutthesis@titleone{#1}}          
 \newcommand{\titletwo}[1]{\def\hebutthesis@titletwo{#1}}
+\newcommand{\deletetitletwo}[1]{\def\hebutthesis@deletetitletwo{#1}}
 \renewcommand{\author}[1]{\def\hebutthesis@author{#1}}        % 对命令‘\author’的重新定义，因为report标准类没有
 \newcommand{\studentID}[1]{\def\hebutthesis@studentID{#1}}    % 定义全新的命令
 \newcommand{\college}[1]{\def\hebutthesis@college{#1}}
@@ -87,11 +89,23 @@
         \fontsize{15}{0}\songti{学\qquad 号：}\Large\uline{\makebox[7em][c]{\hebutthesis@studentID}}\\      % \Large表示比默认字体大一号，\表示换行
         \fontsize{15}{0}\songti{学\qquad 院：}&\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{\hebutthesis@college}} \\
         \fontsize{15}{0}\songti{系(专业)：}&\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{\hebutthesis@major}}\\
-        \fontsize{15}{0}\songti{题\qquad 目：}&\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{\hebutthesis@titleone}} \\
-        &\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{\hebutthesis@titletwo}}      % 当标题不长时，只占一行
+        \ifthenelse{\equal{\hebutthesis@deletetitletwo}{1}}
+          {
+            \fontsize{15}{0}\songti{题\qquad 目：}&\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{\hebutthesis@titleone}} \\
+          }
+          {
+            \fontsize{15}{0}\songti{题\qquad 目：}&\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{\hebutthesis@titleone}} \\
+            &\fontsize{16}{0}\kaishu\uline{\makebox[24em][c]{\hebutthesis@titletwo}}
+          }
       \end{tabular}
-      \vskip 78pt
-      
+      \ifthenelse{\equal{\hebutthesis@deletetitletwo}{1}}
+        {
+          \vskip 78pt
+          \vskip 35pt
+        }
+        {
+          \vskip 78pt
+        }
       \renewcommand\arraystretch{2.4}
       \begin{tabular}{c c}
         \fontsize{15}{0}\songti{指导者：}&\fontsize{16}{0}\kaishu\uline{\makebox[20em][c]{\hebutthesis@supervisor}} \\

@@ -16,6 +16,16 @@
     
     首先安装Tex Live，可以使用“Tex Live + 某一编辑器 + 扩展”的方式，如使用**TeX Live +  VScode + LaTex workshop**。具体方法可参考网络视频教程。
 
+    传送门：
+    
+    TeX Live：https://www.tug.org/texlive/
+
+    VS code：https://code.visualstudio.com/
+
+    个人配置环境时观看的视频（仅供参考非广告）：https://www.bilibili.com/video/BV1y8411P7qs/?spm_id_from=333.337.search-card.all.click
+
+    注意：视频中的.json配置部分代码在使用中存在问题，请用下文给出的代码。
+    
     附针对latex的settings.json配置代码（在大括号内插入）：
 
 
@@ -161,15 +171,7 @@
     ],
     ```
 
-    传送门：
-    
-    TeX Live：https://www.tug.org/texlive/
 
-    VS code：https://code.visualstudio.com/
-
-    个人配置环境时观看的视频（仅供参考非广告）：https://www.bilibili.com/video/BV1y8411P7qs/?spm_id_from=333.337.search-card.all.click
-
-    注意：视频中的.json配置部分代码在使用中存在问题，请用上文给出的代码。
 
 - MacOS
     

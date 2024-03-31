@@ -50,9 +50,9 @@
 \newcommand{\major}[1]{\def\hebutthesis@major{#1}}
 \newcommand{\supervisor}[1]{\def\hebutthesis@supervisor{#1}}
 \newcommand{\hebutThesisTime}[1]{\def\hebutthesis@hebutThesisTime{#1}}
-% \newCJKfontfamily{\fzxbsjt}{fzxbsjt.ttf}     % 定义新中日韩字体家族，命令为\fzxbsjt（方正小标宋简体），文件为fzxbsjt.ttf
+\newCJKfontfamily{\fzxbsjt}{fzxbsjt.ttf}     % 定义新中日韩字体家族，命令为\fzxbsjt（方正小标宋简体），文件为fzxbsjt.ttf
 \usepackage{fontspec}
-\newfontfamily\fzxbsjt{fzxbsjt.ttf}
+%\newfontfamily\fzxbsjt{fzxbsjt.ttf}
 \renewcommand{\headrulewidth}{0.5pt}         % 重新定义页面顶部规则线宽度为0.5磅
 \tcbset{                          % 属于tcolorbox包，创建带有可选彩色背景的文本框
   height=0.85\textheight ,        % 本框的高度为文档总文本高度的85%
@@ -79,7 +79,7 @@
       \fontsize{44}{0}\heiti{毕\qquad 业\qquad 论\qquad 文}    % 字体“黑体”
       \def\doctype{毕业论文}
       \else
-      \fontsize{36}{0}{\fzxbsjt 毕业设计说明书}    % 字体“方正小标宋简体”
+      \fontsize{36}{0}{\songti 毕业设计说明书}    % 字体“方正小标宋简体”
       \def\doctype{毕业设计说明书}
       \fi
       

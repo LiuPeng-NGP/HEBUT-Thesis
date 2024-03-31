@@ -33,7 +33,8 @@
 
 在线编辑：
 * [overleaf 模板](https://www.overleaf.com/read/tcthxvcxhdhz#239939)
-使用前需要一个邮箱来注册overleaf账号。
+使用前需要一个邮箱来注册overleaf账号。Overleaf Templete公开正在平台审查流程中，
+目前可通过左上角 Menu -> Copy Project 使用。
 
 
 ## 系统需求
@@ -73,13 +74,13 @@ VScode网址：https://code.visualstudio.com/
 
 配置到中文界面后，点击左侧扩展
 
-![alt text](readme1.png)
+![alt text](READMEFigures/readme1.png)
 
 搜索“LaTeX Workshop”和"Markdown All in One"，并安装。完成后页面如下：
 
-![alt text](readme2.png)
+![alt text](READMEFigures/readme2.png)
 
-![alt text](readme3.png)
+![alt text](READMEFigures/readme3.png)
 
 ##### 3、Tex Live、VScode、插件均安装完成后的实例测试
 
@@ -87,7 +88,7 @@ VScode网址：https://code.visualstudio.com/
 
 配置json文件：
 点击F1键（有些笔记本电脑需要fn+F1），搜索“首选项：打开用户设置（JSON）”，双击打开以下文件：
-![alt text](readme4.png)
+![alt text](READMEFigures/readme4.png)
 
 在大括号**内部**插入以下内容：
 ```
@@ -239,11 +240,11 @@ VScode网址：https://code.visualstudio.com/
 
 点击HebutThesis_example.tex文件，点击右上角绿色按键
 
-![alt text](readme5.png)
+![alt text](READMEFigures/readme5.png)
 
 运行时效果如下：
 
-![alt text](readme6.png)
+![alt text](READMEFigures/readme6.png)
 
 运行完成后，如果0错误，即表明配置成功（因不同软硬件环境差异可能会有警告，属于正常现象）。
 

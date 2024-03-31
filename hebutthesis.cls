@@ -79,7 +79,7 @@
       \fontsize{44}{0}\heiti{毕\qquad 业\qquad 论\qquad 文}    % 字体“黑体”
       \def\doctype{毕业论文}
       \else
-      \fontsize{36}{0}{\songti 毕业设计说明书}    % 字体“方正小标宋简体”
+      \fontsize{36}{0}\songti{毕业设计说明书}    % 字体“宋体”
       \def\doctype{毕业设计说明书}
       \fi
       

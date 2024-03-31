@@ -32,16 +32,16 @@
 下载其中的zip包(Windows)或tar.gz包(macOS/Linux)即可。
 
 在线编辑：
-* [overleaf 模板](https://www.overleaf.com/read/tcthxvcxhdhz#239939)
-使用前需要一个邮箱来注册overleaf账号。Overleaf Templete公开正在平台审查流程中，
+* [Overleaf 模板](https://www.overleaf.com/read/tcthxvcxhdhz#239939)
+使用前需要一个邮箱来注册Overleaf账号。Overleaf Templete公开正在平台审查流程中，
 目前可通过左上角 Menu -> Copy Project 使用。
 
 
 ## 系统需求
-如果需要在本地编辑，则需要以下环境依赖，如果采用overleaf线上编辑，则可跳过此节。
+如果需要在本地编辑，则需要以下环境依赖，如果采用Overleaf线上编辑，则可跳过此节。
 
 ### Windows
-首先安装Tex Live，可以使用“Tex Live + 某一编辑器 + 扩展”的方式，如使用**TeX Live +  VScode + LaTex workshop**。具体方法可参考网络视频教程。
+首先安装Tex Live，可以使用“Tex Live + 某一编辑器 + 扩展”的方式，如使用**TeX Live +  VScode + LaTex Workshop**。具体方法可参考网络视频教程。
 
 #### 一个面向108k纯小白的仅供参考的配置方案：
 

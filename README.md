@@ -28,8 +28,8 @@
 ## 获取方式
 
 下载至本地：
-* [GitHub Releases](https://github.com/LiuPeng-NGP/HEBUT-Thesis)
-下载其中的zip包(Windows)或tar.gz包(macOS/Linux)即可。
+* [GitHub Releases](https://github.com/LiuPeng-NGP/HEBUT-Thesis/releases)
+下载其中最新发行版的zip包(Windows)或tar.gz包(macOS/Linux)即可。
 
 在线编辑：
 * [Overleaf 模板](https://www.overleaf.com/read/tcthxvcxhdhz#239939)

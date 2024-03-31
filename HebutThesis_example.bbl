@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.2 $
+% $ biblatex bbl format version 3.1 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -37,23 +37,6 @@
            given={Geoffrey},
            giveni={G\bibinitperiod}}}%
       }
-      \name{namea}{3}{}{%
-        {{hash=6a1aa6b7eab12b931ca7c7e3f927231d}{%
-           family={LeCun},
-           familyi={L\bibinitperiod},
-           given={Yann},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=40a8e4774982146adc2688546f54efb2}{%
-           family={Bengio},
-           familyi={B\bibinitperiod},
-           given={Yoshua},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=9a8750ccdb2a4cf14d2655face1ce016}{%
-           family={Hinton},
-           familyi={H\bibinitperiod},
-           given={Geoffrey},
-           giveni={G\bibinitperiod}}}%
-      }
       \list{language}{1}{%
         {english}%
       }
@@ -66,16 +49,12 @@
       \strng{authorbibnamehash}{c6c75bd00ce5a488e91a749d8383b3df}
       \strng{authornamehash}{9e4c6012409dc8dd9b2aa198a2059804}
       \strng{authorfullhash}{c6c75bd00ce5a488e91a749d8383b3df}
-      \strng{nameabibnamehash}{c6c75bd00ce5a488e91a749d8383b3df}
-      \strng{nameanamehash}{9e4c6012409dc8dd9b2aa198a2059804}
-      \strng{nameafullhash}{c6c75bd00ce5a488e91a749d8383b3df}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{nature}
       \field{langid}{english}
-      \field{languageid}{english}
       \field{lansortorder}{4}
       \field{number}{7553}
       \field{title}{Deep learning}

@@ -84,7 +84,7 @@ VScode网址：https://code.visualstudio.com/
 
 ##### 3、Tex Live、VScode、插件均安装完成后的实例测试
 
-在上栏点击“文件”-“打开文件夹”（若已打开文件请关闭文件夹），选择解压后的HEBUT-Thesis-main文件夹，打开后双击HebutThesis_example.tex文件。
+在上栏点击“文件”-“打开文件夹”（若已打开文件请关闭文件夹），选择解压后的“HEBUT-Thesis-某一版本号”文件夹，比如“HEBUT-Thesis-1.0.0”，打开后双击HebutThesis_example.tex文件。
 
 配置json文件：
 点击F1键（有些笔记本电脑需要fn+F1），搜索“首选项：打开用户设置（JSON）”，双击打开以下文件：

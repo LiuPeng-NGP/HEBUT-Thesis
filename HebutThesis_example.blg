@@ -1,15 +1,15 @@
-[0] Config.pm:306> INFO - This is Biber 2.18
-[0] Config.pm:309> INFO - Logfile is 'HebutThesis_example.blg'
-[143] biber-MSWIN64:340> INFO - === 
-[197] Biber.pm:418> INFO - Reading 'HebutThesis_example.bcf'
-[400] Biber.pm:978> INFO - Found 1 citekeys in bib section 0
-[476] Biber.pm:4401> INFO - Processing section 0
-[490] Biber.pm:4592> INFO - Looking for bibtex file 'bibliography.bib' for section 0
-[552] bibtex.pm:1713> INFO - LaTeX decoding ...
-[559] bibtex.pm:1518> INFO - Found BibTeX data source 'bibliography.bib'
-[613] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[614] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[614] Biber.pm:4221> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[614] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
-[616] bbl.pm:654> INFO - Writing 'HebutThesis_example.bbl' with encoding 'UTF-8'
-[618] bbl.pm:757> INFO - Output to HebutThesis_example.bbl
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'HebutThesis_example.blg'
+[133] biber-MSWIN32:340> INFO - === 
+[182] Biber.pm:415> INFO - Reading 'HebutThesis_example.bcf'
+[383] Biber.pm:952> INFO - Found 1 citekeys in bib section 0
+[402] Biber.pm:4340> INFO - Processing section 0
+[415] Biber.pm:4531> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[477] bibtex.pm:1689> INFO - LaTeX decoding ...
+[485] bibtex.pm:1494> INFO - Found BibTeX data source 'bibliography.bib'
+[540] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[540] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[540] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[540] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[542] bbl.pm:654> INFO - Writing 'HebutThesis_example.bbl' with encoding 'UTF-8'
+[543] bbl.pm:757> INFO - Output to HebutThesis_example.bbl

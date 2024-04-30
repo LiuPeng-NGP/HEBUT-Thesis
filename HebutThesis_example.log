@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 23.1) (preloaded format=xelatex 2023.3.6)  31 MAR 2024 18:47
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 23.1) (preloaded format=xelatex 2023.3.6)  30 APR 2024 20:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1490,41 +1490,41 @@ LaTeX Font Warning: Font shape `TU/SimHei(0)/b/n' undefined
 \tf@toc=\write6
 \openout6 = `HebutThesis_example.toc'.
 
- (document/chap01.tex [1
+ (document/chap01.tex [3
 
 
 ]
 1
-[2
+[1
 
-]) (document/chap02.tex [3]
+]) (document/chap02.tex [2]
 2
 File: figures/historyhebut.jpg Graphic file (type bmp)
 <figures/historyhebut.jpg>
 File: figures/河北工业大学校门.jpg Graphic file (type bmp)
 <figures/河北工业大学校门.jpg>
-[4
+[3
 
 ]
 File: figures/参考文献.png Graphic file (type bmp)
 <figures/参考文献.png>
- [5]) (document/chap03.tex [6]
+ [4]) (document/chap03.tex [5]
 3
-[7
+[6
 
-]) (document/chap04.tex [8]
+]) (document/chap04.tex [7]
 4
-) (document/conclusion.tex [9
+) (document/conclusion.tex [8
 
-]) (document/bibliography.tex [10
+]) (document/bibliography.tex [9
 
-]) (document/acknowledgments.tex [11
+]) (document/acknowledgments.tex [10
 
-]) (document/appendix.tex [12
+]) (document/appendix.tex [11
 
 ]
 附录 A
-) [13
+) [12
 
 ] (HebutThesis_example.aux)
 
@@ -1543,4 +1543,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  105i,12n,113p,1300b,4777s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on HebutThesis_example.xdv (16 pages, 123712 bytes).
+Output written on HebutThesis_example.xdv (16 pages, 123296 bytes).

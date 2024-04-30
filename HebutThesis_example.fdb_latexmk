@@ -1,16 +1,16 @@
 # Fdb version 4
-["biber HebutThesis_example"] 0 "HebutThesis_example.bcf" "HebutThesis_example.bbl" "HebutThesis_example" 1711882025 -1
-  "HebutThesis_example.bcf" 1711882024 135222 9792cce9d065a0825aa58091b237e23c "xelatex"
+["biber HebutThesis_example"] 0 "HebutThesis_example.bcf" "HebutThesis_example.bbl" "HebutThesis_example" 1714481258 -1
+  "HebutThesis_example.bcf" 1714481257 135222 9792cce9d065a0825aa58091b237e23c "xelatex"
   (generated)
   "HebutThesis_example.bbl"
   "HebutThesis_example.blg"
   (rewritten before read)
-["xdvipdfmx"] 1711882024 "HebutThesis_example.xdv" "HebutThesis_example.pdf" "HebutThesis_example" 1711882025 0
-  "HebutThesis_example.xdv" 1711882024 123712 8693b0a72d380b0c2185a72018a43df1 "xelatex"
+["xdvipdfmx"] 1714481258 "HebutThesis_example.xdv" "HebutThesis_example.pdf" "HebutThesis_example" 1714481258 0
+  "HebutThesis_example.xdv" 1714481257 123296 8cc8e61f4915044bdbcb635fb2a0c884 "xelatex"
   (generated)
   "HebutThesis_example.pdf"
   (rewritten before read)
-["xelatex"] 1711882020 "c:/Users/14733/Documents/GitHub/HEBUT-Thesis/HebutThesis_example.tex" "HebutThesis_example.xdv" "HebutThesis_example" 1711882025 0
+["xelatex"] 1714481251 "c:/Users/14733/Documents/GitHub/HEBUT-Thesis/HebutThesis_example.tex" "HebutThesis_example.xdv" "HebutThesis_example" 1714481258 0
   "C:/Users/14733/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1678082075 36370816 4e8c1034e28634c185455817d5bde6ad ""
   "C:/Users/14733/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136743454 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
   "C:/Users/14733/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1233951848 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -265,17 +265,17 @@
   "C:/Users/14733/AppData/Local/Programs/MiKTeX/tex/xelatex/xecjk/xeCJK.sty" 1659726270 183137 ed372550124703b2b73cbcc0b47cb20f ""
   "C:/Users/14733/AppData/Local/Programs/MiKTeX/tex/xelatex/xecjk/xeCJKfntef.sty" 1659726270 39577 b470f8a1dbecc9c45c9bf05ca7db9188 ""
   "C:/Windows/Fonts/msyh.ttc" 1689133546 19701556 07c864a5b15e68fa47639738197fae38 ""
-  "HebutThesis_example.aux" 1711882024 5374 21a42563f1ab28733983911d869c25a1 "xelatex"
+  "HebutThesis_example.aux" 1714481257 5373 bafe5e89f5556b6dcba0e0804d31f0d8 "xelatex"
   "HebutThesis_example.bbl" 1711875318 3164 765ebcb5c06bad9036d589e7eec0cca5 "biber HebutThesis_example"
-  "HebutThesis_example.run.xml" 1711882024 2558 09dbee958817dcd242035e13009a54d9 "xelatex"
-  "HebutThesis_example.tex" 1711875172 2221 721e720925b71bb06754828780b5fc9b ""
-  "HebutThesis_example.toc" 1711882024 1914 434379a27fdc10ff67f1a1371aa1ec8e "xelatex"
-  "c:/Users/14733/Documents/GitHub/HEBUT-Thesis/HebutThesis_example.tex" 1711875172 2221 721e720925b71bb06754828780b5fc9b ""
+  "HebutThesis_example.run.xml" 1714481257 2558 09dbee958817dcd242035e13009a54d9 "xelatex"
+  "HebutThesis_example.tex" 1714481193 2276 d85791967e39ac76e9d93fa12b640db3 ""
+  "HebutThesis_example.toc" 1714481257 1913 47011716cfda0363c71fced716a8ca59 "xelatex"
+  "c:/Users/14733/Documents/GitHub/HEBUT-Thesis/HebutThesis_example.tex" 1714481193 2276 d85791967e39ac76e9d93fa12b640db3 ""
   "document/abstract.tex" 1711881942 4462 43353610fde6d1fc7e06dcb295cad1e8 ""
   "document/acknowledgments.tex" 1711277579 587 7448941697a7e3ea171df7d479b6a9cd ""
   "document/appendix.tex" 1711277579 178 f2c4c8a5a30397d74f804726a5b24e35 ""
   "document/bibliography.tex" 1711799532 203 e322856d45aee1d659b64175073841be ""
-  "document/chap01.tex" 1711286324 4010 362b49b7dbf68950c09316a3bd725a3f ""
+  "document/chap01.tex" 1714481244 4020 7667f7fdffa4acb5258033150f1492f0 ""
   "document/chap02.tex" 1711777220 3842 bb65ddfc9a1ebea1c8a005f9060fbfce ""
   "document/chap03.tex" 1711277579 1949 85a3c9bdff2d4b135ee2928f5d4ca9e6 ""
   "document/chap04.tex" 1711277579 229 3816057a4d87995954bd70dcb919e08c ""

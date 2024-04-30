@@ -1,0 +1,15 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'HebutThesis_example.blg'
+[143] biber-MSWIN32:340> INFO - === 
+[202] Biber.pm:415> INFO - Reading 'HebutThesis_example.bcf'
+[409] Biber.pm:952> INFO - Found 1 citekeys in bib section 0
+[428] Biber.pm:4340> INFO - Processing section 0
+[443] Biber.pm:4531> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[518] bibtex.pm:1689> INFO - LaTeX decoding ...
+[531] bibtex.pm:1494> INFO - Found BibTeX data source 'bibliography.bib'
+[586] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[586] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[587] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[587] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[588] bbl.pm:654> INFO - Writing 'HebutThesis_example.bbl' with encoding 'UTF-8'
+[589] bbl.pm:757> INFO - Output to HebutThesis_example.bbl

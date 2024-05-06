@@ -248,6 +248,11 @@ VScode网址：https://code.visualstudio.com/
 
 运行完成后，如果0错误，即表明配置成功（因不同软硬件环境差异可能会有警告，属于正常现象）。
 
+查看效果，可以单击绿色按键的右面的查看键
+
+![alt text](READMEFigures/readme7.png)
+
+即可在页面的分屏页中看到编译生成的pdf。
 ### MacOS
 安装MacTex，编辑器可以用MacTex自带的TeXshop。
 

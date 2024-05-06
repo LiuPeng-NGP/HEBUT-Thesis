@@ -42,10 +42,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}二级标题二}{8}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{结论}{9}{chapter*.6}%
+\contentsline {chapter}{结论}{9}{chapter*.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{参考文献}{10}{chapter*.7}%
+\contentsline {chapter}{参考文献}{10}{chapter*.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{致谢}{11}{chapter*.8}%
+\contentsline {chapter}{致谢}{11}{chapter*.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {附录 A\hspace {.3em}}附录A标题}{12}{appendix.A}%

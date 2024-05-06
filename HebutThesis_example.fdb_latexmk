@@ -1,20 +1,19 @@
 # Fdb version 3
-["biber HebutThesis_example"] 1714482499 "HebutThesis_example.bcf" "HebutThesis_example.bbl" "HebutThesis_example" 1714483288
-  "HebutThesis_example.bcf" 1714483287 130328 a867ad2c83f6b34d10857f75fdeb1339 "xelatex"
-  "bibliography.bib" 1711542484 265 dd3953cf9f5ec8b14a90cd5603724831 ""
+["biber HebutThesis_example"] 0 "HebutThesis_example.bcf" "HebutThesis_example.bbl" "HebutThesis_example" 1715002336
+  "HebutThesis_example.bcf" 1715002334 130328 a867ad2c83f6b34d10857f75fdeb1339 "xelatex"
   (generated)
   "HebutThesis_example.blg"
   "HebutThesis_example.bbl"
-["xdvipdfmx"] 1714483287 "HebutThesis_example.xdv" "HebutThesis_example.pdf" "HebutThesis_example" 1714483288
-  "HebutThesis_example.xdv" 1714483287 125048 4784641dbb16ee0839db37cdf1ad6aa4 "xelatex"
+["xdvipdfmx"] 1715002334 "HebutThesis_example.xdv" "HebutThesis_example.pdf" "HebutThesis_example" 1715002336
+  "HebutThesis_example.xdv" 1715002334 132860 3734a84a7ff417ea47c4624a70d9e9b3 "xelatex"
   (generated)
   "HebutThesis_example.pdf"
-["xelatex"] 1714483280 "c:/Users/hp/Desktop/1/latex项目/HEBUTthesis/HEBUT-Thesis/HebutThesis_example.tex" "HebutThesis_example.xdv" "HebutThesis_example" 1714483288
-  "HebutThesis_example.aux" 1714483287 7928 d4d8025feaea50deddf020f6dbe84414 "xelatex"
-  "HebutThesis_example.bbl" 1714482501 2338 d1964232914c02555540dcf244341489 "biber HebutThesis_example"
-  "HebutThesis_example.run.xml" 1714483287 2558 09dbee958817dcd242035e13009a54d9 "xelatex"
-  "HebutThesis_example.toc" 1714483287 2892 15ff423c1cc2016256f29f563365d447 "xelatex"
-  "c:/Users/hp/Desktop/1/latex项目/HEBUTthesis/HEBUT-Thesis/HebutThesis_example.tex" 1714483280 2221 721e720925b71bb06754828780b5fc9b ""
+["xelatex"] 1715002328 "c:/Users/hp/Desktop/1/latex项目/HEBUTthesis/HEBUT-Thesis/HebutThesis_example.tex" "HebutThesis_example.xdv" "HebutThesis_example" 1715002336
+  "HebutThesis_example.aux" 1715002334 7928 1c9708b66ad2ffbf5eb934a1f4ed1eb2 "xelatex"
+  "HebutThesis_example.bbl" 1714998346 2338 d1964232914c02555540dcf244341489 "biber HebutThesis_example"
+  "HebutThesis_example.run.xml" 1715002334 2558 09dbee958817dcd242035e13009a54d9 "xelatex"
+  "HebutThesis_example.toc" 1715002334 2892 d9e1e25bc984452dff2df49cba8543e8 "xelatex"
+  "c:/Users/hp/Desktop/1/latex项目/HEBUTthesis/HEBUT-Thesis/HebutThesis_example.tex" 1714997708 2223 7af82d6bf659c14bd2cd81c9c3b7a228 ""
   "document/abstract.tex" 1711882167 4462 43353610fde6d1fc7e06dcb295cad1e8 ""
   "document/acknowledgments.tex" 1711542484 587 7448941697a7e3ea171df7d479b6a9cd ""
   "document/appendix.tex" 1711542484 178 f2c4c8a5a30397d74f804726a5b24e35 ""
@@ -264,6 +263,7 @@
   "f:/LaTeX/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcbxparse.code.tex" 1643548188 10266 92d9546f8b2257494d00f8b11c01dcad ""
   "f:/LaTeX/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty" 1643548188 87902 ee89fc2f39c9b113b38f3050b23a3c2e ""
   "f:/LaTeX/texlive/2021/texmf-dist/tex/latex/titlesec/titlesec.sty" 1643548295 48596 2b6a95da931c07a430b1a61904aaa42d ""
+  "f:/LaTeX/texlive/2021/texmf-dist/tex/latex/tocloft/tocloft.sty" 1714997889 36103 97744e5426ed644f974bec303d391e30 ""
   "f:/LaTeX/texlive/2021/texmf-dist/tex/latex/tools/array.sty" 1643548316 12675 9a7bbb9e485cd81cdcc1d56212b088ff ""
   "f:/LaTeX/texlive/2021/texmf-dist/tex/latex/tools/bm.sty" 1643548316 12671 ace2aac118748ea10d1717448ecafbed ""
   "f:/LaTeX/texlive/2021/texmf-dist/tex/latex/tools/calc.sty" 1643548316 10216 5efd55f2010055e7b7875afd6a75be82 ""
@@ -284,11 +284,11 @@
   "f:/LaTeX/texlive/2021/texmf-var/web2c/xetex/xelatex.fmt" 1643548662 5093760 ac7cfa5650cb658ac4f39a83895e52aa ""
   "f:/LaTeX/texlive/2021/texmf.cnf" 1643548531 713 e69b156964470283e0530f5060668171 ""
   "figures/historyhebut.jpg" 1711542484 439592 1877020721840de8d8ed80ea7ae4b376 ""
-  "hebutthesis.cls" 1711882167 11222 28088809d2469fd6f98002e05777bb81 ""
+  "hebutthesis.cls" 1715002327 12306 3629b477310a5b5359e92245b3a00af5 ""
   (generated)
-  "HebutThesis_example.xdv"
   "HebutThesis_example.bcf"
-  "HebutThesis_example.log"
+  "HebutThesis_example.toc"
   "HebutThesis_example.aux"
   "HebutThesis_example.run.xml"
-  "HebutThesis_example.toc"
+  "HebutThesis_example.xdv"
+  "HebutThesis_example.log"

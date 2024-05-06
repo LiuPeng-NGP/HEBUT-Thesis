@@ -30,6 +30,17 @@ INPUT f:/LaTeX/texlive/2021/texmf-dist/tex/latex/base/size10.clo
 INPUT f:/LaTeX/texlive/2021/texmf-dist/tex/latex/base/size10.clo
 INPUT f:/LaTeX/texlive/2021/texmf-dist/tex/latex/base/size10.clo
 INPUT f:/LaTeX/texlive/2021/texmf-dist/tex/latex/base/size10.clo
+INPUT f:/LaTeX/texlive/2021/texmf-dist/tex/latex/tocloft/tocloft.sty
+INPUT f:/LaTeX/texlive/2021/texmf-dist/tex/latex/tocloft/tocloft.sty
+INPUT f:/LaTeX/texlive/2021/texmf-dist/tex/latex/tocloft/tocloft.sty
+INPUT f:/LaTeX/texlive/2021/texmf-dist/tex/latex/tocloft/tocloft.sty
+INPUT f:/LaTeX/texlive/2021/texmf-dist/tex/latex/tocloft/tocloft.sty
+INPUT f:/LaTeX/texlive/2021/texmf-dist/tex/latex/tocloft/tocloft.sty
+INPUT f:/LaTeX/texlive/2021/texmf-dist/tex/latex/tocloft/tocloft.sty
+INPUT f:/LaTeX/texlive/2021/texmf-dist/tex/latex/tocloft/tocloft.sty
+INPUT f:/LaTeX/texlive/2021/texmf-dist/tex/latex/tocloft/tocloft.sty
+INPUT f:/LaTeX/texlive/2021/texmf-dist/tex/latex/tocloft/tocloft.sty
+INPUT f:/LaTeX/texlive/2021/texmf-dist/tex/latex/tocloft/tocloft.sty
 INPUT f:/LaTeX/texlive/2021/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT f:/LaTeX/texlive/2021/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT f:/LaTeX/texlive/2021/texmf-dist/tex/latex/geometry/geometry.sty
@@ -1483,6 +1494,7 @@ INPUT f:/LaTeX/texlive/2021/texmf-dist/tex/latex/tools/tabularx.sty
 INPUT f:/LaTeX/texlive/2021/texmf-dist/tex/latex/tools/tabularx.sty
 INPUT f:/LaTeX/texlive/2021/texmf-dist/tex/latex/tools/array.sty
 INPUT f:/LaTeX/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
+INPUT f:/LaTeX/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref.sty
 INPUT ./HebutThesis_example.aux
 INPUT HebutThesis_example.aux
 INPUT HebutThesis_example.aux

@@ -4,6 +4,7 @@
 \LoadClass{report}  % 加载report文档类
 
 % 加载（包含）其他的包（package）以提供额外的功能或者设置
+\RequirePackage{tocloft}              % 添加自定义目录的宏包
 \RequirePackage[paperwidth = 21cm, paperheight= 29.7cm]{geometry}   % 文档页面布局A4纸
 \RequirePackage[heading = true,zihao=-4,linespread=1.5,UTF8]{ctex}  % 调整中文标题小四号宋体，行间距1.5倍，UTF8编码
 \RequirePackage{bm}           % 生成粗体数学符号
@@ -31,6 +32,7 @@
 \RequirePackage{booktabs}             % 提供了创建高质量表格的命令
 \RequirePackage{tabularx}             % 使表格的列宽可以自动调整
 \RequirePackage{ifthen}               % 添加条件语句包
+\RequirePackage{hyperref}
 
 \addbibresource{bibliography.bib}           % 指定参考文献数据库文件（.bib 文件）
 \allowdisplaybreaks                         % 允许在数学环境中自动进行跨页断行
@@ -123,6 +125,20 @@
 }
 \ProcessOptions\relax     % 处理由 \DeclareOption 和 \DeclareOption* 声明的选项
 
+% 设定目录格式
+
+\setlength{\cftsecindent}{0pt} % 对于section取消目录的缩进
+\setlength{\cftsubsecindent}{0pt} % 对于subsection取消目录的缩进
+\renewcommand{\cfttoctitlefont}{\hfil\bfseries\heiti\zihao{4}\selectfont}   % 设置目录样式黑体四号居中中间七个空格
+\renewcommand{\contentsname}{目\ \ \ \ \ \ \ 录}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}    % 使章标题行有虚线
+\renewcommand{\cftchapfont}{\songti\zihao{-4}\selectfont} % 设置目录页内容样式宋体小四
+\renewcommand{\cftchappagefont}{\songti\zihao{-4}\selectfont} % 设置目录页页码样式宋体小四
+\setlength{\cftbeforechapskip}{0.1pt}  % 设置章节前的间距为 18 磅
+\setlength{\cftbeforesecskip}{0.1pt}   % 设置小节前的间距为 18 磅
+\setlength{\cftbeforesubsecskip}{0.1pt} % 设置子节前的间距为 18 磅
+
+
 % 设置页眉页脚
 \newgeometry{                         % 调整页面布局
     top        = 2.6cm,%2.41 2.5        % 上边距2.6cm，
@@ -183,3 +199,11 @@
 
 \parskip=0pt                  % 段落之间垂直距离为0
 \floatname{algorithm}{算法}   % 将 algorithm 环境的标题名称从默认的“Algorithm”更改为“算法”
+
+% 设置链接颜色
+\hypersetup{
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=black
+}
+

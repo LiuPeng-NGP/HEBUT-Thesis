@@ -1620,9 +1620,6 @@ INPUT ./document/abstract.tex
 INPUT ./document/abstract.tex
 INPUT ./document/abstract.tex
 INPUT document/abstract.tex
-INPUT ./HebutThesis_example.toc
-INPUT HebutThesis_example.toc
-INPUT HebutThesis_example.toc
 INPUT f:/LaTeX/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT f:/LaTeX/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
 INPUT f:/LaTeX/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
@@ -1650,6 +1647,9 @@ INPUT f:/LaTeX/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.t
 INPUT f:/LaTeX/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT f:/LaTeX/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT f:/LaTeX/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT ./HebutThesis_example.toc
+INPUT HebutThesis_example.toc
+INPUT HebutThesis_example.toc
 OUTPUT HebutThesis_example.toc
 INPUT ./document/chap01.tex
 INPUT ./document/chap01.tex

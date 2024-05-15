@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.1.30)  6 MAY 2024 21:32
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.1.30)  15 MAY 2024 08:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1635,7 +1635,12 @@ Package fontspec Info: Font family 'FandolHei-Regular(0)' created for font
 [1
 
 
-]) (./document/abstract.tex [1]) [2] (./HebutThesis_example.toc)
+]) (./document/abstract.tex [1]
+Overfull \hbox (4.2682pt too wide) in paragraph at lines 69--81
+[][]
+ []
+
+) [2] (./HebutThesis_example.toc)
 \tf@toc=\write8
 \openout8 = `HebutThesis_example.toc'.
 
@@ -1680,12 +1685,12 @@ Package logreq Info: Writing requests to 'HebutThesis_example.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 44207 strings out of 476919
- 940590 string characters out of 5822736
+ 44211 strings out of 476919
+ 940702 string characters out of 5822736
  1822867 words of memory out of 5000000
- 63409 multiletter control sequences out of 15000+600000
- 419103 words of font info for 133 fonts, out of 8000000 for 9000
+ 63411 multiletter control sequences out of 15000+600000
+ 419119 words of font info for 135 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  116i,12n,121p,1310b,4671s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on HebutThesis_example.xdv (16 pages, 132860 bytes).
+Output written on HebutThesis_example.xdv (16 pages, 133672 bytes).

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.1.30)  15 MAY 2024 08:58
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.1.30)  5 JUN 2024 21:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1364,40 +1364,7 @@ Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 \TX@delta=\dimen370
 \TX@cols=\count515
 \TX@ftn=\toks49
-)
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: 
-* paper: custom
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(99.58464pt, 467.76349pt, 46.94687pt)
-* v-part:(T,H,B)=(73.97733pt, 644.17032pt, 76.82234pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=467.76349pt
-* \textheight=644.17032pt
-* \oddsidemargin=27.31465pt
-* \evensidemargin=27.31465pt
-* \topmargin=-44.95514pt
-* \headheight=28.45274pt
-* \headsep=18.20973pt
-* \topskip=10.0pt
-* \footskip=22.47748pt
-* \marginparwidth=65.0pt
-* \marginparsep=11.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-)
+))
 \@quotelevel=\count516
 \@quotereset=\count517
  (./HebutThesis_example.aux)
@@ -1432,19 +1399,19 @@ LaTeX Font Info:    ... okay on input line 13.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(99.58464pt, 467.76349pt, 46.94687pt)
-* v-part:(T,H,B)=(73.97733pt, 644.17032pt, 76.82234pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=467.76349pt
-* \textheight=644.17032pt
-* \oddsidemargin=27.31465pt
-* \evensidemargin=27.31465pt
-* \topmargin=-44.95514pt
-* \headheight=28.45274pt
-* \headsep=18.20973pt
+* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
+* v-part:(T,H,B)=(101.40665pt, 591.53014pt, 152.10997pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04675pt
+* \textwidth=418.25368pt
+* \textheight=591.53014pt
+* \oddsidemargin=17.3571pt
+* \evensidemargin=17.3571pt
+* \topmargin=-7.86334pt
+* \headheight=12.0pt
+* \headsep=25.0pt
 * \topskip=10.0pt
-* \footskip=22.47748pt
+* \footskip=30.0pt
 * \marginparwidth=65.0pt
 * \marginparsep=11.0pt
 * \columnsep=10.0pt
@@ -1558,6 +1525,39 @@ Package biblatex Info: ... file 'HebutThesis_example.bbl' found.
 Package biblatex Info: Reference section=0 on input line 13.
 Package biblatex Info: Reference segment=0 on input line 13.
  (./document/cover.tex
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(99.58464pt, 450.97636pt, 46.94687pt)
+* v-part:(T,H,B)=(73.97733pt, 694.24709pt, 76.82234pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04675pt
+* \textwidth=450.97636pt
+* \textheight=694.24709pt
+* \oddsidemargin=27.31465pt
+* \evensidemargin=27.31465pt
+* \topmargin=-44.95514pt
+* \headheight=28.45274pt
+* \headsep=18.20973pt
+* \topskip=10.0pt
+* \footskip=22.47748pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
 
 Package fontspec Warning: Font "FandolKai-Regular" does not contain requested
 (fontspec)                Script "CJK".
@@ -1636,7 +1636,7 @@ Package fontspec Info: Font family 'FandolHei-Regular(0)' created for font
 
 
 ]) (./document/abstract.tex [1]
-Overfull \hbox (4.2682pt too wide) in paragraph at lines 69--81
+Overfull \hbox (21.05533pt too wide) in paragraph at lines 69--81
 [][]
  []
 
@@ -1661,23 +1661,23 @@ File: figures/河北工业大学校门.jpg Graphic file (type bmp)
 ]
 File: figures/参考文献.png Graphic file (type bmp)
 <figures/参考文献.png>
- [4]) (./document/chap03.tex [5]
+) (./document/chap03.tex [4]
 3
-[6
+[5
 
-]) (./document/chap04.tex [7]
+]) (./document/chap04.tex [6]
 4
-) (./document/conclusion.tex [8
+) (./document/conclusion.tex [7
 
-]) (./document/bibliography.tex [9
+]) (./document/bibliography.tex [8
 
-]) (./document/acknowledgments.tex [10
+]) (./document/acknowledgments.tex [9
 
-]) (./document/appendix.tex [11
+]) (./document/appendix.tex [10
 
 ]
 附录 A
-) [12
+) [11
 
 ] (./HebutThesis_example.aux)
 Package logreq Info: Writing requests to 'HebutThesis_example.run.xml'.
@@ -1687,10 +1687,10 @@ Package logreq Info: Writing requests to 'HebutThesis_example.run.xml'.
 Here is how much of TeX's memory you used:
  44211 strings out of 476919
  940702 string characters out of 5822736
- 1822867 words of memory out of 5000000
+ 1824042 words of memory out of 5000000
  63411 multiletter control sequences out of 15000+600000
  419119 words of font info for 135 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 116i,12n,121p,1310b,4671s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 116i,12n,121p,1310b,4673s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on HebutThesis_example.xdv (16 pages, 133672 bytes).
+Output written on HebutThesis_example.xdv (15 pages, 132212 bytes).

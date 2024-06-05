@@ -20,32 +20,32 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}插图}{3}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}插表}{4}{section.2.2}%
+\contentsline {section}{\numberline {2.2}插表}{3}{section.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}引用}{4}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3\hspace {.3em}}数学符号与公式（仅供参考）}{6}{chapter.3}%
+\contentsline {chapter}{\numberline {3\hspace {.3em}}数学符号与公式（仅供参考）}{5}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}数学模式}{6}{section.3.1}%
+\contentsline {section}{\numberline {3.1}数学模式}{5}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}基础数学符号}{6}{section.3.2}%
+\contentsline {section}{\numberline {3.2}基础数学符号}{5}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}常用数学结构}{7}{section.3.3}%
+\contentsline {section}{\numberline {3.3}常用数学结构}{6}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4\hspace {.3em}}章节标题}{8}{chapter.4}%
+\contentsline {chapter}{\numberline {4\hspace {.3em}}章节标题}{7}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}二级标题一}{8}{section.4.1}%
+\contentsline {section}{\numberline {4.1}二级标题一}{7}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}三级标题一}{8}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.1}三级标题一}{7}{subsection.4.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}三级标题二}{8}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.2}三级标题二}{7}{subsection.4.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}二级标题二}{8}{section.4.2}%
+\contentsline {section}{\numberline {4.2}二级标题二}{7}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{结论}{9}{chapter*.5}%
+\contentsline {chapter}{结论}{8}{chapter*.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{参考文献}{10}{chapter*.6}%
+\contentsline {chapter}{参考文献}{9}{chapter*.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{致谢}{11}{chapter*.7}%
+\contentsline {chapter}{致谢}{10}{chapter*.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}附录A标题}{12}{appendix.A}%
+\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}附录A标题}{11}{appendix.A}%

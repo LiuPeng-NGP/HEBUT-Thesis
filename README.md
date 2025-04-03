@@ -1,4 +1,5 @@
 
+Update: 2025年请参考 [HEBUT-Thesis-2025](!https://github.com/Kylin233333/HEBUT-Thesis-2025)
 # 河北工业大学本科毕业设计论文/说明书模板
 首次上线日期：2024/3/31
 
